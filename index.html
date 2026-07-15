@@ -281,15 +281,15 @@ body.paused .live-tag{animation-play-state:paused}
 .b-ring small{font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted2)}
 .b-num{font-family:'Space Grotesk',sans-serif;font-size:clamp(44px,4.6vw,64px);font-weight:700;letter-spacing:-.03em;line-height:1;color:var(--acc)}
 /* donut chart */
-.donut-wrap{flex:1;display:flex;align-items:center;justify-content:center;padding:22px 0}
-.donut{position:relative;width:min(180px,72%)}
+.donut-wrap{flex:1;display:flex;align-items:center;justify-content:center;padding:26px 0 10px}
+.donut{position:relative;width:min(250px,88%)}
 .donut svg{width:100%;height:auto;display:block}
 .donut .trk{fill:none;stroke:rgba(255,255,255,.09);stroke-width:13}
 .donut .arc{fill:none;stroke:#fff;stroke-width:13;stroke-linecap:round;stroke-dasharray:364.4;stroke-dashoffset:364.4;transition:stroke-dashoffset 1.8s var(--ease) .4s;filter:drop-shadow(0 0 9px rgba(255,255,255,.3))}
 .b.in .donut .arc{stroke-dashoffset:167.6}
 .d-label{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}
-.d-label b{font-family:'Space Grotesk',sans-serif;font-size:clamp(26px,2.4vw,34px);font-weight:700;letter-spacing:-.02em}
-.d-label small{font-family:'Space Mono',monospace;font-size:8.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted2);margin-top:5px;max-width:92px;line-height:1.5}
+.d-label b{font-family:'Space Grotesk',sans-serif;font-size:clamp(36px,3.4vw,48px);font-weight:700;letter-spacing:-.02em;color:#fff}
+.d-label small{font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:#d6d6d6;margin-top:7px;max-width:120px;line-height:1.55}
 .b-chips{display:flex;flex-wrap:wrap;gap:8px}
 @property --chipAng{syntax:'<angle>';initial-value:0deg;inherits:false}
 .b-chips span{--ring:rgba(255,255,255,.55);position:relative;isolation:isolate;display:inline-flex;align-items:center;gap:7px;font-family:'Space Mono',monospace;font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#eef0f5;border:1px solid var(--line2);border-radius:100px;padding:7px 14px;transition:border-color .3s,color .3s;animation:chipBg 4.6s ease-in-out infinite}
@@ -776,7 +776,6 @@ html.js .piece.rv.in{clip-path:inset(0 0 0 0 round 28px)}
             <div class="d-label"><b data-count="54" data-suffix="%">0%</b><small>Revenue growth QoQ*</small></div>
           </div>
         </div>
-        <div class="art"><div class="b-num" data-count="184" data-suffix="%">0%</div><small style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted2)">Avg. revenue growth*</small></div>
       </article>
     </div>
     <p class="work-note rv">*Illustrative placeholders. Real numbers shared on your growth call.</p>
