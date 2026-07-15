@@ -367,7 +367,11 @@ body.paused .b-chips span::before{animation-play-state:paused}
 .g-web .l2.s{width:32%}
 .g-web .cta{height:26px;width:104px;border-radius:100px;background:rgba(255,255,255,.94);margin-top:18px}
 .g-web .row{display:flex;gap:12px;margin-top:22px}
-.g-web .row i{flex:1;height:74px;border-radius:12px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.06)}
+.g-web .row .kpi{flex:1;border-radius:12px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);padding:16px 18px;display:flex;flex-direction:column;gap:4px;min-width:0}
+.g-web .kpi small{font-family:'Space Mono',monospace;font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);white-space:nowrap}
+.g-web .kpi b{font-family:'Space Grotesk',sans-serif;font-size:clamp(17px,1.7vw,24px);font-weight:700;letter-spacing:-.01em;color:var(--text);white-space:nowrap}
+.g-web .kpi em{font-style:normal;font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.06em;color:#3ddc84;white-space:nowrap}
+.g-web .uni{position:absolute;right:28px;top:28px;font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:#fff;border:1px solid rgba(255,255,255,.35);border-radius:100px;padding:7px 14px;background:rgba(255,255,255,.06)}
 .g-dash{background:linear-gradient(150deg,#121212,#080808)}
 .piece .art.sales-art{inset:0}
 .sales-head{position:absolute;left:5%;top:10%;z-index:1}
@@ -826,14 +830,18 @@ html.js .piece.rv.in{clip-path:inset(0 0 0 0 round 28px)}
     </div>
     <div class="gal">
       <article class="piece rv">
-        <div class="art" data-plx="40"><div class="g-web"><div class="fr"><div class="l1"></div><div class="l2"></div><div class="l2 s"></div><div class="cta"></div><div class="row"><i></i><i></i><i></i></div></div></div></div>
+        <div class="art" data-plx="40"><div class="g-web"><div class="fr"><span class="uni">Unicorn</span><div class="l1"></div><div class="l2"></div><div class="l2 s"></div><div class="cta"></div><div class="row">
+          <span class="kpi"><small>GWP</small><b>₹988 Cr</b><em>▲ 102.4% YoY</em></span>
+          <span class="kpi"><small>Total Revenue</small><b>₹488.1 Cr</b><em>▲ 133.5% YoY</em></span>
+          <span class="kpi"><small>CAC</small><b>₹3,850</b><em>▼ 30% YoY</em></span>
+        </div></div></div></div>
         <div class="veil2"></div>
         <div class="info">
           <div>
             <span class="svc-tag">Website Redesign + Meta Ads + Google Ads</span>
-            <h3>D2C Brand Growth</h3>
+            <h3>Brand Growth</h3>
           </div>
-          <p class="meta"><b>Challenge:</b> strong product, weak product-page experience, rising CAC. <b>Move:</b> rebuilt the product page and launched full-funnel campaigns for profitable growth.</p>
+          <p class="meta"><b>Challenge:</b> strong product, weak product-page experience, rising CAC. <b>Move:</b> rebuilt the product page and launched full-funnel campaigns. <b>Result:</b> GWP up 102.4%, CAC down 30%, and the company crossed into unicorn territory.</p>
           <span class="go" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 17L17 7M8 7h9v9"/></svg></span>
         </div>
       </article>
