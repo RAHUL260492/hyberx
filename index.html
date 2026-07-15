@@ -395,6 +395,10 @@ body.paused .b-chips span::before{animation-play-state:paused}
 /* center the strip when the cards don't fill the viewport, without breaking scroll */
 .vid-scroll>.vid:first-child{margin-left:auto}
 .vid-scroll>.vid:last-child{margin-right:auto}
+@media(min-width:1500px){
+  .vid-scroll{padding-left:28px;padding-right:28px;justify-content:center;overflow-x:visible;scroll-snap-type:none}
+  .vid{width:clamp(200px,calc((100vw - 170px)/7),300px)}
+}
 .vid{scroll-snap-align:start;flex:none;width:300px;aspect-ratio:3/4;border-radius:20px;border:1px solid var(--line2);position:relative;overflow:hidden;display:flex;flex-direction:column;justify-content:flex-end;padding:24px;isolation:isolate;transition:transform .5s var(--ease),border-color .5s;box-shadow:var(--gloss-edge)}
 .vid:hover{transform:translateY(-6px);border-color:rgba(255,255,255,.22)}
 .vid::before{content:"";position:absolute;inset:0;z-index:-1;transition:transform .8s var(--ease)}
