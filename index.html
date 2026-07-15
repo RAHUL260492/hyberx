@@ -402,10 +402,12 @@ body.paused .b-chips span::before{animation-play-state:paused}
 .vid-scroll::-webkit-scrollbar{height:6px}
 .vid-scroll::-webkit-scrollbar-thumb{background:rgba(255,255,255,.275);border-radius:3px}
 .vid-scroll::-webkit-scrollbar-track{background:rgba(255,255,255,.04)}
-/* wide screens: centered wrapped grid (4 + 3), no scrolling */
+/* wide screens: all seven cards on one centered line */
 @media(min-width:1500px){
-  .vid-scroll{flex-wrap:wrap;justify-content:center;gap:16px;overflow:visible;scroll-snap-type:none;max-width:1360px;margin:0 auto;padding:6px 28px 26px}
-  .vid{width:300px}
+  .vid-scroll{flex-wrap:nowrap;justify-content:center;gap:14px;overflow:visible;scroll-snap-type:none;padding:6px 28px 26px}
+  .vid{flex:1 1 0;width:auto;min-width:0;max-width:300px;padding:18px}
+  .vid h3{font-size:16.5px}
+  .vid p{font-size:12px}
 }
 .vid{scroll-snap-align:start;flex:none;width:300px;aspect-ratio:3/4;border-radius:20px;border:1px solid var(--line2);position:relative;overflow:hidden;display:flex;flex-direction:column;justify-content:flex-end;padding:24px;isolation:isolate;transition:transform .5s var(--ease),border-color .5s;box-shadow:var(--gloss-edge)}
 .vid:hover{transform:translateY(-6px);border-color:rgba(255,255,255,.22)}
