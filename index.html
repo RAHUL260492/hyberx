@@ -229,6 +229,8 @@ body.paused .live-tag{animation-play-state:paused}
 .b h3{font-size:clamp(20px,1.8vw,24px);letter-spacing:-.02em;margin-bottom:10px}
 .b p{font-size:14.5px;color:var(--muted);max-width:420px}
 .b .tag{font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--acc);margin-bottom:16px}
+.b-link{display:inline-flex;align-items:center;gap:8px;margin-top:16px;font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--text);align-self:flex-start;border-bottom:1px solid rgba(255,255,255,.25);padding-bottom:3px;transition:border-color .3s,gap .3s var(--ease)}
+.b-link:hover{border-color:#fff;gap:12px}
 .b .art{margin-top:auto;padding-top:26px}
 .s7{grid-column:span 7}.s6{grid-column:span 6}.s5{grid-column:span 5}.s4{grid-column:span 4}.s3{grid-column:span 3}.s8{grid-column:span 8}.s12{grid-column:span 12}
 /* bento arts */
@@ -737,6 +739,7 @@ html.js .piece.rv.in{clip-path:inset(0 0 0 0 round 28px)}
         <span class="tag">Performance Marketing</span>
         <h3>Paid media that pays for itself</h3>
         <p>Launch, manage, and scale campaigns across Google, Meta, LinkedIn, and other paid channels with a clear focus on ROI, CAC, ROAS, and revenue.</p>
+        <a class="b-link" href="performance-marketing.html">Explore Performance Marketing <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
         <div class="art"><div class="b-bars"><i style="--h:.32"></i><i style="--h:.46"></i><i style="--h:.4"></i><i style="--h:.58"></i><i style="--h:.52"></i><i style="--h:.72"></i><i style="--h:.66"></i><i style="--h:.86"></i><i style="--h:1"></i></div></div>
       </article>
       <article class="b s5 rv">
@@ -749,24 +752,28 @@ html.js .piece.rv.in{clip-path:inset(0 0 0 0 round 28px)}
         <span class="tag">Websites &amp; E-commerce</span>
         <h3>Built to convert</h3>
         <p>High-converting websites, landing pages, and e-commerce experiences that look premium and are engineered to sell.</p>
+        <a class="b-link" href="website-design-development.html">Explore Websites <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
         <div class="art"><div class="b-browser"><div class="dots"><i></i><i></i><i></i></div><div class="l1"></div><div class="l2"></div><div class="l2 s"></div><div class="row"><i></i><i></i><i></i></div></div></div>
       </article>
       <article class="b s4 rv">
         <span class="tag">Content Creation</span>
         <h3>Scroll-stopping, platform-ready</h3>
         <p>Content for social feeds, ad accounts, and brand stories, built to stop the scroll and sell.</p>
+        <a class="b-link" href="content-creation.html">Explore Content <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
         <div class="art"><div class="b-stack"><i></i><i></i><i></i></div></div>
       </article>
       <article class="b s3 rv">
         <span class="tag">Conversion Optimization</span>
         <h3>More from every click</h3>
         <p>Funnels, CTAs, and journeys tuned to convert.</p>
+        <a class="b-link" href="conversion-optimization.html">Explore CRO <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
         <div class="art"><div class="b-ring"><svg viewBox="0 0 80 80"><circle class="bgc" cx="40" cy="40" r="33"/><circle class="fgc" cx="40" cy="40" r="33" transform="rotate(-90 40 40)"/></svg><div><b>+38%</b><small>Avg. CVR lift*</small></div></div></div>
       </article>
       <article class="b s8 rv">
         <span class="tag">Ad Films &amp; Brand Videos</span>
         <h3>Cinema for the feed</h3>
         <p>Ad films and brand videos that make your offer clear and your brand hard to forget.</p>
+        <a class="b-link" href="ad-films-brand-videos.html">Explore Ad Films <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
         <div class="art"><div class="b-frame yt-live" id="ytLive" data-yt="3JIw_Tfav9g" role="button" tabindex="0" aria-label="Play showreel video"><img class="thumb" src="https://img.youtube.com/vi/3JIw_Tfav9g/hqdefault.jpg" alt="Showreel preview"><div class="t-play" aria-hidden="true"></div></div></div>
       </article>
       <article class="b s4 rv">
@@ -1083,11 +1090,11 @@ html.js .piece.rv.in{clip-path:inset(0 0 0 0 round 28px)}
       <div>
         <h4>Services</h4>
         <ul>
-          <li><a href="#services">Performance Marketing</a></li>
-          <li><a href="#services">Website Design &amp; Dev</a></li>
-          <li><a href="#services">Content Creation</a></li>
-          <li><a href="#content">Ad Films &amp; Brand Videos</a></li>
-          <li><a href="#services">Conversion Optimization</a></li>
+          <li><a href="performance-marketing.html">Performance Marketing</a></li>
+          <li><a href="website-design-development.html">Website Design &amp; Dev</a></li>
+          <li><a href="content-creation.html">Content Creation</a></li>
+          <li><a href="ad-films-brand-videos.html">Ad Films &amp; Brand Videos</a></li>
+          <li><a href="conversion-optimization.html">Conversion Optimization</a></li>
         </ul>
       </div>
       <div>
