@@ -89,6 +89,11 @@ html.js .h-an{opacity:0;transform:translateY(30px);animation:hIn 1s var(--ease) 
 .card h3{font-size:20px;letter-spacing:-.02em;margin-bottom:10px}
 .card p{font-size:14.5px;color:var(--muted)}
 .card .n{font-family:'Space Mono',monospace;font-size:12px;color:var(--muted2);display:block;margin-bottom:16px}
+.card .yt-embed{position:relative;margin-top:18px;aspect-ratio:16/9;border-radius:12px;overflow:hidden;border:1px solid var(--line2);background:#0a0a0a;cursor:pointer}
+.card .yt-embed iframe{position:absolute;inset:0;width:100%;height:100%;border:0;filter:grayscale(1) contrast(1.05)}
+.card .yt-embed .pthumb{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:grayscale(1) contrast(1.05)}
+.card .yt-embed .t-play{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:54px;height:54px;border-radius:50%;border:1.5px solid rgba(255,255,255,.7);background:rgba(0,0,0,.35)}
+.card .yt-embed .t-play::after{content:"";position:absolute;left:54%;top:50%;transform:translate(-50%,-50%);border-left:14px solid #fff;border-top:9px solid transparent;border-bottom:9px solid transparent}
 .chips{display:flex;flex-wrap:wrap;gap:12px}
 .chip{font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:#eef0f5;border:1px solid var(--line2);border-radius:100px;padding:10px 18px;transition:border-color .3s,transform .3s var(--ease)}
 .chip:hover{border-color:rgba(255,255,255,.35);transform:translateY(-2px)}
@@ -178,7 +183,7 @@ footer{border-top:1px solid var(--line2);padding:56px 0 40px;background:var(--bg
   <div class="wrap">
     <div class="sec-head rv"><span class="ey"><i class="d"></i>What's Included</span><h2>Every frame earns its place.</h2></div>
     <div class="grid3"><article class="card rv"><span class="n">01</span><h3>Ad films</h3><p>Cinematic commercials built around one clear message and a reason to act.</p></article>
-<article class="card rv"><span class="n">02</span><h3>Brand films</h3><p>The story of who you are, told well enough that people remember it.</p></article>
+<article class="card rv"><span class="n">02</span><h3>Brand films</h3><p>The story of who you are, told well enough that people remember it.</p><div class="yt-embed" data-yt="dXMsB_bY2Os" data-vtitle="There's an air about India | The sound of a new India"></div></article>
 <article class="card rv"><span class="n">03</span><h3>Founder stories</h3><p>Put a face to the brand and build trust before the first sales call.</p></article>
 <article class="card rv"><span class="n">04</span><h3>Product films</h3><p>Detail, texture and demonstration that makes the product the hero.</p></article>
 <article class="card rv"><span class="n">05</span><h3>Testimonial videos</h3><p>Real customers on camera. Proof that sells harder than any claim.</p></article>
@@ -282,6 +287,28 @@ if(fine&&motionOK){
     b.addEventListener('mouseleave',function(){b.style.transform='';});
   });
 }
+/* card video embeds — real player on http(s); poster that opens YouTube on file:// */
+document.querySelectorAll('.yt-embed').forEach(function(box){
+  var id=box.dataset.yt,title=box.dataset.vtitle||'HyberX video';
+  if(location.protocol!=='file:'){
+    var f=document.createElement('iframe');
+    f.src='https://www.youtube.com/embed/'+id+'?rel=0&modestbranding=1';
+    f.allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+    f.allowFullscreen=true;
+    f.referrerPolicy='strict-origin-when-cross-origin';
+    f.title=title;
+    box.appendChild(f);
+  }else{
+    var im=document.createElement('img');
+    im.className='pthumb';im.alt=title;
+    im.src='https://img.youtube.com/vi/'+id+'/hqdefault.jpg';
+    var pl=document.createElement('div');pl.className='t-play';
+    box.appendChild(im);box.appendChild(pl);
+    box.addEventListener('click',function(){
+      window.open('https://youtu.be/'+id,'_blank','noopener');
+    });
+  }
+});
 document.getElementById('yr').textContent=new Date().getFullYear();
 })();
 </script>
