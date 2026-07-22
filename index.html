@@ -561,6 +561,10 @@ html.js .piece.rv.in{clip-path:inset(0 0 0 0 round 28px)}
 .vid.has-embed .tg{position:static;display:block;margin-bottom:14px}
 .vid.has-embed .vframe{position:relative;width:100%;aspect-ratio:16/9;border-radius:10px;overflow:hidden;border:1px solid rgba(255,255,255,.14);background:#000;margin-bottom:auto}
 .vid.has-embed h3{margin-top:16px}
+/* vertical (9:16) embed — fills the card, text floats over it */
+.vid.has-embed-v .vframe{position:absolute;inset:0;z-index:0;background:#000}
+.vid.has-embed-v .scrim{position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(180deg,rgba(0,0,0,.55),transparent 26%,rgba(0,0,0,.35) 62%,rgba(0,0,0,.85))}
+.vid.has-embed-v .tg,.vid.has-embed-v h3,.vid.has-embed-v p{position:relative;z-index:2;pointer-events:none}
 /* video lightbox */
 .lightbox{position:fixed;inset:0;z-index:300;background:rgba(2,2,3,.94);backdrop-filter:blur(10px);display:none;align-items:center;justify-content:center;padding:4vmin}
 .lightbox.open{display:flex}
@@ -926,7 +930,7 @@ html.js .piece.rv.in{clip-path:inset(0 0 0 0 round 28px)}
     <div class="vid v2"><span class="tg">Story</span><span class="vp"></span><h3>Founder Videos</h3><p>Put a face to the brand and build trust at scale.</p></div>
     <div class="vid v3"><span class="tg">Product</span><span class="vp"></span><h3>Product Videos</h3><p>Show the product, the detail, and the difference.</p></div>
     <div class="vid v4"><span class="tg">Paid Media</span><span class="vp"></span><h3>Performance Ad Creatives</h3><p>Engineered for hooks, retention, and conversion.</p></div>
-    <div class="vid v5"><span class="tg">Short-form</span><span class="vp"></span><h3>Social Media Reels</h3><p>Platform-native short-form built for reach.</p></div>
+    <div class="vid v5 has-embed-v"><div class="vframe yt-embed" data-yt="HOwnpDexSzQ" data-vtitle="#AskMore of your phone. And discover something better with Gemini on Google #Pixel10 Pro."></div><span class="scrim"></span><span class="tg">Short-form</span><h3>Social Media Reels</h3><p>Platform-native short-form built for reach.</p></div>
     <div class="vid v6"><span class="tg">Proof</span><span class="vp"></span><h3>Testimonial Videos</h3><p>Real customers on camera. Proof that sells.</p></div>
     <div class="vid v7"><span class="tg">Native</span><span class="vp"></span><h3>UGC-Style Ads</h3><p>Blends into the feed, converts out of it.</p></div>
   </div>
