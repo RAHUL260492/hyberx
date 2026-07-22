@@ -207,9 +207,19 @@ body.paused .live-tag{animation-play-state:paused}
 .t-web.has-shot{padding:0;cursor:pointer;background:#0b0b0b}
 .t-web .shot{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;object-position:50% 50%;z-index:0}
 .t-dash{background:linear-gradient(160deg,#121212,#090909);padding:20px;display:flex;flex-direction:column;justify-content:flex-end}
+.t-dash.has-shot{padding:0}
+.t-dash .shot{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
 .t-dash svg{width:100%;height:110px}
 .t-dash .kp{display:flex;gap:8px;margin-bottom:12px}
-.t-dash .kp i{flex:1;height:34px;border-radius:8px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.07)}
+.t-dash .kp i{flex:1;height:34px;border-radius:8px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.07);position:relative;overflow:hidden}
+/* each KPI box reads as label + value + trend */
+.t-dash .kp i::before{content:"";position:absolute;left:8px;top:8px;width:44%;height:4px;border-radius:2px;background:rgba(255,255,255,.26)}
+.t-dash .kp i::after{content:"";position:absolute;left:8px;top:18px;width:64%;height:7px;border-radius:3.5px;background:rgba(255,255,255,.88)}
+.t-dash .kp i:nth-child(2)::before{width:32%}
+.t-dash .kp i:nth-child(2)::after{width:46%}
+.t-dash .kp i:nth-child(3)::before{width:52%}
+.t-dash .kp i:nth-child(3)::after{width:76%}
+.t-dash .kp b{position:absolute;right:7px;top:12px;width:0;height:0;border-style:solid;border-width:0 4px 6px 4px;border-color:transparent transparent rgba(255,255,255,.75) transparent}
 .t-film{background:radial-gradient(circle at 68% 32%,rgba(255,255,255,.22),transparent 58%),linear-gradient(160deg,#0f0f0f,#080808);display:flex;align-items:center;justify-content:center}
 .t-film::before,.t-film::after{content:"";position:absolute;left:0;right:0;height:13%;background:var(--bg);z-index:1}
 .t-film::before{top:0}.t-film::after{bottom:0}
@@ -737,14 +747,14 @@ html.js .piece.rv.in{clip-path:inset(0 0 0 0 round 28px)}
     <div class="reel-set">
       <div class="tile t-web has-shot site-link" data-href="https://inhautecouture.com/"><img class="shot" src="ecom-web-inhautecouture.jpg" alt=""><span class="cap">E-commerce · Web</span></div>
       <div class="tile t-film vid-yt" data-yt="dXMsB_bY2Os" data-vtitle="There's an air about India | The sound of a new India"><img class="tfilm-thumb" src="https://img.youtube.com/vi/dXMsB_bY2Os/hqdefault.jpg" alt=""><div class="t-play"></div><span class="cap">Brand Film · 4K</span></div>
-      <div class="tile t-dash"><div class="kp"><i></i><i></i><i></i></div><svg viewBox="0 0 300 110" preserveAspectRatio="none"><path d="M0 92 C40 84,70 72,100 66 S170 46,210 32 S270 12,300 6" fill="none" stroke="#ffffff" stroke-width="2.5"/><path d="M0 92 C40 84,70 72,100 66 S170 46,210 32 S270 12,300 6 L300 110 L0 110 Z" fill="rgba(255,255,255,.066)"/></svg><span class="cap">Paid Media · Scale</span></div>
+      <div class="tile t-dash has-shot"><img class="shot" src="paid-media-scale.jpg" alt=""></div>
       <div class="tile t-reelv vid-yt" data-yt="SaPqj-lyn4I" data-vtitle="The world's finest machines. One destination"><div class="ph"><img src="https://i.ytimg.com/vi/SaPqj-lyn4I/oardefault.jpg" alt=""></div><span class="cap">Reels · Short-form</span></div>
       <div class="tile t-soc"><i></i><i></i><i></i><i></i><span class="cap">Social · Creative</span></div>
     </div>
     <div class="reel-set">
       <div class="tile t-web has-shot site-link" data-href="https://inhautecouture.com/"><img class="shot" src="ecom-web-inhautecouture.jpg" alt=""><span class="cap">E-commerce · Web</span></div>
       <div class="tile t-film vid-yt" data-yt="dXMsB_bY2Os" data-vtitle="There's an air about India | The sound of a new India"><img class="tfilm-thumb" src="https://img.youtube.com/vi/dXMsB_bY2Os/hqdefault.jpg" alt=""><div class="t-play"></div><span class="cap">Brand Film · 4K</span></div>
-      <div class="tile t-dash"><div class="kp"><i></i><i></i><i></i></div><svg viewBox="0 0 300 110" preserveAspectRatio="none"><path d="M0 92 C40 84,70 72,100 66 S170 46,210 32 S270 12,300 6" fill="none" stroke="#ffffff" stroke-width="2.5"/><path d="M0 92 C40 84,70 72,100 66 S170 46,210 32 S270 12,300 6 L300 110 L0 110 Z" fill="rgba(255,255,255,.066)"/></svg><span class="cap">Paid Media · Scale</span></div>
+      <div class="tile t-dash has-shot"><img class="shot" src="paid-media-scale.jpg" alt=""></div>
       <div class="tile t-reelv vid-yt" data-yt="SaPqj-lyn4I" data-vtitle="The world's finest machines. One destination"><div class="ph"><img src="https://i.ytimg.com/vi/SaPqj-lyn4I/oardefault.jpg" alt=""></div><span class="cap">Reels · Short-form</span></div>
       <div class="tile t-soc"><i></i><i></i><i></i><i></i><span class="cap">Social · Creative</span></div>
     </div>
