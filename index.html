@@ -202,6 +202,9 @@ body.paused .live-tag{animation-play-state:paused}
 .t-film{background:radial-gradient(circle at 68% 32%,rgba(255,255,255,.22),transparent 58%),linear-gradient(160deg,#0f0f0f,#080808);display:flex;align-items:center;justify-content:center}
 .t-film::before,.t-film::after{content:"";position:absolute;left:0;right:0;height:13%;background:var(--bg);z-index:1}
 .t-film::before{top:0}.t-film::after{bottom:0}
+.t-film.vid-yt{cursor:pointer}
+.t-film .tfilm-thumb{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:grayscale(1) contrast(1.06);z-index:0}
+.t-film .t-play{position:relative;z-index:2}
 .t-play{width:52px;height:52px;border-radius:50%;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.3);backdrop-filter:blur(6px);display:flex;align-items:center;justify-content:center}
 .t-play::after{content:"";border-style:solid;border-width:8px 0 8px 13px;border-color:transparent transparent transparent #fff;margin-left:3px}
 .t-soc{background:linear-gradient(160deg,#131313,#090909);display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:20px}
@@ -715,14 +718,14 @@ html.js .piece.rv.in{clip-path:inset(0 0 0 0 round 28px)}
   <div class="reel-track" aria-hidden="true">
     <div class="reel-set">
       <div class="tile t-web"><div class="fr"><div class="dots"><i></i><i></i><i></i></div><div class="l1"></div><div class="l2"></div><div class="l2 s"></div><div class="cta"></div></div><span class="cap">E-commerce · Web</span></div>
-      <div class="tile t-film"><div class="t-play"></div><span class="cap">Brand Film · 4K</span></div>
+      <div class="tile t-film vid-yt" data-yt="dXMsB_bY2Os" data-vtitle="There's an air about India | The sound of a new India"><img class="tfilm-thumb" src="https://img.youtube.com/vi/dXMsB_bY2Os/hqdefault.jpg" alt=""><div class="t-play"></div><span class="cap">Brand Film · 4K</span></div>
       <div class="tile t-dash"><div class="kp"><i></i><i></i><i></i></div><svg viewBox="0 0 300 110" preserveAspectRatio="none"><path d="M0 92 C40 84,70 72,100 66 S170 46,210 32 S270 12,300 6" fill="none" stroke="#ffffff" stroke-width="2.5"/><path d="M0 92 C40 84,70 72,100 66 S170 46,210 32 S270 12,300 6 L300 110 L0 110 Z" fill="rgba(255,255,255,.066)"/></svg><span class="cap">Paid Media · Scale</span></div>
       <div class="tile t-reelv"><div class="ph"></div><span class="cap">Reels · Short-form</span></div>
       <div class="tile t-soc"><i></i><i></i><i></i><i></i><span class="cap">Social · Creative</span></div>
     </div>
     <div class="reel-set">
       <div class="tile t-web"><div class="fr"><div class="dots"><i></i><i></i><i></i></div><div class="l1"></div><div class="l2"></div><div class="l2 s"></div><div class="cta"></div></div><span class="cap">E-commerce · Web</span></div>
-      <div class="tile t-film"><div class="t-play"></div><span class="cap">Brand Film · 4K</span></div>
+      <div class="tile t-film vid-yt" data-yt="dXMsB_bY2Os" data-vtitle="There's an air about India | The sound of a new India"><img class="tfilm-thumb" src="https://img.youtube.com/vi/dXMsB_bY2Os/hqdefault.jpg" alt=""><div class="t-play"></div><span class="cap">Brand Film · 4K</span></div>
       <div class="tile t-dash"><div class="kp"><i></i><i></i><i></i></div><svg viewBox="0 0 300 110" preserveAspectRatio="none"><path d="M0 92 C40 84,70 72,100 66 S170 46,210 32 S270 12,300 6" fill="none" stroke="#ffffff" stroke-width="2.5"/><path d="M0 92 C40 84,70 72,100 66 S170 46,210 32 S270 12,300 6 L300 110 L0 110 Z" fill="rgba(255,255,255,.066)"/></svg><span class="cap">Paid Media · Scale</span></div>
       <div class="tile t-reelv"><div class="ph"></div><span class="cap">Reels · Short-form</span></div>
       <div class="tile t-soc"><i></i><i></i><i></i><i></i><span class="cap">Social · Creative</span></div>
