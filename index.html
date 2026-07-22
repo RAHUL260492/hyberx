@@ -516,6 +516,7 @@ body.paused .b-chips span::before{animation-play-state:paused}
 .f-group textarea{min-height:110px;resize:vertical}
 .form-card .btn{width:100%;margin-top:8px;padding:18px}
 .form-note{font-size:12.5px;color:var(--muted2);text-align:center;margin-top:16px}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
 .form-ok{display:none;text-align:center;padding:60px 20px}
 .form-ok.show{display:block}
 .form-ok .ok-ic{width:64px;height:64px;border-radius:50%;background:var(--acc-dim);border:1px solid rgba(255,255,255,.165);display:flex;align-items:center;justify-content:center;margin:0 auto 22px}
@@ -1090,6 +1091,7 @@ html.js .piece.rv.in{clip-path:inset(0 0 0 0 round 28px)}
           </div>
         </div>
         <div class="f-group"><label for="fMsg">Message</label><textarea id="fMsg" name="message" placeholder="Tell us about your brand and growth goals..."></textarea></div>
+        <div class="hp" aria-hidden="true"><label for="fHp">Do not fill this in</label><input id="fHp" name="website_url_confirm" type="text" tabindex="-1" autocomplete="off"></div>
         <button type="submit" class="btn btn-pri">Book a Growth Call <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
         <p class="form-note">No spam. No pressure. Just a clear conversation about growth.</p>
       </form>
@@ -1293,13 +1295,23 @@ html.js .piece.rv.in{clip-path:inset(0 0 0 0 round 28px)}
   form.addEventListener('submit',function(ev){
     ev.preventDefault();
     if(!form.checkValidity()){form.reportValidity();return;}
-    var d=new FormData(form),lines=[];
-    d.forEach(function(v,k){if(v)lines.push(k.charAt(0).toUpperCase()+k.slice(1)+': '+v);});
-    /* opens the user's email client with the enquiry pre-filled.
-       Replace with your form endpoint (Formspree, Netlify Forms, etc.) when ready. */
-    var mail='mailto:hello@hyberx.com?subject='+encodeURIComponent('Growth Call Request — '+(d.get('name')||''))+'&body='+encodeURIComponent(lines.join('\n'));
-    window.location.href=mail;
-    form.style.display='none';ok.classList.add('show');
+    var d=new FormData(form),btn=form.querySelector('button[type=submit]');
+    function done(){form.style.display='none';ok.classList.add('show');}
+    /* last resort so an enquiry is never lost if the endpoint is unreachable */
+    function fallbackMail(){
+      var lines=[];
+      d.forEach(function(v,k){if(v&&k!=='website_url_confirm')lines.push(k.charAt(0).toUpperCase()+k.slice(1)+': '+v);});
+      window.location.href='mailto:Rahul@hyberx.com?cc=support@hyberx.com&subject='+
+        encodeURIComponent('Growth Call Request — '+(d.get('name')||''))+
+        '&body='+encodeURIComponent(lines.join('\n'));
+      done();
+    }
+    if(location.protocol==='file:'){fallbackMail();return;}
+    btn.disabled=true;
+    fetch('contact.php',{method:'POST',body:d})
+      .then(function(r){return r.json().catch(function(){return{ok:false}});})
+      .then(function(res){btn.disabled=false;if(res&&res.ok){done();}else{fallbackMail();}})
+      .catch(function(){btn.disabled=false;fallbackMail();});
   });
 
   document.getElementById('yr').textContent=new Date().getFullYear();
