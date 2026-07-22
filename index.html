@@ -553,6 +553,18 @@ html.js .piece.rv.in{clip-path:inset(0 0 0 0 round 28px)}
 .piece{will-change:transform}
 .vid .sh{position:absolute;inset:0;z-index:0;background:linear-gradient(115deg,transparent 45%,rgba(255,255,255,.08) 52%,transparent 59%);transform:translateX(-130%);transition:transform 1s var(--ease);pointer-events:none}
 .vid:hover .sh{transform:translateX(130%)}
+/* video card with an embedded player */
+.vid.has-embed{justify-content:flex-start;gap:0}
+.vid.has-embed .tg{position:static;display:block;margin-bottom:14px}
+.vid.has-embed .vframe{position:relative;width:100%;aspect-ratio:16/9;border-radius:10px;overflow:hidden;border:1px solid rgba(255,255,255,.14);background:#000;margin-bottom:auto}
+.vid.has-embed h3{margin-top:16px}
+/* video lightbox */
+.lightbox{position:fixed;inset:0;z-index:300;background:rgba(2,2,3,.94);backdrop-filter:blur(10px);display:none;align-items:center;justify-content:center;padding:4vmin}
+.lightbox.open{display:flex}
+.lb-frame{position:relative;width:min(1100px,94vw);aspect-ratio:16/9;background:#000;border:1px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:0 40px 120px rgba(0,0,0,.85)}
+.lb-frame iframe{width:100%;height:100%;border:0;display:block}
+.lb-close{position:absolute;top:18px;right:22px;z-index:301;width:46px;height:46px;border-radius:50%;border:1px solid rgba(255,255,255,.35);background:rgba(10,10,12,.7);color:#fff;font-size:20px;line-height:1;display:flex;align-items:center;justify-content:center;transition:transform .3s var(--ease),border-color .3s}
+.lb-close:hover{transform:scale(1.08);border-color:#fff}
 .band::after{content:"";position:absolute;width:140%;aspect-ratio:1;left:50%;top:50%;translate:-50% -50%;background:conic-gradient(from 0deg,transparent 0 70%,rgba(255,255,255,.066) 82%,transparent 94%);animation:bandSpin 26s linear infinite;pointer-events:none}
 @keyframes bandSpin{to{transform:rotate(360deg)}}
 .band>*{position:relative;z-index:1}
@@ -907,7 +919,7 @@ html.js .piece.rv.in{clip-path:inset(0 0 0 0 round 28px)}
     </div>
   </div>
   <div class="vid-scroll rv" tabindex="0" aria-label="Content formats — scroll horizontally">
-    <div class="vid v1"><span class="tg">Cinematic · 4K</span><span class="vp"></span><h3>Brand Films</h3><p>Films that define how your brand looks, sounds, and feels.</p></div>
+    <div class="vid v1 has-embed"><span class="tg">Cinematic · 4K</span><div class="vframe yt-embed" data-yt="dXMsB_bY2Os" data-vtitle="There's an air about India | The sound of a new India"></div><h3>Brand Films</h3><p>Films that define how your brand looks, sounds, and feels.</p></div>
     <div class="vid v2"><span class="tg">Story</span><span class="vp"></span><h3>Founder Videos</h3><p>Put a face to the brand and build trust at scale.</p></div>
     <div class="vid v3"><span class="tg">Product</span><span class="vp"></span><h3>Product Videos</h3><p>Show the product, the detail, and the difference.</p></div>
     <div class="vid v4"><span class="tg">Paid Media</span><span class="vp"></span><h3>Performance Ad Creatives</h3><p>Engineered for hooks, retention, and conversion.</p></div>
@@ -1121,6 +1133,11 @@ html.js .piece.rv.in{clip-path:inset(0 0 0 0 round 28px)}
 </footer>
 
 <!-- mobile sticky CTA -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Video player">
+  <div class="lb-frame" id="lbFrame"></div>
+  <button class="lb-close" id="lbClose" aria-label="Close video">✕</button>
+</div>
+
 <button class="motion-toggle" id="motionToggle" aria-pressed="false" aria-label="Pause background animations" title="Pause animations">
   <svg class="ic-pause" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4h4v16H7zM13 4h4v16h-4z"/></svg>
   <svg class="ic-play" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5l11 7-11 7z"/></svg>
@@ -1439,6 +1456,37 @@ html.js .piece.rv.in{clip-path:inset(0 0 0 0 round 28px)}
         window.open('https://youtu.be/'+id,'_blank','noopener');
       });
     }
+  });
+
+  /* video lightbox for .vid-yt cards */
+  var lb=document.getElementById('lightbox'),lbFrame=document.getElementById('lbFrame'),lbClose=document.getElementById('lbClose'),lbLastFocus=null;
+  function lbOpen(id,title){
+    if(location.protocol==='file:'){window.open('https://youtu.be/'+id,'_blank','noopener');return;}
+    lbLastFocus=document.activeElement;
+    var f=document.createElement('iframe');
+    f.src='https://www.youtube.com/embed/'+id+'?autoplay=1&rel=0&modestbranding=1';
+    f.allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+    f.allowFullscreen=true;
+    f.referrerPolicy='strict-origin-when-cross-origin';
+    f.title=title||'HyberX video';
+    lbFrame.appendChild(f);
+    lb.classList.add('open');
+    document.body.classList.add('lock');
+    lbClose.focus();
+  }
+  function lbShut(){
+    lb.classList.remove('open');
+    lbFrame.innerHTML='';
+    document.body.classList.remove('lock');
+    if(lbLastFocus)lbLastFocus.focus();
+  }
+  lbClose.addEventListener('click',lbShut);
+  lb.addEventListener('click',function(e){if(e.target===lb)lbShut();});
+  addEventListener('keydown',function(e){if(e.key==='Escape'&&lb.classList.contains('open'))lbShut();});
+  document.querySelectorAll('.vid-yt').forEach(function(v){
+    function go(){lbOpen(v.dataset.yt,v.dataset.vtitle);}
+    v.addEventListener('click',go);
+    v.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();go();}});
   });
 
   /* content banners — grayscale like the film treatment; click brings the colour */
