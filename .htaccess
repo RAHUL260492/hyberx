@@ -26,3 +26,34 @@ Header set Cache-Control "public, max-age=2592000"
 Header set Cache-Control "no-cache"
 </FilesMatch>
 </IfModule>
+
+# Blog posts: date-based slugs redirected to topic-based slugs
+Redirect 301 /blog/web-design-seo-recap-july-20-2026.html /blog/google-ai-overviews-top-stories-website-impact.html
+Redirect 301 /blog/web-design-seo-recap-july-13-2026.html /blog/llms-txt-seo-myth-ai-referral-traffic.html
+Redirect 301 /blog/web-design-seo-recap-july-6-2026.html /blog/chrome-150-css-wordpress-responsive-styling.html
+Redirect 301 /blog/web-design-seo-recap-june-29-2026.html /blog/june-2026-google-spam-update-chrome-150.html
+Redirect 301 /blog/web-design-seo-recap-june-22-2026.html /blog/google-volatility-black-hat-crackdown.html
+Redirect 301 /blog/web-design-seo-recap-june-15-2026.html /blog/safari-27-wwdc-zero-click-searches.html
+Redirect 301 /blog/web-design-seo-recap-june-8-2026.html /blog/may-core-update-search-console-ai-reports.html
+Redirect 301 /blog/web-design-seo-recap-june-1-2026.html /blog/google-ads-ai-mode-may-core-update.html
+Redirect 301 /blog/web-design-seo-recap-may-25-2026.html /blog/google-io-ai-mode-default-wordpress-7.html
+Redirect 301 /blog/web-design-seo-recap-may-18-2026.html /blog/faq-rich-results-retired-wordpress-7-countdown.html
+Redirect 301 /blog/web-design-seo-recap-may-11-2026.html /blog/chrome-148-browser-ai-wordpress-7-rc.html
+Redirect 301 /blog/web-design-seo-recap-may-4-2026.html /blog/google-preferred-sources-contrast-color-css.html
+Redirect 301 /blog/web-design-seo-recap-april-27-2026.html /blog/post-core-update-volatility-back-button-traps.html
+Redirect 301 /blog/web-design-seo-recap-april-20-2026.html /blog/google-back-button-hijacking-fake-reviews-purge.html
+Redirect 301 /blog/web-design-seo-recap-april-13-2026.html /blog/march-core-update-ends-impressions-data.html
+Redirect 301 /blog/web-design-seo-recap-april-6-2026.html /blog/core-update-volatility-css-masonry-ships.html
+Redirect 301 /blog/web-design-seo-recap-march-30-2026.html /blog/march-2026-core-update-safari-masonry.html
+Redirect 301 /blog/web-design-seo-recap-march-23-2026.html /blog/ai-overviews-shopping-queries-chatgpt-ads.html
+Redirect 301 /blog/web-design-seo-recap-march-16-2026.html /blog/wordpress-releases-css-container-queries.html
+Redirect 301 /blog/web-design-seo-recap-march-9-2026.html /blog/google-discover-core-update-css-shape.html
+Redirect 301 /blog/web-design-seo-recap-march-2-2026.html /blog/february-shakeup-firefox-ai-kill-switch.html
+Redirect 301 /blog/web-design-seo-recap-february-23-2026.html /blog/ai-overviews-link-cards-chrome-145-css.html
+Redirect 301 /blog/web-design-seo-recap-february-16-2026.html /blog/discover-core-update-css-scroll-animations.html
+Redirect 301 /blog/web-design-seo-recap-february-9-2026.html /blog/discover-only-core-update-anchor-positioning.html
+Redirect 301 /blog/web-design-seo-recap-february-2-2026.html /blog/google-volatility-ai-overviews-opt-out.html
+Redirect 301 /blog/web-design-seo-recap-january-26-2026.html /blog/ai-mode-personalization-llms-txt-tested.html
+Redirect 301 /blog/web-design-seo-recap-january-19-2026.html /blog/google-shakeups-firefox-147-chrome-145-css.html
+Redirect 301 /blog/web-design-seo-recap-january-12-2026.html /blog/google-volatility-ces-2026-ai-hardware.html
+Redirect 301 /blog/web-design-seo-recap-january-5-2026.html /blog/seo-web-design-playbook-2026.html
