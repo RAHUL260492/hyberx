@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#050507">
+<script>document.documentElement.classList.add('js')</script>
+<title>January Volatility Deepens, AI Mode Gets Personal & Chrome 145 Hits Beta | HyberX Weekly</title>
+<meta name="description" content="Weekly web design, development and SEO recap for 19–25 January 2026: another unconfirmed Google ranking shakeup, AI Mode connecting to Gmail and Photos, a real-world llms.txt test, ChatGPT local search data, and Chrome 145 beta.">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<link rel="canonical" href="https://hyberx.com/blog/web-design-seo-recap-january-26-2026.html">
+<meta property="og:url" content="https://hyberx.com/blog/web-design-seo-recap-january-26-2026.html">
+<meta property="og:image" content="https://hyberx.com/og-image.png">
+<meta property="og:site_name" content="HyberX">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://hyberx.com/og-image.png">
+<meta property="og:title" content="January Volatility Deepens, AI Mode Gets Personal & Chrome 145 Hits Beta | HyberX Weekly">
+<meta property="og:description" content="Weekly web design, development and SEO recap for 19–25 January 2026: unconfirmed ranking shakeup, AI Mode personalization via Gmail and Photos, llms.txt tested in the wild, ChatGPT local search data, Chrome 145 beta.">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2026-01-26">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "January Volatility Deepens, AI Mode Gets Personal and Chrome 145 Hits Beta",
+  "description": "Weekly web design, development and SEO recap for 19–25 January 2026: another unconfirmed Google ranking shakeup, AI Mode connecting to Gmail and Photos, a real-world llms.txt test, ChatGPT local search data, and Chrome 145 beta.",
+  "datePublished": "2026-01-26",
+  "dateModified": "2026-01-26",
+  "author": {"@type": "Organization", "name": "HyberX", "url": "https://hyberx.com/"},
+  "publisher": {"@type": "Organization", "name": "HyberX", "url": "https://hyberx.com/", "logo": {"@type": "ImageObject", "url": "https://hyberx.com/og-image.png"}},
+  "mainEntityOfPage": "https://hyberx.com/blog/web-design-seo-recap-january-26-2026.html",
+  "image": "https://hyberx.com/og-image.png"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "Was there a Google algorithm update the week of 19–25 January 2026?", "acceptedAnswer": {"@type": "Answer", "text": "Nothing confirmed. Rank trackers showed strong fluctuations around 20–21 January — the fourth wave of unconfirmed volatility since the December 2025 core update finished rolling out. Measure first, act after a full week of data; panic edits during a tremor routinely make things worse."}},
+    {"@type": "Question", "name": "What does AI Mode connecting to Gmail and Google Photos mean for SEO?", "acceptedAnswer": {"@type": "Answer", "text": "Opt-in personalization means two people asking the same question can now get different answers based on their own data. Rank tracking becomes less reliable as a single source of truth, so measure business outcomes — calls, forms, booked jobs — alongside positions."}},
+    {"@type": "Question", "name": "Does llms.txt actually work? What did this week's test show?", "acceptedAnswer": {"@type": "Answer", "text": "A test across 10 websites found most saw no measurable change after adding llms.txt. The two sites that did gain AI traffic gained it from concurrent improvements — PR, page structure and FAQ content — not from the file itself. Spend the effort on structure and quotable content."}},
+    {"@type": "Question", "name": "How are people actually using ChatGPT for local search?", "acceptedAnswer": {"@type": "Answer", "text": "Research on real ChatGPT sessions found about 75% included keyword-style prompts like 'dentist 11214', roughly 45% had no follow-up questions, and sessions averaged about 2.1 prompts. People search AI assistants much like they search Google — so clear, crawlable service and location pages still win."}},
+    {"@type": "Question", "name": "What's in Chrome 145 and should developers care now?", "acceptedAnswer": {"@type": "Answer", "text": "Chrome 145 reached beta on desktop on 14 January and on Android and iOS on 21 January, bringing the text-justify CSS property, column wrapping in multicol, percentage letter-spacing and word-spacing, and a new Origin API. Test in beta now — stable follows within weeks."}}
+  ]
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;450;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#050507;--bg2:#0a0a0e;--card:#0e0e13;--card2:#14141b;--text:#f7f8fa;--muted:#a5a5a5;--muted2:#7f7f7f;--line:rgba(255,255,255,.1);--line2:rgba(255,255,255,.06);--acc:#ffffff;--acc-ink:#050507;--max:1280px;--r:24px;--ease:cubic-bezier(.19,1,.22,1)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+html.js .rv{opacity:0;transform:translateY(26px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+html.js .rv.in{opacity:1;transform:none}
+body{background:var(--bg);color:var(--text);font-family:'Inter',system-ui,sans-serif;font-weight:450;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body.lock{overflow:hidden}
+h1,h2,h3,h4{font-family:'Space Grotesk',sans-serif;font-weight:600;line-height:1.1;letter-spacing:-.03em}
+a{color:inherit;text-decoration:none}
+img,svg{display:block;max-width:100%}
+button{font:inherit;cursor:pointer}
+::selection{background:#fff;color:#050507}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 28px}
+.ey{display:inline-flex;align-items:center;gap:10px;font-family:'Space Mono',monospace;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+.ey .d{width:6px;height:6px;border-radius:50%;background:var(--acc);box-shadow:0 0 12px var(--acc);animation:pulse 2.4s var(--ease) infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
+.skip{position:fixed;top:-64px;left:16px;z-index:300;background:var(--card2);border:1px solid var(--line);color:var(--text);padding:12px 20px;border-radius:10px;font-weight:600;font-size:14px;transition:top .3s var(--ease)}
+.skip:focus{top:16px}
+a:focus-visible,button:focus-visible{outline:2px solid var(--acc);outline-offset:3px;border-radius:6px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:17px 32px;border-radius:100px;font-weight:600;font-size:15px;border:1px solid transparent;transition:transform .35s var(--ease),box-shadow .35s var(--ease),background .35s,border-color .35s;white-space:nowrap;position:relative;overflow:hidden;isolation:isolate}
+.btn-pri{background:#fff;color:var(--acc-ink);box-shadow:0 8px 32px rgba(255,255,255,.18)}
+.btn-pri:hover{transform:translateY(-2px);box-shadow:0 16px 48px rgba(255,255,255,.26)}
+.btn-ghost{border-color:var(--line);color:var(--text);background:rgba(255,255,255,.03)}
+.btn-ghost:hover{border-color:rgba(255,255,255,.3);background:rgba(255,255,255,.06);transform:translateY(-2px)}
+.glow{position:fixed;inset:0;z-index:-2;background:var(--bg);overflow:hidden}
+.glow::before{content:"";position:absolute;width:70vw;height:70vw;left:50%;top:-42vw;transform:translateX(-50%);border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,.088),transparent 62%);filter:blur(60px)}
+.grain{position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.05;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.6'/%3E%3C/svg%3E")}
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;transition:background .4s,border-color .4s,backdrop-filter .4s}
+.nav.on{background:rgba(5,5,7,.8);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border-bottom:1px solid var(--line2)}
+.nav-in{max-width:var(--max);margin:0 auto;padding:0 28px;height:74px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.logo{font-family:'Space Grotesk',sans-serif;font-size:23px;font-weight:700;letter-spacing:-.02em}
+.logo b{color:transparent;-webkit-text-stroke:1.2px var(--text);font-weight:700}
+.nav-links{display:flex;gap:34px;align-items:center}
+.nav-links a{font-size:14.5px;font-weight:500;color:var(--muted);position:relative;padding:6px 0;transition:color .3s}
+.nav-links a:hover,.nav-links a.act{color:var(--text)}
+.nav-links a::after{content:"";position:absolute;left:0;bottom:0;width:0;height:1.5px;background:var(--acc);transition:width .4s var(--ease)}
+.nav-links a:hover::after,.nav-links a.act::after{width:100%}
+.nav .btn{padding:12px 24px;font-size:14px}
+.burger{display:none;background:none;border:0;width:44px;height:44px;position:relative;z-index:110}
+.burger span{display:block;width:24px;height:2px;background:var(--text);margin:5px auto;border-radius:2px;transition:transform .4s var(--ease),opacity .3s}
+.burger.x span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.burger.x span:nth-child(2){opacity:0}
+.burger.x span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+.mnav{position:fixed;inset:0;z-index:105;background:rgba(5,5,7,.97);backdrop-filter:blur(24px);display:flex;flex-direction:column;justify-content:center;padding:0 36px;gap:8px;opacity:0;pointer-events:none;transition:opacity .4s var(--ease)}
+.mnav.open{opacity:1;pointer-events:auto}
+.mnav a{font-family:'Space Grotesk',sans-serif;font-size:34px;font-weight:600;letter-spacing:-.02em;padding:12px 0;border-bottom:1px solid var(--line2)}
+.mnav .btn{margin-top:28px;align-self:flex-start}
+/* article */
+.post-hero{padding:170px 0 60px;text-align:center}
+.post-hero .ey{justify-content:center}
+.post-hero h1{font-size:clamp(34px,4.8vw,64px);max-width:960px;margin:26px auto 0}
+.post-meta{margin-top:26px;font-family:'Space Mono',monospace;font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted2);display:flex;gap:18px;justify-content:center;flex-wrap:wrap}
+.post{max-width:780px;margin:0 auto;padding:30px 28px 90px}
+.post p{font-size:16.5px;color:#cfcfd4;margin:0 0 22px}
+.post p b,.post p strong{color:var(--text)}
+.post h2{font-size:clamp(24px,2.8vw,34px);margin:54px 0 18px;letter-spacing:-.02em}
+.post h3{font-size:20px;margin:34px 0 12px}
+.post a.ext{color:var(--text);text-decoration:underline;text-decoration-color:rgba(255,255,255,.3);text-underline-offset:3px;transition:text-decoration-color .3s}
+.post a.ext:hover{text-decoration-color:var(--acc)}
+.post ul{margin:0 0 22px;padding-left:22px}
+.post ul li{font-size:16px;color:#cfcfd4;margin-bottom:10px}
+.post .lede{font-size:19px;color:var(--muted);line-height:1.65}
+.callout{border:1px solid var(--line);border-radius:18px;background:linear-gradient(170deg,var(--card2),var(--card));padding:26px 28px;margin:34px 0}
+.callout .ct{font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);display:block;margin-bottom:10px}
+.callout p{margin:0;font-size:15.5px}
+.src{margin-top:60px;padding-top:28px;border-top:1px solid var(--line2)}
+.src h2{font-size:18px;margin:0 0 14px}
+.src ul{list-style:none;padding:0}
+.src li{font-size:13.5px;color:var(--muted);margin-bottom:8px}
+.band{border-radius:30px;border:1px solid var(--line);background:radial-gradient(800px 380px at 50% -10%,rgba(255,255,255,.121),transparent 62%),linear-gradient(170deg,var(--card2),var(--card));padding:70px 40px;text-align:center;position:relative;overflow:hidden;margin:0 auto 100px;max-width:980px}
+.band h2{font-size:clamp(28px,4vw,46px);letter-spacing:-.03em;margin-bottom:14px}
+.band p{color:var(--muted);max-width:540px;margin:0 auto 32px;font-size:16px}
+footer{border-top:1px solid var(--line2);padding:56px 0 40px;background:var(--bg2)}
+.f-in{display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap}
+.f-links{display:flex;gap:26px;flex-wrap:wrap}
+.f-links a{font-size:14px;color:var(--muted);transition:color .3s}
+.f-links a:hover{color:var(--text)}
+.f-bottom{margin-top:34px;padding-top:26px;border-top:1px solid var(--line2);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:13px;color:var(--muted2)}
+@media(max-width:720px){
+  .wrap{padding:0 20px}
+  .nav-links{display:none}.nav .nav-cta{display:none}.burger{display:block}.nav-in{height:64px;padding:0 20px}
+  .post-hero{padding:130px 0 40px}
+  .post{padding:20px 20px 70px}
+  .band{padding:50px 24px;margin:0 20px 80px}
+}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.001s!important;transition-duration:.001s!important}html{scroll-behavior:auto}html.js .rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+<div class="glow" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
+<header class="nav" id="nav">
+  <div class="nav-in">
+    <a href="../index.html" class="logo" aria-label="HyberX home">Hyber<b>X</b></a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="../index.html">Home</a>
+      <a href="../index.html#services">Services</a>
+      <a href="../index.html#work">Work</a>
+      <a href="index.html" class="act">Insights</a>
+      <a href="../index.html#contact">Contact</a>
+    </nav>
+    <div style="display:flex;align-items:center;gap:12px">
+      <a href="../index.html#contact" class="btn btn-pri nav-cta">Book a Call</a>
+      <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<div class="mnav" id="mnav" role="navigation" aria-label="Mobile navigation">
+  <a href="../index.html">Home</a>
+  <a href="../index.html#services">Services</a>
+  <a href="../index.html#work">Work</a>
+  <a href="index.html">Insights</a>
+  <a href="../index.html#contact">Contact</a>
+  <a href="../index.html#contact" class="btn btn-pri">Book a Growth Call</a>
+</div>
+
+<main id="main">
+<section class="post-hero">
+  <div class="wrap">
+    <span class="ey"><i class="d"></i>Weekly Recap · Web Design, Dev & SEO</span>
+    <h1>Another January shakeup, AI Mode goes personal, and llms.txt finally gets tested.</h1>
+    <div class="post-meta"><span>26 January 2026</span><span>10 min read</span></div>
+  </div>
+</section>
+
+<article class="post">
+  <p class="lede">January refuses to sit still. Between 19 and 25 January, rank trackers lit up for the fourth time this month with a shakeup Google didn't confirm, AI Mode started plugging into people's Gmail and Google Photos to personalise answers, and someone finally ran a real test of llms.txt across ten live websites — with results that should end a few agency sales pitches. Add fresh data on how people actually phrase local searches inside ChatGPT, Chrome 145 landing in beta across desktop and mobile, and a busy week in the ads world, and there's plenty here that touches how business websites get found, built and measured. Here's the week in full, with our take on each item.</p>
+
+  <h2>1. The 20–21 January shakeup: the fourth unconfirmed wave this month</h2>
+  <h3>What happened</h3>
+  <p>Rank-tracking tools showed <b>strong ranking fluctuations around 20–21 January</b> — and multiple monitoring outlets reported the volatility heating up further from the 21st onward. Google confirmed nothing. That makes this the fourth distinct wave since the December 2025 core update finished rolling out on 29 December, following spikes around 6, 12 and 15–16 January. The pattern is now unmistakable: 2026's algorithm moves constantly, not just during named updates, and big swings can hit sites that changed nothing at all.</p>
+  <h3>How to respond when the ground moves and Google stays silent</h3>
+  <ul>
+    <li><b>Measure first, act later.</b> Separate position changes from click changes in Search Console — they have different causes and different fixes.</li>
+    <li><b>Check which queries moved.</b> Brand queries dropping is rare and alarming; commercial queries churning is normal competitive weather; informational queries fading is often AI answer expansion, not a penalty.</li>
+    <li><b>Benchmark against competitors.</b> If your whole niche moved, it's the algorithm breathing. If only you moved, audit your last 30 days of changes.</li>
+    <li><b>Rule out the boring causes.</b> Broken redirects, a slow deploy, deindexed pages and expired plugins explain more "algorithm hits" than algorithms do.</li>
+    <li><b>Wait a full week</b> before rewriting anything. Panic edits during a tremor routinely turn a temporary dip into a permanent loss.</li>
+  </ul>
+  <div class="callout"><span class="ct">What we'd do about it</span>
+  <p>Four unconfirmed waves in one month is not noise — it's the new baseline. The sites that shrug off this weather share the same traits: fast pages, clean structure, genuine expertise, and conversion paths that don't depend on one keyword. If every tremor shakes your traffic, that's a build-quality problem before it's a content problem — and it's the first thing we audit as a <a class="ext" href="../website-design-development.html">website development company</a> when a new client arrives mid-panic.</p></div>
+
+  <h2>2. AI Mode gets personal: your customers' searches are no longer your searches</h2>
+  <h3>What happened</h3>
+  <p>Google began letting users <b>connect AI Mode to personal data</b> — Gmail and Google Photos, on an opt-in basis — so answers can draw on someone's own context. AI Mode also now asks clarifying follow-up questions, particularly on shopping queries, running multiple searches behind the scenes to work out what "best" means for that specific person. And AI search increasingly evaluates <b>sections of pages, not just whole pages</b>, when deciding what to surface.</p>
+  <h3>Why this matters for how you measure and build</h3>
+  <ul>
+    <li><b>Two people, same question, different answers.</b> Rank tracking as a single source of truth just got weaker. What you see in an incognito window is no longer what your customer sees.</li>
+    <li><b>Track outcomes, not just positions.</b> Calls, form fills and booked jobs are becoming the only reliable scoreboard. This same week, practitioners reported leads and conversion rates rising while raw traffic looked flat — AI answers resolve some searches without a click, so visibility and traffic have started to diverge.</li>
+    <li><b>Structure every section to stand alone.</b> If AI systems lift individual sections, each h2 block on your service pages needs its own clear claim, proof and answer — not a payoff buried three scrolls down.</li>
+  </ul>
+  <div class="callout"><span class="ct">What we'd do about it</span>
+  <p>Stop treating the ranking report as the monthly headline. Wire up call tracking and form attribution now, so when traffic flattens but leads climb you can prove the channel still works. This is where SEO and <a class="ext" href="../conversion-optimization.html">conversion optimization</a> stop being separate disciplines: if fewer people click through, every visit you do get has to count double.</p></div>
+
+  <h2>3. llms.txt tested on 10 real websites — and how people actually search ChatGPT</h2>
+  <h3>The llms.txt reality check</h3>
+  <p>A practitioner test added <b>llms.txt across 10 websites</b> and measured what happened. Most sites: no measurable change. Two sites did see AI traffic increase — but the gains traced back to concurrent improvements in PR, page structure and FAQ content, not the file itself. If a vendor is selling "llms.txt optimisation" as a deliverable, this week produced the field data to question it.</p>
+  <h3>What real ChatGPT usage looks like</h3>
+  <p>Research on real ChatGPT sessions found behaviour far closer to classic search than the hype suggests: about <b>75% of sessions included keyword-style prompts</b> ("dentist 11214"), roughly <b>45% had no follow-up questions</b> at all, and the average session ran about <b>2.1 prompts</b>. People aren't holding long conversations with AI assistants — they're searching them. Meanwhile, crawler data showed businesses increasingly blocking AI training bots while assistant crawlers like SearchBot and Applebot quietly expand coverage — blanket-blocking everything may cost you future AI visibility.</p>
+  <p>The practical conclusion is unfashionable but consistent: what earns AI visibility is the same thing that earns rankings — quotable, well-structured content, clear heading hierarchy, real proof on the page, and fast crawlable markup. All of that is decided during html web development, when headings, structure and page weight get built — which is why it can't be bolted on after launch.</p>
+
+  <h2>4. Chrome 145 hits beta on desktop and mobile</h2>
+  <p>Chrome 145 reached <b>beta on Windows, Mac and Linux on 14 January</b>, then rolled to <b>Android and iOS beta on 21 January</b>. For people who build websites, the interesting cargo is typographic and layout control that used to require hacks:</p>
+  <ul>
+    <li><b>text-justify</b> lands as a supported CSS property, giving real control over justification behaviour.</li>
+    <li><b>Column wrapping in multicol</b> — multi-column layouts can finally wrap columns in the block direction, unlocking magazine-style layouts without JavaScript.</li>
+    <li><b>Percentage values in letter-spacing and word-spacing</b> — spacing that scales with font size, cleaner responsive typography.</li>
+    <li><b>A new Origin object</b> in the platform API surface for comparing, serialising and parsing origins — small, but it tidies a genuinely messy corner of security-sensitive code.</li>
+    <li>Also in the release train: an SQLite backend for IndexedDB and the long-awaited return of <b>JPEG-XL decoding</b> via a Rust-based decoder — one to watch for image-heavy stores when stable ships.</li>
+  </ul>
+  <p>None of this is urgent for a business site this week — but stable follows beta within weeks, and teams that test in beta ship without surprises. It's also the second browser milestone of the month, after Firefox 147 shipped on 13 January with CSS anchor positioning enabled by default.</p>
+
+  <h2>5. The ads week: prediction markets, ChatGPT ads pricing, and Siri's Gemini deal</h2>
+  <ul>
+    <li><b>Google Ads began allowing prediction-market ads on 21 January</b> — US only, restricted to federally regulated entities. A niche vertical, but a marker of how fast Google's ad policy is moving in 2026.</li>
+    <li><b>OpenAI detailed its ChatGPT ads model</b>: advertisers will be charged per impression, not per click, and early trial participants were reportedly asked to keep spend under $1 million. A brand-new paid channel is forming inside the tool your customers increasingly search — worth watching, not yet worth budget for most businesses.</li>
+    <li><b>Google Ads updated its call and messaging ad terms</b>, and Display &amp; Video 360 announced the sunset of Campaign and Insertion Order targeting in its API and Structured Data Files for 23 February.</li>
+    <li><b>Apple's Siri roadmap</b> firmed up: reports this week pointed to two staged releases of the revamped Siri and Apple Intelligence, powered by Google's Gemini models. The assistant on a billion iPhones answering from Gemini makes your structured, crawlable content matter on yet another surface.</li>
+  </ul>
+
+  <h2>What this week means for your website strategy</h2>
+  <p>Three threads worth pulling together if you own a business website or are scoping a build this quarter:</p>
+  <ul>
+    <li><b>Volatility is a build-quality test.</b> Four unconfirmed waves in January sorted the resilient sites from the fragile ones. Resilience comes from the fundamentals — speed, structure, expertise — all decided at build time, which is the sharpest question to put to any website development company you're evaluating.</li>
+    <li><b>Measurement has to move down-funnel.</b> Personalised AI answers and zero-click resolution mean traffic and visibility are diverging. If your reporting stops at sessions, you'll misread the channel — track calls, forms and revenue per page instead.</li>
+    <li><b>Platform discipline beats hacks.</b> llms.txt failed its field test; structure and quotable content passed. The same logic applies to ecommerce: stores that win in AI-assisted shopping queries are the ones with clean product markup and fast templates, which is exactly what separates serious <a class="ext" href="../shopify-development-new-york.html">Shopify development partners</a> from theme-flippers. If you're choosing a shopify developer partner this year, ask how their builds perform in AI answers, not just in Lighthouse.</li>
+  </ul>
+
+  <h2>Frequently asked questions</h2>
+  <h3>Was there a Google algorithm update the week of 19–25 January 2026?</h3>
+  <p>Nothing confirmed. Rank trackers showed strong fluctuations around 20–21 January — the fourth wave of unconfirmed volatility since the December 2025 core update finished rolling out. Measure first, act after a full week of data; panic edits during a tremor routinely make things worse.</p>
+  <h3>What does AI Mode connecting to Gmail and Google Photos mean for SEO?</h3>
+  <p>Opt-in personalization means two people asking the same question can now get different answers based on their own data. Rank tracking becomes less reliable as a single source of truth, so measure business outcomes — calls, forms, booked jobs — alongside positions.</p>
+  <h3>Does llms.txt actually work? What did this week's test show?</h3>
+  <p>A test across 10 websites found most saw no measurable change after adding llms.txt. The two sites that did gain AI traffic gained it from concurrent improvements — PR, page structure and FAQ content — not from the file itself. Spend the effort on structure and quotable content.</p>
+  <h3>How are people actually using ChatGPT for local search?</h3>
+  <p>Research on real ChatGPT sessions found about 75% included keyword-style prompts like "dentist 11214", roughly 45% had no follow-ups, and sessions averaged about 2.1 prompts. People search AI assistants much like they search Google — so clear, crawlable service and location pages still win, whether someone types your service into Google or asks an assistant for web developers near me.</p>
+  <h3>What's in Chrome 145 and should developers care now?</h3>
+  <p>Chrome 145 reached beta on desktop on 14 January and on Android and iOS on 21 January, bringing the text-justify CSS property, column wrapping in multicol, percentage letter-spacing and word-spacing, and a new Origin API. Test in beta now — stable follows within weeks.</p>
+
+  <h2>The takeaway</h2>
+  <p>The week's field data all points the same direction: the shortcuts don't survive contact with reality, and the fundamentals do. llms.txt failed a ten-site test while structure and proof passed. Rankings whipsawed while well-built sites held. Traffic flattened while leads on well-instrumented sites rose. In a year where Google confirms little and personalises everything, the only durable strategy is a website built fast, structured clean, and measured on what actually moves revenue.</p>
+
+  <div class="src rv">
+    <h2>Sources & further reading</h2>
+    <ul>
+      <li><a class="ext" href="https://localdominator.co/seo-news/seo-news-roundup-january-19-to-25-2026/" target="_blank" rel="noopener">Local Dominator — SEO News Roundup, 19–25 January 2026</a></li>
+      <li><a class="ext" href="https://www.seroundtable.com/google-search-ranking-volatility-remains-heated-40828.html" target="_blank" rel="noopener">Search Engine Roundtable — Google Search Ranking Volatility Remains Super Heated</a></li>
+      <li><a class="ext" href="https://www.seroundtable.com/recap-01-22-2026-40801.html" target="_blank" rel="noopener">Search Engine Roundtable — Daily Search Forum Recap, 22 January 2026</a></li>
+      <li><a class="ext" href="https://developer.chrome.com/blog/chrome-145-beta" target="_blank" rel="noopener">Chrome for Developers — Chrome 145 beta</a></li>
+      <li><a class="ext" href="https://www.seo-kreativ.de/en/blog/google-ranking-volatility-january-2026/" target="_blank" rel="noopener">SEO Kreativ — Google Ranking Volatility January 2026</a></li>
+    </ul>
+  </div>
+</article>
+
+<section class="band rv">
+  <h2>Want a site built for how search works now?</h2>
+  <p>We design and build conversion-first websites that hold up in classic search and AI answers alike.</p>
+  <a href="../index.html#contact" class="btn btn-pri">Book a Growth Call</a>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-in">
+      <a href="../index.html" class="logo">Hyber<b>X</b></a>
+      <nav class="f-links" aria-label="Services">
+        <a href="../performance-marketing.html">Performance Marketing</a>
+        <a href="../website-design-development.html">Websites</a>
+        <a href="../content-creation.html">Content</a>
+        <a href="../ad-films-brand-videos.html">Ad Films</a>
+        <a href="../conversion-optimization.html">CRO</a>
+      </nav>
+    </div>
+    <div class="f-bottom">
+      <span>© <span id="yr">2026</span> HyberX. All rights reserved.</span>
+      <span style="display:flex;gap:22px"><a href="../privacy-policy.html">Privacy Policy</a><a href="../terms-of-service.html">Terms of Service</a><a href="../index.html#contact">support@hyberx.com</a></span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+"use strict";
+var nav=document.getElementById('nav'),burger=document.getElementById('burger'),mnav=document.getElementById('mnav');
+addEventListener('scroll',function(){nav.classList.toggle('on',scrollY>24);},{passive:true});
+nav.classList.toggle('on',scrollY>24);
+burger.addEventListener('click',function(){
+  var open=mnav.classList.toggle('open');burger.classList.toggle('x',open);
+  burger.setAttribute('aria-expanded',open);document.body.classList.toggle('lock',open);
+});
+addEventListener('keydown',function(e){
+  if(e.key==='Escape'&&mnav.classList.contains('open')){
+    mnav.classList.remove('open');burger.classList.remove('x');
+    burger.setAttribute('aria-expanded','false');document.body.classList.remove('lock');burger.focus();
+  }
+});
+if('IntersectionObserver' in window){
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.12,rootMargin:'0px 0px -40px 0px'});
+  document.querySelectorAll('.rv').forEach(function(el){io.observe(el);});
+}else{document.querySelectorAll('.rv').forEach(function(el){el.classList.add('in');});}
+document.getElementById('yr').textContent=new Date().getFullYear();
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#050507">
+<script>document.documentElement.classList.add('js')</script>
+<title>March Core Update Mid-Rollout, WordPress 7.0 Delayed & Masonry Ships in Safari | HyberX Weekly</title>
+<meta name="description" content="Weekly web design, development and SEO recap for 30 March – 5 April 2026: the March core update's peak volatility, WordPress 7.0's delay, CSS Grid Lanes in Safari 26.4, and the March web platform roundup.">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<link rel="canonical" href="https://hyberx.com/blog/web-design-seo-recap-april-6-2026.html">
+<meta property="og:url" content="https://hyberx.com/blog/web-design-seo-recap-april-6-2026.html">
+<meta property="og:image" content="https://hyberx.com/og-image.png">
+<meta property="og:site_name" content="HyberX">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://hyberx.com/og-image.png">
+<meta property="og:title" content="March Core Update Mid-Rollout, WordPress 7.0 Delayed & Masonry Ships in Safari | HyberX Weekly">
+<meta property="og:description" content="Weekly web design, development and SEO recap for 30 March – 5 April 2026: peak core update volatility, WordPress 7.0's delay, CSS Grid Lanes in Safari 26.4, and the March web platform roundup.">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2026-04-06">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "March Core Update Mid-Rollout, WordPress 7.0 Delayed and Masonry Ships in Safari",
+  "description": "Weekly web design, development and SEO recap for 30 March – 5 April 2026: the March core update's peak volatility, WordPress 7.0's delay, CSS Grid Lanes in Safari 26.4, and the March web platform roundup.",
+  "datePublished": "2026-04-06",
+  "dateModified": "2026-04-06",
+  "author": {"@type": "Organization", "name": "HyberX", "url": "https://hyberx.com/"},
+  "publisher": {"@type": "Organization", "name": "HyberX", "url": "https://hyberx.com/", "logo": {"@type": "ImageObject", "url": "https://hyberx.com/og-image.png"}},
+  "mainEntityOfPage": "https://hyberx.com/blog/web-design-seo-recap-april-6-2026.html",
+  "image": "https://hyberx.com/og-image.png"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "Is the March 2026 Google core update finished?", "acceptedAnswer": {"@type": "Answer", "text": "No. It began on 27 March 2026 and was still rolling out through the week of 30 March – 5 April, with volatility trackers at some of their highest readings in years. Rankings will keep moving until Google confirms completion, so judge nothing mid-rollout."}},
+    {"@type": "Question", "name": "Should I change my website while a Google core update is rolling out?", "acceptedAnswer": {"@type": "Answer", "text": "No structural or content overhauls mid-rollout. Positions swing in both directions before settling, so a panic rewrite responds to data that will look different in two weeks. Keep shipping planned improvements, log your rankings, and assess only after Google confirms the update is complete."}},
+    {"@type": "Question", "name": "Why was WordPress 7.0 delayed and should I wait for it?", "acceptedAnswer": {"@type": "Answer", "text": "The core team announced on 31 March 2026 that 7.0 would miss its planned 9 April date, mainly to get the real-time collaboration database architecture right, with pre-releases paused until 17 April. Don't wait: keep your current WordPress install updated and plan the 7.0 upgrade as a tested project once a stable release lands."}},
+    {"@type": "Question", "name": "What is CSS Grid Lanes in Safari 26.4 and can I use masonry layouts now?", "acceptedAnswer": {"@type": "Answer", "text": "CSS Grid Lanes is Safari 26.4's native masonry-style layout, shipped 24 March 2026 — Pinterest-style column flows without JavaScript libraries. It's one engine so far, so ship it as progressive enhancement with a standard grid fallback rather than relying on it cross-browser."}},
+    {"@type": "Question", "name": "Does the March 2026 core update affect Shopify stores too?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — core updates are platform-agnostic, and this one shifted visibility toward destination sources and away from thin intermediary pages. Ecommerce stores with unique product content, real reviews and clean structured data held up best; templated, thin-content stores were the most exposed."}}
+  ]
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;450;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#050507;--bg2:#0a0a0e;--card:#0e0e13;--card2:#14141b;--text:#f7f8fa;--muted:#a5a5a5;--muted2:#7f7f7f;--line:rgba(255,255,255,.1);--line2:rgba(255,255,255,.06);--acc:#ffffff;--acc-ink:#050507;--max:1280px;--r:24px;--ease:cubic-bezier(.19,1,.22,1)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+html.js .rv{opacity:0;transform:translateY(26px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+html.js .rv.in{opacity:1;transform:none}
+body{background:var(--bg);color:var(--text);font-family:'Inter',system-ui,sans-serif;font-weight:450;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body.lock{overflow:hidden}
+h1,h2,h3,h4{font-family:'Space Grotesk',sans-serif;font-weight:600;line-height:1.1;letter-spacing:-.03em}
+a{color:inherit;text-decoration:none}
+img,svg{display:block;max-width:100%}
+button{font:inherit;cursor:pointer}
+::selection{background:#fff;color:#050507}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 28px}
+.ey{display:inline-flex;align-items:center;gap:10px;font-family:'Space Mono',monospace;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+.ey .d{width:6px;height:6px;border-radius:50%;background:var(--acc);box-shadow:0 0 12px var(--acc);animation:pulse 2.4s var(--ease) infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
+.skip{position:fixed;top:-64px;left:16px;z-index:300;background:var(--card2);border:1px solid var(--line);color:var(--text);padding:12px 20px;border-radius:10px;font-weight:600;font-size:14px;transition:top .3s var(--ease)}
+.skip:focus{top:16px}
+a:focus-visible,button:focus-visible{outline:2px solid var(--acc);outline-offset:3px;border-radius:6px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:17px 32px;border-radius:100px;font-weight:600;font-size:15px;border:1px solid transparent;transition:transform .35s var(--ease),box-shadow .35s var(--ease),background .35s,border-color .35s;white-space:nowrap;position:relative;overflow:hidden;isolation:isolate}
+.btn-pri{background:#fff;color:var(--acc-ink);box-shadow:0 8px 32px rgba(255,255,255,.18)}
+.btn-pri:hover{transform:translateY(-2px);box-shadow:0 16px 48px rgba(255,255,255,.26)}
+.btn-ghost{border-color:var(--line);color:var(--text);background:rgba(255,255,255,.03)}
+.btn-ghost:hover{border-color:rgba(255,255,255,.3);background:rgba(255,255,255,.06);transform:translateY(-2px)}
+.glow{position:fixed;inset:0;z-index:-2;background:var(--bg);overflow:hidden}
+.glow::before{content:"";position:absolute;width:70vw;height:70vw;left:50%;top:-42vw;transform:translateX(-50%);border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,.088),transparent 62%);filter:blur(60px)}
+.grain{position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.05;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.6'/%3E%3C/svg%3E")}
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;transition:background .4s,border-color .4s,backdrop-filter .4s}
+.nav.on{background:rgba(5,5,7,.8);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border-bottom:1px solid var(--line2)}
+.nav-in{max-width:var(--max);margin:0 auto;padding:0 28px;height:74px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.logo{font-family:'Space Grotesk',sans-serif;font-size:23px;font-weight:700;letter-spacing:-.02em}
+.logo b{color:transparent;-webkit-text-stroke:1.2px var(--text);font-weight:700}
+.nav-links{display:flex;gap:34px;align-items:center}
+.nav-links a{font-size:14.5px;font-weight:500;color:var(--muted);position:relative;padding:6px 0;transition:color .3s}
+.nav-links a:hover,.nav-links a.act{color:var(--text)}
+.nav-links a::after{content:"";position:absolute;left:0;bottom:0;width:0;height:1.5px;background:var(--acc);transition:width .4s var(--ease)}
+.nav-links a:hover::after,.nav-links a.act::after{width:100%}
+.nav .btn{padding:12px 24px;font-size:14px}
+.burger{display:none;background:none;border:0;width:44px;height:44px;position:relative;z-index:110}
+.burger span{display:block;width:24px;height:2px;background:var(--text);margin:5px auto;border-radius:2px;transition:transform .4s var(--ease),opacity .3s}
+.burger.x span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.burger.x span:nth-child(2){opacity:0}
+.burger.x span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+.mnav{position:fixed;inset:0;z-index:105;background:rgba(5,5,7,.97);backdrop-filter:blur(24px);display:flex;flex-direction:column;justify-content:center;padding:0 36px;gap:8px;opacity:0;pointer-events:none;transition:opacity .4s var(--ease)}
+.mnav.open{opacity:1;pointer-events:auto}
+.mnav a{font-family:'Space Grotesk',sans-serif;font-size:34px;font-weight:600;letter-spacing:-.02em;padding:12px 0;border-bottom:1px solid var(--line2)}
+.mnav .btn{margin-top:28px;align-self:flex-start}
+/* article */
+.post-hero{padding:170px 0 60px;text-align:center}
+.post-hero .ey{justify-content:center}
+.post-hero h1{font-size:clamp(34px,4.8vw,64px);max-width:960px;margin:26px auto 0}
+.post-meta{margin-top:26px;font-family:'Space Mono',monospace;font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted2);display:flex;gap:18px;justify-content:center;flex-wrap:wrap}
+.post{max-width:780px;margin:0 auto;padding:30px 28px 90px}
+.post p{font-size:16.5px;color:#cfcfd4;margin:0 0 22px}
+.post p b,.post p strong{color:var(--text)}
+.post h2{font-size:clamp(24px,2.8vw,34px);margin:54px 0 18px;letter-spacing:-.02em}
+.post h3{font-size:20px;margin:34px 0 12px}
+.post a.ext{color:var(--text);text-decoration:underline;text-decoration-color:rgba(255,255,255,.3);text-underline-offset:3px;transition:text-decoration-color .3s}
+.post a.ext:hover{text-decoration-color:var(--acc)}
+.post ul{margin:0 0 22px;padding-left:22px}
+.post ul li{font-size:16px;color:#cfcfd4;margin-bottom:10px}
+.post .lede{font-size:19px;color:var(--muted);line-height:1.65}
+.callout{border:1px solid var(--line);border-radius:18px;background:linear-gradient(170deg,var(--card2),var(--card));padding:26px 28px;margin:34px 0}
+.callout .ct{font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);display:block;margin-bottom:10px}
+.callout p{margin:0;font-size:15.5px}
+.src{margin-top:60px;padding-top:28px;border-top:1px solid var(--line2)}
+.src h2{font-size:18px;margin:0 0 14px}
+.src ul{list-style:none;padding:0}
+.src li{font-size:13.5px;color:var(--muted);margin-bottom:8px}
+.band{border-radius:30px;border:1px solid var(--line);background:radial-gradient(800px 380px at 50% -10%,rgba(255,255,255,.121),transparent 62%),linear-gradient(170deg,var(--card2),var(--card));padding:70px 40px;text-align:center;position:relative;overflow:hidden;margin:0 auto 100px;max-width:980px}
+.band h2{font-size:clamp(28px,4vw,46px);letter-spacing:-.03em;margin-bottom:14px}
+.band p{color:var(--muted);max-width:540px;margin:0 auto 32px;font-size:16px}
+footer{border-top:1px solid var(--line2);padding:56px 0 40px;background:var(--bg2)}
+.f-in{display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap}
+.f-links{display:flex;gap:26px;flex-wrap:wrap}
+.f-links a{font-size:14px;color:var(--muted);transition:color .3s}
+.f-links a:hover{color:var(--text)}
+.f-bottom{margin-top:34px;padding-top:26px;border-top:1px solid var(--line2);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:13px;color:var(--muted2)}
+@media(max-width:720px){
+  .wrap{padding:0 20px}
+  .nav-links{display:none}.nav .nav-cta{display:none}.burger{display:block}.nav-in{height:64px;padding:0 20px}
+  .post-hero{padding:130px 0 40px}
+  .post{padding:20px 20px 70px}
+  .band{padding:50px 24px;margin:0 20px 80px}
+}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.001s!important;transition-duration:.001s!important}html{scroll-behavior:auto}html.js .rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+<div class="glow" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
+<header class="nav" id="nav">
+  <div class="nav-in">
+    <a href="../index.html" class="logo" aria-label="HyberX home">Hyber<b>X</b></a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="../index.html">Home</a>
+      <a href="../index.html#services">Services</a>
+      <a href="../index.html#work">Work</a>
+      <a href="index.html" class="act">Insights</a>
+      <a href="../index.html#contact">Contact</a>
+    </nav>
+    <div style="display:flex;align-items:center;gap:12px">
+      <a href="../index.html#contact" class="btn btn-pri nav-cta">Book a Call</a>
+      <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<div class="mnav" id="mnav" role="navigation" aria-label="Mobile navigation">
+  <a href="../index.html">Home</a>
+  <a href="../index.html#services">Services</a>
+  <a href="../index.html#work">Work</a>
+  <a href="index.html">Insights</a>
+  <a href="../index.html#contact">Contact</a>
+  <a href="../index.html#contact" class="btn btn-pri">Book a Growth Call</a>
+</div>
+
+<main id="main">
+<section class="post-hero">
+  <div class="wrap">
+    <span class="ey"><i class="d"></i>Weekly Recap · Web Design, Dev & SEO</span>
+    <h1>A core update at full volatility, WordPress 7.0 hits pause, and masonry finally ships.</h1>
+    <div class="post-meta"><span>6 April 2026</span><span>10 min read</span></div>
+  </div>
+</section>
+
+<article class="post">
+  <p class="lede">The week of 30 March to 5 April 2026 was the eye of the storm. Google's March core update — which started rolling out on 27 March, a day after the March spam update finished — spent the whole week reshuffling results, pushing volatility trackers to some of the highest readings they've ever recorded. Meanwhile WordPress announced that 7.0 would miss its April release date, Safari 26.4's native masonry layout settled into developers' hands, and the March web platform roundup landed with genuinely useful CSS. One caveat before we start: this week contained April Fools' Day, and the news below is strictly the verified, dated kind. Here's what happened, and what each item means if your website has to earn revenue.</p>
+
+  <h2>1. The March 2026 core update: peak turbulence, and it isn't done</h2>
+  <h3>What happened</h3>
+  <p>Google's <b>March 2026 core update</b> began on <b>27 March</b> and was in full flight all week — it wouldn't be confirmed complete until 8 April. The numbers were dramatic even by core-update standards: Semrush's volatility sensor peaked at <b>9.5 out of 10</b>, among the highest ever recorded, and SE Ranking's comparison against December's update showed far more churn — <b>79.5% of top-3 URLs changed positions</b> (versus 66.8% in December), 90.7% movement across the top 10, and roughly a quarter of top-10 pages dropping out of the top 100 entirely.</p>
+  <h3>The early pattern</h3>
+  <ul>
+    <li><b>Destination sources gained.</b> Official sites, specialist publishers and strong brands — pages that are the answer, not a doorway to it — were the visible early winners.</li>
+    <li><b>Intermediary pages lost.</b> Thin aggregator, affiliate-style and "content about content" pages absorbed the sharpest drops.</li>
+    <li><b>The spam update muddied the water.</b> With the March spam update completing on 26 March and the core update starting on the 27th, sites hit during this week can't yet tell which system moved them — one more reason not to react early.</li>
+  </ul>
+  <div class="callout"><span class="ct">What we'd do about it</span>
+  <p>Nothing structural until the rollout is confirmed complete. Mid-rollout rankings swing both ways before settling, and a panic rewrite on 2 April is a bet against data that will look different on the 14th. What we do this week instead: log daily positions for money queries, annotate analytics with the rollout dates, and audit whether your site reads as a destination or an intermediary. If your pages mostly summarise what better sources already say, that's the exposure — and fixing it is a content and <a class="ext" href="../website-design-development.html">website design and development</a> project, not a tweak.</p></div>
+
+  <h2>2. WordPress 7.0 delayed: the biggest release in years hits pause</h2>
+  <h3>What happened</h3>
+  <p>On <b>31 March</b>, the WordPress core team announced that <b>7.0 would not ship on its planned 9 April date</b>. A follow-up post on <b>2 April</b> spelled out the mechanics: pre-release versions paused until 17 April, with a new schedule to be announced by 22 April. The sticking point is the database architecture behind <b>real-time collaboration</b> — the flagship feature of the release — which the team wants to get right rather than get out.</p>
+  <h3>Why this is the right call — and what it means for site owners</h3>
+  <ul>
+    <li><b>A delayed CMS release is cheaper than a broken one.</b> WordPress runs a huge share of the web; a rushed architectural change to how content is stored would ripple through every plugin and host.</li>
+    <li><b>Don't freeze your roadmap.</b> Keep your current install patched and keep shipping. Nothing about the delay changes what a good WordPress site needs this quarter.</li>
+    <li><b>Plan 7.0 as a project, not an auto-update.</b> When it lands, the collaboration architecture makes this a test-on-staging release. Budget for it like a mini-migration.</li>
+  </ul>
+  <div class="callout"><span class="ct">What we'd do about it</span>
+  <p>Treat the delay as free planning time. List your plugins, flag anything unmaintained, and get a staging environment in place if you don't have one — the sites that upgrade smoothly in May will be the ones that used April to prepare. If your install is too fragile to test safely, that's the real finding, and it's worth a conversation with a <a class="ext" href="../website-design-development.html">website development company</a> before a major release forces the issue.</p></div>
+
+  <h2>3. Safari 26.4: masonry layout goes native with CSS Grid Lanes</h2>
+  <p>Safari 26.4 shipped on 24 March — just before this week — and its headline feature dominated developer conversation through early April: <b>CSS Grid Lanes</b>, a native masonry-style layout. Pinterest-style column flows, portfolio grids and image galleries that previously needed a JavaScript library now work in pure CSS in one engine. The release also brought <b>WebTransport</b> (a modern, low-latency alternative to WebSocket), the <b>Keyboard Lock API</b>, and 191 bug fixes across SVG, tables and CSS zoom — 44 features in total.</p>
+  <h3>Why designers should care</h3>
+  <p>Masonry via JavaScript has always been a tax: layout shift while the script boots, broken rendering when it fails, and a payload penalty on exactly the image-heavy pages that can least afford it. A native version removes all three — eventually. For now it's one browser, so the professional move is progressive enhancement: a standard CSS grid every browser renders, upgraded to Grid Lanes where supported. That's a ten-line pattern in careful html web development, and it's the difference between using a new feature and depending on it.</p>
+  <div class="callout"><span class="ct">What we'd do about it</span>
+  <p>Adopt it where layout is decoration, not function — galleries, work grids, testimonial walls. Hold off anywhere layout order carries meaning, like pricing tables or comparison pages. And measure the win: swapping a masonry library for native CSS on an image-heavy page is a straight Core Web Vitals improvement, which makes it a <a class="ext" href="../conversion-optimization.html">conversion optimization</a> play, not just a developer nicety.</p></div>
+
+  <h2>4. The March web platform roundup: what Chrome 146, Firefox 149 and friends shipped</h2>
+  <p>Right on schedule at the start of April, web.dev published its "New to the web platform in March" roundup, confirming the month's stable releases — <b>Chrome 146, Firefox 149 and Safari 26.4</b> — and previewing the betas. The useful bits for working teams:</p>
+  <ul>
+    <li><b>Name-only container queries</b> landed in both Firefox 149 and Safari 26.4 — you can now match against a named container with no size condition, which simplifies component-level responsive design.</li>
+    <li><b>CloseWatcher API</b> in Firefox 149 — dialogs and drawers that close correctly with Esc on desktop and the Back gesture on Android, without hand-rolled listeners.</li>
+    <li><b>Scroll-position-driven animation control</b> in Chrome 146 — more scroll-linked motion moving from JavaScript into CSS.</li>
+    <li><b>contrast-color() in Chrome 147 beta</b> — a CSS function that returns black or white, whichever contrasts better with a given colour. Small feature, big accessibility payoff for badge, tag and button systems. Chrome 147 stable was scheduled for 7 April, days after this week closed.</li>
+  </ul>
+  <p>None of these is a headline on its own. Together they continue 2026's clearest platform trend: capability moving out of JavaScript and into CSS and HTML, where it's faster, more resilient and free.</p>
+
+  <h2>5. Quick notes: spam update aftermath and an April Fools' filter</h2>
+  <ul>
+    <li><b>The March spam update completed on 26 March,</b> so this week was also the first clean week of post-spam-update data. If your site dropped in late March but holds steady through the core update, the spam system is the likelier cause — a different diagnosis with a different fix.</li>
+    <li><b>April 1 came and went.</b> The industry's joke-post tradition ran as usual, and it's why this recap cites only dated, verifiable announcements. A good habit for readers too: any "Google announces" story published on 1 April deserves a second source before it reaches your strategy deck.</li>
+    <li><b>AI Mode kept expanding.</b> Google's AI Mode reached general availability for US users during March, part of the backdrop against which this core update's "destinations over intermediaries" pattern makes strategic sense: Google increasingly summarises the middle of the funnel itself.</li>
+  </ul>
+
+  <h2>What this week means for your website strategy</h2>
+  <p>Three threads worth pulling together if you own a business website or are scoping a build this quarter:</p>
+  <ul>
+    <li><b>Be the destination.</b> The core update's early pattern rewards sites that are the source — original data, real expertise, genuine product depth — and punishes pages that merely stand between a searcher and the answer. Every page on your site should pass one test: would this still deserve traffic if Google could summarise it?</li>
+    <li><b>Volatility is a build-quality audit.</b> Sites that swing violently with every update usually share fundamentals problems — slow templates, thin templated content, messy information architecture. The fix isn't chasing the algorithm; it's engineering the site properly once.</li>
+    <li><b>Ecommerce isn't exempt.</b> Core updates hit product and collection pages as hard as blog posts, and templated store content is exactly the "intermediary" material this update demoted. It's why we'd put unique product content and structured data on the scope of any store build — and it's a fair test question for <a class="ext" href="../shopify-development-new-york.html">Shopify development partners</a> you're evaluating: ask how the build itself, not a plugin, earns search visibility.</li>
+  </ul>
+
+  <h2>Frequently asked questions</h2>
+  <h3>Is the March 2026 Google core update finished?</h3>
+  <p>No. It began on 27 March 2026 and was still rolling out through the week of 30 March – 5 April, with volatility trackers at some of their highest readings in years. Rankings will keep moving until Google confirms completion, so judge nothing mid-rollout.</p>
+  <h3>Should I change my website while a Google core update is rolling out?</h3>
+  <p>No structural or content overhauls mid-rollout. Positions swing in both directions before settling, so a panic rewrite responds to data that will look different in two weeks. Keep shipping planned improvements, log your rankings, and assess only after Google confirms the update is complete.</p>
+  <h3>Why was WordPress 7.0 delayed and should I wait for it?</h3>
+  <p>The core team announced on 31 March 2026 that 7.0 would miss its planned 9 April date, mainly to get the real-time collaboration database architecture right, with pre-releases paused until 17 April. Don't wait: keep your current WordPress install updated and plan the 7.0 upgrade as a tested project once a stable release lands.</p>
+  <h3>What is CSS Grid Lanes in Safari 26.4 and can I use masonry layouts now?</h3>
+  <p>CSS Grid Lanes is Safari 26.4's native masonry-style layout, shipped 24 March 2026 — Pinterest-style column flows without JavaScript libraries. It's one engine so far, so ship it as progressive enhancement with a standard grid fallback rather than relying on it cross-browser.</p>
+  <h3>Does the March 2026 core update affect Shopify stores too?</h3>
+  <p>Yes — core updates are platform-agnostic, and this one shifted visibility toward destination sources and away from thin intermediary pages. Ecommerce stores with unique product content, real reviews and clean structured data held up best; templated, thin-content stores were the most exposed. If yours dropped, an audit from a <a class="ext" href="../shopify-development-new-york.html">Shopify developer partner</a> should look at content depth and site structure before touching keywords.</p>
+
+  <h2>The takeaway</h2>
+  <p>A week of enforced patience. Google's biggest core update in years was mid-flight, WordPress deliberately chose slower over sorry, and the platform quietly shipped CSS that replaces JavaScript. The common lesson: the wins go to teams that build deliberately — destination-grade content, properly engineered layouts, staged upgrades — while everyone else reacts to a storm that hasn't finished yet. Hold your nerve, prepare your staging environment, and let the update land before you grade yourself.</p>
+
+  <div class="src rv">
+    <h2>Sources & further reading</h2>
+    <ul>
+      <li><a class="ext" href="https://searchengineland.com/march-2026-google-core-update-what-changed-474397" target="_blank" rel="noopener">Search Engine Land — March 2026 Google core update: more volatile than December</a></li>
+      <li><a class="ext" href="https://seranking.com/blog/google-core-update-march-2026-vs-december-2025/" target="_blank" rel="noopener">SE Ranking — March 2026 core update caused more volatility than December's</a></li>
+      <li><a class="ext" href="https://wordpress.org/news/2026/03/wordpress-6-9-3-and-7-0-beta-4/" target="_blank" rel="noopener">WordPress.org — WordPress 6.9.3 and 7.0 beta 4</a></li>
+      <li><a class="ext" href="https://wp-umbrella.com/blog/wordpress-7-0-release-status-and-timeline/" target="_blank" rel="noopener">WP Umbrella — WordPress 7.0 release status and timeline</a></li>
+      <li><a class="ext" href="https://webkit.org/blog/17862/webkit-features-for-safari-26-4/" target="_blank" rel="noopener">WebKit — Features for Safari 26.4</a></li>
+      <li><a class="ext" href="https://web.dev/blog/web-platform-03-2026" target="_blank" rel="noopener">web.dev — New to the web platform in March 2026</a></li>
+      <li><a class="ext" href="https://developer.chrome.com/release-notes/147" target="_blank" rel="noopener">Chrome for Developers — Chrome 147 release notes</a></li>
+    </ul>
+  </div>
+</article>
+
+<section class="band rv">
+  <h2>Want a site built for how search works now?</h2>
+  <p>We design and build conversion-first websites that hold up in classic search and AI answers alike.</p>
+  <a href="../index.html#contact" class="btn btn-pri">Book a Growth Call</a>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-in">
+      <a href="../index.html" class="logo">Hyber<b>X</b></a>
+      <nav class="f-links" aria-label="Services">
+        <a href="../performance-marketing.html">Performance Marketing</a>
+        <a href="../website-design-development.html">Websites</a>
+        <a href="../content-creation.html">Content</a>
+        <a href="../ad-films-brand-videos.html">Ad Films</a>
+        <a href="../conversion-optimization.html">CRO</a>
+      </nav>
+    </div>
+    <div class="f-bottom">
+      <span>© <span id="yr">2026</span> HyberX. All rights reserved.</span>
+      <span style="display:flex;gap:22px"><a href="../privacy-policy.html">Privacy Policy</a><a href="../terms-of-service.html">Terms of Service</a><a href="../index.html#contact">support@hyberx.com</a></span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+"use strict";
+var nav=document.getElementById('nav'),burger=document.getElementById('burger'),mnav=document.getElementById('mnav');
+addEventListener('scroll',function(){nav.classList.toggle('on',scrollY>24);},{passive:true});
+nav.classList.toggle('on',scrollY>24);
+burger.addEventListener('click',function(){
+  var open=mnav.classList.toggle('open');burger.classList.toggle('x',open);
+  burger.setAttribute('aria-expanded',open);document.body.classList.toggle('lock',open);
+});
+addEventListener('keydown',function(e){
+  if(e.key==='Escape'&&mnav.classList.contains('open')){
+    mnav.classList.remove('open');burger.classList.remove('x');
+    burger.setAttribute('aria-expanded','false');document.body.classList.remove('lock');burger.focus();
+  }
+});
+if('IntersectionObserver' in window){
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.12,rootMargin:'0px 0px -40px 0px'});
+  document.querySelectorAll('.rv').forEach(function(el){io.observe(el);});
+}else{document.querySelectorAll('.rv').forEach(function(el){el.classList.add('in');});}
+document.getElementById('yr').textContent=new Date().getFullYear();
+})();
+</script>
+</body>
+</html>

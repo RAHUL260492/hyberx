@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#050507">
+<script>document.documentElement.classList.add('js')</script>
+<title>Core Update Closes Out 2025, WordPress 6.9 "Gene" & What to Build for in 2026 | HyberX Weekly</title>
+<meta name="description" content="Weekly web design, development and SEO recap for 29 December 2025 – 4 January 2026: the December core update finishes rolling out, Interop 2025 ends at a 97% pass rate, WordPress 6.9 lands, and the 2026 search playbook takes shape.">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<link rel="canonical" href="https://hyberx.com/blog/web-design-seo-recap-january-5-2026.html">
+<meta property="og:url" content="https://hyberx.com/blog/web-design-seo-recap-january-5-2026.html">
+<meta property="og:image" content="https://hyberx.com/og-image.png">
+<meta property="og:site_name" content="HyberX">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://hyberx.com/og-image.png">
+<meta property="og:title" content="Core Update Closes Out 2025, WordPress 6.9 &quot;Gene&quot; & What to Build for in 2026 | HyberX Weekly">
+<meta property="og:description" content="Weekly recap for 29 December 2025 – 4 January 2026: the December core update completes, Interop 2025 hits 97%, WordPress 6.9 lands, and the 2026 search playbook takes shape.">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2026-01-05">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Core Update Closes Out 2025, WordPress 6.9 \"Gene\" and What to Build for in 2026",
+  "description": "Weekly web design, development and SEO recap for 29 December 2025 – 4 January 2026: the December core update finishes rolling out, Interop 2025 ends at a 97% pass rate, WordPress 6.9 lands, and the 2026 search playbook takes shape.",
+  "datePublished": "2026-01-05",
+  "dateModified": "2026-01-05",
+  "author": {"@type": "Organization", "name": "HyberX", "url": "https://hyberx.com/"},
+  "publisher": {"@type": "Organization", "name": "HyberX", "url": "https://hyberx.com/", "logo": {"@type": "ImageObject", "url": "https://hyberx.com/og-image.png"}},
+  "mainEntityOfPage": "https://hyberx.com/blog/web-design-seo-recap-january-5-2026.html",
+  "image": "https://hyberx.com/og-image.png"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "The December 2025 core update just finished — should I make changes now?", "acceptedAnswer": {"@type": "Answer", "text": "Wait for a stable baseline first. The rollout completed on 29 December 2025 but volatility stayed elevated into January, so give rankings one to two weeks to settle. Then compare pre-update and post-update positions by query type. If you lost ground broadly, the fix is depth and focus — the update rewarded topical specialists over generalists — not quick tweaks."}},
+    {"@type": "Question", "name": "Is it safe to use CSS features like anchor positioning and view transitions in client projects in 2026?", "acceptedAnswer": {"@type": "Answer", "text": "Largely yes. Interop 2025 closed with a 97% cross-browser pass rate, and features such as same-document View Transitions, CSS Anchor Positioning, @scope and the Navigation API now work across Chrome, Edge, Firefox and Safari. Use progressive enhancement for older installed browsers, but these are no longer experimental bets."}},
+    {"@type": "Question", "name": "Should I update to WordPress 6.9 before starting a 2026 redesign?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. WordPress 6.9 \"Gene\" shipped on 2 December 2025 and is stable, and its Notes commenting, Command Palette and Abilities API are the foundation the platform is building on next. Starting a redesign on an older major version means migrating mid-project — update first, then build."}},
+    {"@type": "Question", "name": "How should I budget for SEO in 2026 if zero-click searches keep growing?", "acceptedAnswer": {"@type": "Answer", "text": "Shift the goal from raw traffic to qualified visibility and conversion. With most queries ending without a click, budget for content that earns citations in AI answers, structured data and fast crawlable pages, and conversion optimization so the smaller number of visitors who do click convert at a higher rate."}},
+    {"@type": "Question", "name": "What should I ask a web agency before hiring one for a 2026 project?", "acceptedAnswer": {"@type": "Answer", "text": "Ask how the build itself earns rankings: heading structure, structured data, Core Web Vitals on shipped work, and redirect discipline during migrations. Whether you search \"web developers near me\" or hire remotely, judge the process — a specialised website development company with a documented SEO-preservation checklist beats proximity every time."}}
+  ]
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;450;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#050507;--bg2:#0a0a0e;--card:#0e0e13;--card2:#14141b;--text:#f7f8fa;--muted:#a5a5a5;--muted2:#7f7f7f;--line:rgba(255,255,255,.1);--line2:rgba(255,255,255,.06);--acc:#ffffff;--acc-ink:#050507;--max:1280px;--r:24px;--ease:cubic-bezier(.19,1,.22,1)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+html.js .rv{opacity:0;transform:translateY(26px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+html.js .rv.in{opacity:1;transform:none}
+body{background:var(--bg);color:var(--text);font-family:'Inter',system-ui,sans-serif;font-weight:450;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body.lock{overflow:hidden}
+h1,h2,h3,h4{font-family:'Space Grotesk',sans-serif;font-weight:600;line-height:1.1;letter-spacing:-.03em}
+a{color:inherit;text-decoration:none}
+img,svg{display:block;max-width:100%}
+button{font:inherit;cursor:pointer}
+::selection{background:#fff;color:#050507}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 28px}
+.ey{display:inline-flex;align-items:center;gap:10px;font-family:'Space Mono',monospace;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+.ey .d{width:6px;height:6px;border-radius:50%;background:var(--acc);box-shadow:0 0 12px var(--acc);animation:pulse 2.4s var(--ease) infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
+.skip{position:fixed;top:-64px;left:16px;z-index:300;background:var(--card2);border:1px solid var(--line);color:var(--text);padding:12px 20px;border-radius:10px;font-weight:600;font-size:14px;transition:top .3s var(--ease)}
+.skip:focus{top:16px}
+a:focus-visible,button:focus-visible{outline:2px solid var(--acc);outline-offset:3px;border-radius:6px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:17px 32px;border-radius:100px;font-weight:600;font-size:15px;border:1px solid transparent;transition:transform .35s var(--ease),box-shadow .35s var(--ease),background .35s,border-color .35s;white-space:nowrap;position:relative;overflow:hidden;isolation:isolate}
+.btn-pri{background:#fff;color:var(--acc-ink);box-shadow:0 8px 32px rgba(255,255,255,.18)}
+.btn-pri:hover{transform:translateY(-2px);box-shadow:0 16px 48px rgba(255,255,255,.26)}
+.btn-ghost{border-color:var(--line);color:var(--text);background:rgba(255,255,255,.03)}
+.btn-ghost:hover{border-color:rgba(255,255,255,.3);background:rgba(255,255,255,.06);transform:translateY(-2px)}
+.glow{position:fixed;inset:0;z-index:-2;background:var(--bg);overflow:hidden}
+.glow::before{content:"";position:absolute;width:70vw;height:70vw;left:50%;top:-42vw;transform:translateX(-50%);border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,.088),transparent 62%);filter:blur(60px)}
+.grain{position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.05;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.6'/%3E%3C/svg%3E")}
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;transition:background .4s,border-color .4s,backdrop-filter .4s}
+.nav.on{background:rgba(5,5,7,.8);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border-bottom:1px solid var(--line2)}
+.nav-in{max-width:var(--max);margin:0 auto;padding:0 28px;height:74px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.logo{font-family:'Space Grotesk',sans-serif;font-size:23px;font-weight:700;letter-spacing:-.02em}
+.logo b{color:transparent;-webkit-text-stroke:1.2px var(--text);font-weight:700}
+.nav-links{display:flex;gap:34px;align-items:center}
+.nav-links a{font-size:14.5px;font-weight:500;color:var(--muted);position:relative;padding:6px 0;transition:color .3s}
+.nav-links a:hover,.nav-links a.act{color:var(--text)}
+.nav-links a::after{content:"";position:absolute;left:0;bottom:0;width:0;height:1.5px;background:var(--acc);transition:width .4s var(--ease)}
+.nav-links a:hover::after,.nav-links a.act::after{width:100%}
+.nav .btn{padding:12px 24px;font-size:14px}
+.burger{display:none;background:none;border:0;width:44px;height:44px;position:relative;z-index:110}
+.burger span{display:block;width:24px;height:2px;background:var(--text);margin:5px auto;border-radius:2px;transition:transform .4s var(--ease),opacity .3s}
+.burger.x span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.burger.x span:nth-child(2){opacity:0}
+.burger.x span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+.mnav{position:fixed;inset:0;z-index:105;background:rgba(5,5,7,.97);backdrop-filter:blur(24px);display:flex;flex-direction:column;justify-content:center;padding:0 36px;gap:8px;opacity:0;pointer-events:none;transition:opacity .4s var(--ease)}
+.mnav.open{opacity:1;pointer-events:auto}
+.mnav a{font-family:'Space Grotesk',sans-serif;font-size:34px;font-weight:600;letter-spacing:-.02em;padding:12px 0;border-bottom:1px solid var(--line2)}
+.mnav .btn{margin-top:28px;align-self:flex-start}
+/* article */
+.post-hero{padding:170px 0 60px;text-align:center}
+.post-hero .ey{justify-content:center}
+.post-hero h1{font-size:clamp(34px,4.8vw,64px);max-width:960px;margin:26px auto 0}
+.post-meta{margin-top:26px;font-family:'Space Mono',monospace;font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted2);display:flex;gap:18px;justify-content:center;flex-wrap:wrap}
+.post{max-width:780px;margin:0 auto;padding:30px 28px 90px}
+.post p{font-size:16.5px;color:#cfcfd4;margin:0 0 22px}
+.post p b,.post p strong{color:var(--text)}
+.post h2{font-size:clamp(24px,2.8vw,34px);margin:54px 0 18px;letter-spacing:-.02em}
+.post h3{font-size:20px;margin:34px 0 12px}
+.post a.ext{color:var(--text);text-decoration:underline;text-decoration-color:rgba(255,255,255,.3);text-underline-offset:3px;transition:text-decoration-color .3s}
+.post a.ext:hover{text-decoration-color:var(--acc)}
+.post ul{margin:0 0 22px;padding-left:22px}
+.post ul li{font-size:16px;color:#cfcfd4;margin-bottom:10px}
+.post .lede{font-size:19px;color:var(--muted);line-height:1.65}
+.callout{border:1px solid var(--line);border-radius:18px;background:linear-gradient(170deg,var(--card2),var(--card));padding:26px 28px;margin:34px 0}
+.callout .ct{font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);display:block;margin-bottom:10px}
+.callout p{margin:0;font-size:15.5px}
+.src{margin-top:60px;padding-top:28px;border-top:1px solid var(--line2)}
+.src h2{font-size:18px;margin:0 0 14px}
+.src ul{list-style:none;padding:0}
+.src li{font-size:13.5px;color:var(--muted);margin-bottom:8px}
+.band{border-radius:30px;border:1px solid var(--line);background:radial-gradient(800px 380px at 50% -10%,rgba(255,255,255,.121),transparent 62%),linear-gradient(170deg,var(--card2),var(--card));padding:70px 40px;text-align:center;position:relative;overflow:hidden;margin:0 auto 100px;max-width:980px}
+.band h2{font-size:clamp(28px,4vw,46px);letter-spacing:-.03em;margin-bottom:14px}
+.band p{color:var(--muted);max-width:540px;margin:0 auto 32px;font-size:16px}
+footer{border-top:1px solid var(--line2);padding:56px 0 40px;background:var(--bg2)}
+.f-in{display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap}
+.f-links{display:flex;gap:26px;flex-wrap:wrap}
+.f-links a{font-size:14px;color:var(--muted);transition:color .3s}
+.f-links a:hover{color:var(--text)}
+.f-bottom{margin-top:34px;padding-top:26px;border-top:1px solid var(--line2);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:13px;color:var(--muted2)}
+@media(max-width:720px){
+  .wrap{padding:0 20px}
+  .nav-links{display:none}.nav .nav-cta{display:none}.burger{display:block}.nav-in{height:64px;padding:0 20px}
+  .post-hero{padding:130px 0 40px}
+  .post{padding:20px 20px 70px}
+  .band{padding:50px 24px;margin:0 20px 80px}
+}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.001s!important;transition-duration:.001s!important}html{scroll-behavior:auto}html.js .rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+<div class="glow" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
+<header class="nav" id="nav">
+  <div class="nav-in">
+    <a href="../index.html" class="logo" aria-label="HyberX home">Hyber<b>X</b></a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="../index.html">Home</a>
+      <a href="../index.html#services">Services</a>
+      <a href="../index.html#work">Work</a>
+      <a href="index.html" class="act">Insights</a>
+      <a href="../index.html#contact">Contact</a>
+    </nav>
+    <div style="display:flex;align-items:center;gap:12px">
+      <a href="../index.html#contact" class="btn btn-pri nav-cta">Book a Call</a>
+      <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<div class="mnav" id="mnav" role="navigation" aria-label="Mobile navigation">
+  <a href="../index.html">Home</a>
+  <a href="../index.html#services">Services</a>
+  <a href="../index.html#work">Work</a>
+  <a href="index.html">Insights</a>
+  <a href="../index.html#contact">Contact</a>
+  <a href="../index.html#contact" class="btn btn-pri">Book a Growth Call</a>
+</div>
+
+<main id="main">
+<section class="post-hero">
+  <div class="wrap">
+    <span class="ey"><i class="d"></i>Weekly Recap · Web Design, Dev & SEO</span>
+    <h1>The core update closes out 2025, browsers hit 97% agreement, and the 2026 playbook takes shape.</h1>
+    <div class="post-meta"><span>5 January 2026</span><span>10 min read</span></div>
+  </div>
+</section>
+
+<article class="post">
+  <p class="lede">Google chose the last working days of 2025 to finish its December core update — the rollout completed on <b>29 December</b> after eighteen days and two distinct peaks — and then let the dust keep swirling straight into the new year. Meanwhile the browser world quietly delivered its best year on record: Interop 2025 closed with a <b>97% cross-browser pass rate</b>, turning a stack of once-experimental CSS features into things you can actually ship. Add WordPress 6.9 settling in after its early-December release and a wave of 2026 prediction pieces landing over the holidays, and the year-opening week is really one long planning memo. Here's what happened between 29 December and 4 January — and what it tells you to build this year.</p>
+
+  <h2>1. The December 2025 core update is done — the volatility isn't</h2>
+  <h3>What happened</h3>
+  <p>Google confirmed the <b>December 2025 core update finished rolling out on 29 December</b>, roughly 18 days after it began on 11 December. It was an unusual, wave-like rollout with two clear peaks — around <b>13 December</b> and <b>20 December</b> — and analysts flagged YMYL and e-commerce categories as the most affected. Google's own description was standard: a regular update "designed to better surface relevant, satisfying content for searchers from all types of sites."</p>
+  <p>What made the week notable is what <em>didn't</em> happen after the official end date. Rank-tracking tools stayed heated through New Year's week, with site owners still reporting traffic swings days after the completion announcement. The clearest pattern in the post-update analysis: <b>topical specialists gained, generalists lost.</b> Sites that go deep on one subject were rewarded; sites that do a little of everything drifted down.</p>
+  <h3>How to read your own numbers this week</h3>
+  <ul>
+    <li><b>Annotate the dates.</b> Mark 11–29 December in your analytics so nobody misreads holiday seasonality plus a core update as a single trend.</li>
+    <li><b>Compare like-for-like weeks.</b> Late December traffic is weird everywhere. Compare against the same week last year before drawing conclusions.</li>
+    <li><b>Segment by query class.</b> Losses on broad informational queries with AI Overviews present are a different problem from losses on commercial queries against direct competitors.</li>
+    <li><b>Hold the panic edits.</b> Core update recovery comes from sustained quality improvements assessed over months — not from rewriting title tags in January's first week.</li>
+  </ul>
+  <div class="callout"><span class="ct">What we'd do about it</span>
+  <p>Treat the specialist-vs-generalist signal as your content strategy for the year. If your site covers six loosely related services in equal shallow depth, consolidate: pick the offerings that drive revenue, build genuinely deep pages around them, and prune the rest. That's a structural decision, which is why we'd scope it with a <a class="ext" href="../website-design-development.html">website development company</a> that can restructure information architecture and redirects properly — not just publish more posts into a flat blog.</p></div>
+
+  <h2>2. Interop 2025's final score: the most aligned browsers have ever been</h2>
+  <p>The year-end Interop 2025 reports from the browser vendors landed with a genuinely big number: the shared test suite went from a <b>29% pass rate across all browsers at the start of 2025 to 97% by year end</b>, with the experimental builds of Chrome, Edge, Firefox and Safari all reaching 99%. Safari made the largest single jump of any browser, climbing from 43 to 99.</p>
+  <h3>What you can now ship without hesitation</h3>
+  <p>The practical outcome is a list of features that crossed from "demo material" to "production" during 2025, now stable across all major engines:</p>
+  <ul>
+    <li><b>Same-document View Transitions</b> — native, smooth page-state animations without a JavaScript framework.</li>
+    <li><b>CSS Anchor Positioning</b> — tooltips, dropdowns and popovers positioned by the browser, ending a decade of positioning libraries.</li>
+    <li><b>CSS @scope</b> — style boundaries without naming conventions or build tooling.</li>
+    <li><b>The Navigation API and URLPattern</b> — cleaner client-side routing primitives baked into the platform.</li>
+    <li>Reliability work on <b>flexbox, grid, backdrop-filter and writing modes</b> — the boring fixes that eliminate cross-browser debugging days.</li>
+  </ul>
+  <div class="callout"><span class="ct">What we'd do about it</span>
+  <p>This is the strongest argument in years for lean, standards-first html web development. Every feature above replaces JavaScript you used to ship — positioning libraries, transition frameworks, scoping tooling — with CSS and platform APIs that weigh nothing and never break on update. For a business website, fewer dependencies means faster pages, and faster pages convert better. In 2026, "do we still need this library?" is a question worth asking on every build.</p></div>
+
+  <h2>3. WordPress 6.9 "Gene": a month in, and the platform's AI signal</h2>
+  <p>WordPress 6.9 <b>"Gene"</b> shipped on <b>2 December 2025</b>, so New Year's week is roughly the one-month mark — the point where most agencies consider a major release safe for client production sites. Three features define it:</p>
+  <ul>
+    <li><b>Notes</b> — block-level commenting inside the editor, finally giving content teams a review workflow without exporting to Google Docs.</li>
+    <li><b>Command Palette improvements</b> — faster keyboard-driven navigation across the dashboard.</li>
+    <li><b>The Abilities API</b> — described by the project as "a standardized way to open the door for AI-powered" capabilities. This is the strategic one: WordPress is building the plumbing for AI tools to act on sites in a controlled way, and plugin developers will spend 2026 building on it.</li>
+  </ul>
+  <p>The December State of the Word address — the project's twentieth — reinforced the same direction: community scale plus an explicit bet on AI integration as a platform feature rather than a plugin free-for-all. If WordPress powers your marketing site, 6.9 is the version to start the year on.</p>
+
+  <h2>4. The 2026 prediction pieces agree on one uncomfortable thing</h2>
+  <p>The holiday week is when every SEO publication ships its predictions, and this year's crop converged with unusual consistency. The recurring claims across the major year-ahead pieces:</p>
+  <ul>
+    <li><b>Zero-click is the baseline now.</b> Analyses circulating this week put the share of queries ending without any click at over 60%, with more search journeys starting and ending inside the results page or an AI interface.</li>
+    <li><b>Citation is the new ranking.</b> Visibility in 2026 depends less on holding position three and more on whether AI-generated answers cite and recommend you. "Earn inclusion and positive framing inside the answer" is the new goal being written into strategy decks.</li>
+    <li><b>Structure wins twice.</b> The same qualities that survive core updates — clear headings, direct answers, real authorship, parseable structured data — are what AI systems quote. There is one playbook, not two.</li>
+    <li><b>Fewer, better visitors.</b> If click volume falls while intent quality rises, conversion rate becomes the multiplier on everything else you do.</li>
+  </ul>
+  <div class="callout"><span class="ct">What we'd do about it</span>
+  <p>Stop measuring SEO success in raw sessions this year. If 2026 sends you fewer but better-briefed visitors, the highest-leverage investment on most business websites isn't more content — it's <a class="ext" href="../conversion-optimization.html">conversion optimization</a>: clearer offers, proof near the call to action, and forms that don't leak. A site that converts 3% instead of 1.5% just doubled the value of every ranking it already has.</p></div>
+
+  <h2>5. Quiet week, loud calendar: what's queued for early 2026</h2>
+  <p>Holiday weeks are slow for announcements, but the queue for Q1 was visible by 4 January:</p>
+  <ul>
+    <li><b>Post-update turbulence isn't over.</b> Trackers were already twitching as the new year began — and the weeks that followed proved it out, so a stable baseline in January should be treated as provisional.</li>
+    <li><b>Interop 2026 planning</b> was underway, with vendors signalling another year of convergence-focused work after 2025's results.</li>
+    <li><b>AI Overviews keep expanding.</b> Every 2026 outlook this week assumed broader AI answer coverage across query types — plan for it rather than reacting to it.</li>
+    <li><b>Ecommerce platforms enter planning season.</b> January is when merchants scope the year's builds; if a replatform or theme rebuild is on your list, brief your <a class="ext" href="../shopify-development-new-york.html">Shopify development partners</a> now, before the spring rush eats the good timelines.</li>
+  </ul>
+
+  <h2>What to prioritise in your website for 2026</h2>
+  <p>Reading the week's threads together, the 2026 build priorities for a revenue-focused business website rank like this:</p>
+  <ul>
+    <li><b>Depth over breadth.</b> The December update's clearest lesson. Fewer topics, genuinely covered, beats broad thin coverage — in classic rankings and AI citations alike.</li>
+    <li><b>Platform-native builds.</b> With browsers at 97% agreement, lean semantic HTML plus modern CSS out-performs framework-heavy builds on speed, stability and crawlability. Ask any agency you evaluate to show how their markup earns rankings, not just how it looks.</li>
+    <li><b>Every page a landing page.</b> AI-referred and zero-click-era visitors land deep and arrive pre-briefed. Value statement, proof, next step — on every page, not just the homepage.</li>
+    <li><b>Conversion as a discipline.</b> Traffic is getting scarcer and more qualified. Testing and tightening the path to enquiry is the multiplier on all other spend.</li>
+    <li><b>Pick partners by process.</b> Whether it's a local search for "web developers near me" or a specialised remote team — for a storefront, a proper shopify developer partner; for a marketing site, a build team with an SEO-preservation checklist — judge the migration discipline and the shipped Core Web Vitals, not the postcode.</li>
+  </ul>
+
+  <h2>Frequently asked questions</h2>
+  <h3>The December 2025 core update just finished — should I make changes now?</h3>
+  <p>Not yet. The rollout completed on 29 December but volatility stayed elevated into January, so give rankings a week or two to settle before diagnosing. Then compare pre- and post-update positions by query type. If you lost ground broadly, the answer is deeper, more focused content over months — the update rewarded specialists — not quick January tweaks.</p>
+  <h3>Is it safe to use CSS features like anchor positioning and view transitions in client projects in 2026?</h3>
+  <p>Largely yes. Interop 2025 closed at a 97% cross-browser pass rate, and same-document View Transitions, CSS Anchor Positioning, @scope and the Navigation API now work across all major engines. Use progressive enhancement for stragglers on old installed versions, but these are no longer experimental bets.</p>
+  <h3>Should I update to WordPress 6.9 before starting a 2026 redesign?</h3>
+  <p>Yes. "Gene" shipped on 2 December 2025, has had a month to stabilise, and its Notes commenting, Command Palette and Abilities API are what the platform builds on next. Starting a redesign on an older major version just means migrating mid-project.</p>
+  <h3>How should I budget for SEO in 2026 if zero-click searches keep growing?</h3>
+  <p>Shift the target from raw traffic to qualified visibility plus conversion. Budget for content structured to earn AI citations, technical work that keeps pages fast and crawlable, and conversion optimization so the visitors who do click convert at a higher rate. Fewer, better visitors is a fine outcome — if your site closes them.</p>
+  <h3>What should I ask a web agency before hiring one this year?</h3>
+  <p>One question does most of the work: "show me how the build itself earns rankings." Heading structure, structured data, real Core Web Vitals scores on shipped sites, and a written redirect plan for migrations. Whether you go local or remote, whether it's a marketing site or a storefront with shopify development partners, the process on paper predicts the outcome.</p>
+
+  <h2>The takeaway</h2>
+  <p>2025 ended with an unambiguous message from both Google and the browser vendors: the platform is rewarding fundamentals. The core update paid specialists and punished the shallow; Interop paid the standards-first builders with a stack of free capabilities. The 2026 prediction pieces just extend the same line — fewer clicks, higher intent, one playbook. The websites that win this year will be the ones built deep, built lean, and built to convert the visitors that still arrive.</p>
+
+  <div class="src rv">
+    <h2>Sources & further reading</h2>
+    <ul>
+      <li><a class="ext" href="https://www.seroundtable.com/google-december-2025-core-update-completed-40671.html" target="_blank" rel="noopener">Search Engine Roundtable — Google December 2025 Core Update Done Rolling Out</a></li>
+      <li><a class="ext" href="https://www.seo-kreativ.de/en/blog/google-ranking-volatility-january-2026/" target="_blank" rel="noopener">SEO Kreativ — Google Ranking Volatility, January 2026</a></li>
+      <li><a class="ext" href="https://webkit.org/blog/17808/interop-2025-review/" target="_blank" rel="noopener">WebKit — Interop 2025: A Year of Convergence</a></li>
+      <li><a class="ext" href="https://web.dev/blog/interop-2025" target="_blank" rel="noopener">web.dev — Interop 2025: Another Year of Web Platform Improvements</a></li>
+      <li><a class="ext" href="https://wordpress.org/news/2025/12/" target="_blank" rel="noopener">WordPress.org — WordPress 6.9 "Gene" and State of the Word 2025</a></li>
+      <li><a class="ext" href="https://tinuiti.com/blog/search/future-of-seo/" target="_blank" rel="noopener">Tinuiti — The Future of SEO: 7 Predictions for Marketers in 2026</a></li>
+      <li><a class="ext" href="https://seosherpa.com/seo-predictions-2026/" target="_blank" rel="noopener">SEO Sherpa — 10 SEO Predictions for 2026</a></li>
+    </ul>
+  </div>
+</article>
+
+<section class="band rv">
+  <h2>Planning a 2026 website project?</h2>
+  <p>We design and build conversion-first websites that hold up in classic search and AI answers alike.</p>
+  <a href="../index.html#contact" class="btn btn-pri">Book a Growth Call</a>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-in">
+      <a href="../index.html" class="logo">Hyber<b>X</b></a>
+      <nav class="f-links" aria-label="Services">
+        <a href="../performance-marketing.html">Performance Marketing</a>
+        <a href="../website-design-development.html">Websites</a>
+        <a href="../content-creation.html">Content</a>
+        <a href="../ad-films-brand-videos.html">Ad Films</a>
+        <a href="../conversion-optimization.html">CRO</a>
+      </nav>
+    </div>
+    <div class="f-bottom">
+      <span>© <span id="yr">2026</span> HyberX. All rights reserved.</span>
+      <span style="display:flex;gap:22px"><a href="../privacy-policy.html">Privacy Policy</a><a href="../terms-of-service.html">Terms of Service</a><a href="../index.html#contact">support@hyberx.com</a></span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+"use strict";
+var nav=document.getElementById('nav'),burger=document.getElementById('burger'),mnav=document.getElementById('mnav');
+addEventListener('scroll',function(){nav.classList.toggle('on',scrollY>24);},{passive:true});
+nav.classList.toggle('on',scrollY>24);
+burger.addEventListener('click',function(){
+  var open=mnav.classList.toggle('open');burger.classList.toggle('x',open);
+  burger.setAttribute('aria-expanded',open);document.body.classList.toggle('lock',open);
+});
+addEventListener('keydown',function(e){
+  if(e.key==='Escape'&&mnav.classList.contains('open')){
+    mnav.classList.remove('open');burger.classList.remove('x');
+    burger.setAttribute('aria-expanded','false');document.body.classList.remove('lock');burger.focus();
+  }
+});
+if('IntersectionObserver' in window){
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.12,rootMargin:'0px 0px -40px 0px'});
+  document.querySelectorAll('.rv').forEach(function(el){io.observe(el);});
+}else{document.querySelectorAll('.rv').forEach(function(el){el.classList.add('in');});}
+document.getElementById('yr').textContent=new Date().getFullYear();
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#050507">
+<script>document.documentElement.classList.add('js')</script>
+<title>Pre-I/O Volatility, FAQ Rich Results Gone & the WordPress 7.0 Countdown | HyberX Weekly</title>
+<meta name="description" content="Weekly web design, development and SEO recap for 11–17 May 2026: Google ranking volatility on 13–14 May, spam policies extended to AI Overviews and AI Mode, FAQ rich results deprecated, WordPress 7.0 days away, and Chrome 149 beta CSS features.">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<link rel="canonical" href="https://hyberx.com/blog/web-design-seo-recap-may-18-2026.html">
+<meta property="og:url" content="https://hyberx.com/blog/web-design-seo-recap-may-18-2026.html">
+<meta property="og:image" content="https://hyberx.com/og-image.png">
+<meta property="og:site_name" content="HyberX">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://hyberx.com/og-image.png">
+<meta property="og:title" content="Pre-I/O Volatility, FAQ Rich Results Gone & the WordPress 7.0 Countdown | HyberX Weekly">
+<meta property="og:description" content="Weekly web design, development and SEO recap for 11–17 May 2026: ranking volatility on 13–14 May, spam policies extended to AI answers, FAQ rich results deprecated, WordPress 7.0 days away, Chrome 149 beta.">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2026-05-18">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Pre-I/O Volatility, FAQ Rich Results Gone and the WordPress 7.0 Countdown",
+  "description": "Weekly web design, development and SEO recap for 11–17 May 2026: Google ranking volatility on 13–14 May, spam policies extended to AI Overviews and AI Mode, FAQ rich results deprecated, WordPress 7.0 days away, and Chrome 149 beta CSS features.",
+  "datePublished": "2026-05-18",
+  "dateModified": "2026-05-18",
+  "author": {"@type": "Organization", "name": "HyberX", "url": "https://hyberx.com/"},
+  "publisher": {"@type": "Organization", "name": "HyberX", "url": "https://hyberx.com/", "logo": {"@type": "ImageObject", "url": "https://hyberx.com/og-image.png"}},
+  "mainEntityOfPage": "https://hyberx.com/blog/web-design-seo-recap-may-18-2026.html",
+  "image": "https://hyberx.com/og-image.png"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "Was there a Google algorithm update the week of 11–17 May 2026?", "acceptedAnswer": {"@type": "Answer", "text": "Nothing confirmed. Rank-tracking tools showed heated volatility around 13–14 May, but Google announced no update. With Google I/O starting 19 May, some pre-event turbulence is normal. Diagnose before acting: separate rank drops from click drops, compare competitors, and wait a full week of data before changing content."}},
+    {"@type": "Question", "name": "Should I remove FAQ schema now that Google dropped FAQ rich results?", "acceptedAnswer": {"@type": "Answer", "text": "No. FAQ rich results stopped showing in Google Search from 7 May 2026, but FAQPage remains a valid schema.org type and Google says it will keep using the markup to understand pages. Keep well-structured FAQ content on the page — it still feeds AI answers and long-tail queries — just stop expecting the expandable result in listings."}},
+    {"@type": "Question", "name": "Do Google's spam policies apply to AI Overviews and AI Mode?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Google clarified this week that its spam policies extend to AI-powered search results. Low-quality AI-generated pages, false claims and manipulative content can be penalized in AI answers just as in classic listings. Use AI to assist production, not to replace genuine expertise and trust signals."}},
+    {"@type": "Question", "name": "Is it safe to update to WordPress 7.0 on launch day?", "acceptedAnswer": {"@type": "Answer", "text": "For most business sites, wait one to two weeks. WordPress 7.0 ships 20 May 2026 with a refreshed admin, new blocks and merged Gutenberg 22.0–22.6 features — a large surface area for plugin and theme conflicts. Take a full backup, test on staging, confirm your critical plugins declare 7.0 compatibility, then update."}},
+    {"@type": "Question", "name": "Does schema markup improve AI citations?", "acceptedAnswer": {"@type": "Answer", "text": "Not on its own. An Ahrefs test discussed this week found schema markup alone didn't increase AI citations. Structured data helps machines parse your pages, but citations come from strong, quotable content, unique details, real proof and trusted mentions across the web."}}
+  ]
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;450;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#050507;--bg2:#0a0a0e;--card:#0e0e13;--card2:#14141b;--text:#f7f8fa;--muted:#a5a5a5;--muted2:#7f7f7f;--line:rgba(255,255,255,.1);--line2:rgba(255,255,255,.06);--acc:#ffffff;--acc-ink:#050507;--max:1280px;--r:24px;--ease:cubic-bezier(.19,1,.22,1)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+html.js .rv{opacity:0;transform:translateY(26px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+html.js .rv.in{opacity:1;transform:none}
+body{background:var(--bg);color:var(--text);font-family:'Inter',system-ui,sans-serif;font-weight:450;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body.lock{overflow:hidden}
+h1,h2,h3,h4{font-family:'Space Grotesk',sans-serif;font-weight:600;line-height:1.1;letter-spacing:-.03em}
+a{color:inherit;text-decoration:none}
+img,svg{display:block;max-width:100%}
+button{font:inherit;cursor:pointer}
+::selection{background:#fff;color:#050507}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 28px}
+.ey{display:inline-flex;align-items:center;gap:10px;font-family:'Space Mono',monospace;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+.ey .d{width:6px;height:6px;border-radius:50%;background:var(--acc);box-shadow:0 0 12px var(--acc);animation:pulse 2.4s var(--ease) infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
+.skip{position:fixed;top:-64px;left:16px;z-index:300;background:var(--card2);border:1px solid var(--line);color:var(--text);padding:12px 20px;border-radius:10px;font-weight:600;font-size:14px;transition:top .3s var(--ease)}
+.skip:focus{top:16px}
+a:focus-visible,button:focus-visible{outline:2px solid var(--acc);outline-offset:3px;border-radius:6px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:17px 32px;border-radius:100px;font-weight:600;font-size:15px;border:1px solid transparent;transition:transform .35s var(--ease),box-shadow .35s var(--ease),background .35s,border-color .35s;white-space:nowrap;position:relative;overflow:hidden;isolation:isolate}
+.btn-pri{background:#fff;color:var(--acc-ink);box-shadow:0 8px 32px rgba(255,255,255,.18)}
+.btn-pri:hover{transform:translateY(-2px);box-shadow:0 16px 48px rgba(255,255,255,.26)}
+.btn-ghost{border-color:var(--line);color:var(--text);background:rgba(255,255,255,.03)}
+.btn-ghost:hover{border-color:rgba(255,255,255,.3);background:rgba(255,255,255,.06);transform:translateY(-2px)}
+.glow{position:fixed;inset:0;z-index:-2;background:var(--bg);overflow:hidden}
+.glow::before{content:"";position:absolute;width:70vw;height:70vw;left:50%;top:-42vw;transform:translateX(-50%);border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,.088),transparent 62%);filter:blur(60px)}
+.grain{position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.05;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.6'/%3E%3C/svg%3E")}
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;transition:background .4s,border-color .4s,backdrop-filter .4s}
+.nav.on{background:rgba(5,5,7,.8);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border-bottom:1px solid var(--line2)}
+.nav-in{max-width:var(--max);margin:0 auto;padding:0 28px;height:74px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.logo{font-family:'Space Grotesk',sans-serif;font-size:23px;font-weight:700;letter-spacing:-.02em}
+.logo b{color:transparent;-webkit-text-stroke:1.2px var(--text);font-weight:700}
+.nav-links{display:flex;gap:34px;align-items:center}
+.nav-links a{font-size:14.5px;font-weight:500;color:var(--muted);position:relative;padding:6px 0;transition:color .3s}
+.nav-links a:hover,.nav-links a.act{color:var(--text)}
+.nav-links a::after{content:"";position:absolute;left:0;bottom:0;width:0;height:1.5px;background:var(--acc);transition:width .4s var(--ease)}
+.nav-links a:hover::after,.nav-links a.act::after{width:100%}
+.nav .btn{padding:12px 24px;font-size:14px}
+.burger{display:none;background:none;border:0;width:44px;height:44px;position:relative;z-index:110}
+.burger span{display:block;width:24px;height:2px;background:var(--text);margin:5px auto;border-radius:2px;transition:transform .4s var(--ease),opacity .3s}
+.burger.x span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.burger.x span:nth-child(2){opacity:0}
+.burger.x span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+.mnav{position:fixed;inset:0;z-index:105;background:rgba(5,5,7,.97);backdrop-filter:blur(24px);display:flex;flex-direction:column;justify-content:center;padding:0 36px;gap:8px;opacity:0;pointer-events:none;transition:opacity .4s var(--ease)}
+.mnav.open{opacity:1;pointer-events:auto}
+.mnav a{font-family:'Space Grotesk',sans-serif;font-size:34px;font-weight:600;letter-spacing:-.02em;padding:12px 0;border-bottom:1px solid var(--line2)}
+.mnav .btn{margin-top:28px;align-self:flex-start}
+/* article */
+.post-hero{padding:170px 0 60px;text-align:center}
+.post-hero .ey{justify-content:center}
+.post-hero h1{font-size:clamp(34px,4.8vw,64px);max-width:960px;margin:26px auto 0}
+.post-meta{margin-top:26px;font-family:'Space Mono',monospace;font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted2);display:flex;gap:18px;justify-content:center;flex-wrap:wrap}
+.post{max-width:780px;margin:0 auto;padding:30px 28px 90px}
+.post p{font-size:16.5px;color:#cfcfd4;margin:0 0 22px}
+.post p b,.post p strong{color:var(--text)}
+.post h2{font-size:clamp(24px,2.8vw,34px);margin:54px 0 18px;letter-spacing:-.02em}
+.post h3{font-size:20px;margin:34px 0 12px}
+.post a.ext{color:var(--text);text-decoration:underline;text-decoration-color:rgba(255,255,255,.3);text-underline-offset:3px;transition:text-decoration-color .3s}
+.post a.ext:hover{text-decoration-color:var(--acc)}
+.post ul{margin:0 0 22px;padding-left:22px}
+.post ul li{font-size:16px;color:#cfcfd4;margin-bottom:10px}
+.post .lede{font-size:19px;color:var(--muted);line-height:1.65}
+.callout{border:1px solid var(--line);border-radius:18px;background:linear-gradient(170deg,var(--card2),var(--card));padding:26px 28px;margin:34px 0}
+.callout .ct{font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);display:block;margin-bottom:10px}
+.callout p{margin:0;font-size:15.5px}
+.src{margin-top:60px;padding-top:28px;border-top:1px solid var(--line2)}
+.src h2{font-size:18px;margin:0 0 14px}
+.src ul{list-style:none;padding:0}
+.src li{font-size:13.5px;color:var(--muted);margin-bottom:8px}
+.band{border-radius:30px;border:1px solid var(--line);background:radial-gradient(800px 380px at 50% -10%,rgba(255,255,255,.121),transparent 62%),linear-gradient(170deg,var(--card2),var(--card));padding:70px 40px;text-align:center;position:relative;overflow:hidden;margin:0 auto 100px;max-width:980px}
+.band h2{font-size:clamp(28px,4vw,46px);letter-spacing:-.03em;margin-bottom:14px}
+.band p{color:var(--muted);max-width:540px;margin:0 auto 32px;font-size:16px}
+footer{border-top:1px solid var(--line2);padding:56px 0 40px;background:var(--bg2)}
+.f-in{display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap}
+.f-links{display:flex;gap:26px;flex-wrap:wrap}
+.f-links a{font-size:14px;color:var(--muted);transition:color .3s}
+.f-links a:hover{color:var(--text)}
+.f-bottom{margin-top:34px;padding-top:26px;border-top:1px solid var(--line2);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:13px;color:var(--muted2)}
+@media(max-width:720px){
+  .wrap{padding:0 20px}
+  .nav-links{display:none}.nav .nav-cta{display:none}.burger{display:block}.nav-in{height:64px;padding:0 20px}
+  .post-hero{padding:130px 0 40px}
+  .post{padding:20px 20px 70px}
+  .band{padding:50px 24px;margin:0 20px 80px}
+}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.001s!important;transition-duration:.001s!important}html{scroll-behavior:auto}html.js .rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+<div class="glow" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
+<header class="nav" id="nav">
+  <div class="nav-in">
+    <a href="../index.html" class="logo" aria-label="HyberX home">Hyber<b>X</b></a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="../index.html">Home</a>
+      <a href="../index.html#services">Services</a>
+      <a href="../index.html#work">Work</a>
+      <a href="index.html" class="act">Insights</a>
+      <a href="../index.html#contact">Contact</a>
+    </nav>
+    <div style="display:flex;align-items:center;gap:12px">
+      <a href="../index.html#contact" class="btn btn-pri nav-cta">Book a Call</a>
+      <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<div class="mnav" id="mnav" role="navigation" aria-label="Mobile navigation">
+  <a href="../index.html">Home</a>
+  <a href="../index.html#services">Services</a>
+  <a href="../index.html#work">Work</a>
+  <a href="index.html">Insights</a>
+  <a href="../index.html#contact">Contact</a>
+  <a href="../index.html#contact" class="btn btn-pri">Book a Growth Call</a>
+</div>
+
+<main id="main">
+<section class="post-hero">
+  <div class="wrap">
+    <span class="ey"><i class="d"></i>Weekly Recap · Web Design, Dev & SEO</span>
+    <h1>Rankings shake before I/O, FAQ rich results disappear, and WordPress 7.0 is two days away.</h1>
+    <div class="post-meta"><span>18 May 2026</span><span>10 min read</span></div>
+  </div>
+</section>
+
+<article class="post">
+  <p class="lede">The week of 11–17 May felt like the calm before two storms. Google I/O opens tomorrow, WordPress 7.0 ships on Wednesday — and yet the week itself was anything but quiet. Rank trackers ran hot on 13–14 May with no confirmed update, Google quietly extended its spam policies to cover AI Overviews and AI Mode answers, the fallout from the FAQ rich results deprecation hit Search Console reports, and an Ahrefs test punctured one of the most persistent myths about schema markup and AI citations. If your website is how customers find and choose you, here's what actually happened — and what each item means for a business site that has to earn revenue.</p>
+
+  <h2>1. Ranking volatility heats up on 13–14 May — with no confirmed update</h2>
+  <h3>What happened</h3>
+  <p>Search Engine Roundtable reported that Google search ranking volatility <b>heated up on 13 and 14 May</b>, with multiple tracking tools showing elevated movement and site owners reporting swings across both organic and local results. Google confirmed nothing. With <b>Google I/O starting 19 May</b>, this fits a familiar pattern: turbulence tends to spike around Google's big announcement windows, and the algorithm now moves constantly between named updates rather than only during them.</p>
+  <h3>How to read an unconfirmed tremor</h3>
+  <ul>
+    <li><b>Separate rank changes from click changes.</b> Search Console shows both; they have different causes and different fixes.</li>
+    <li><b>Check which query class moved.</b> Brand queries dropping is rare and alarming. Commercial queries churning is competitive weather. Informational queries fading is often AI answer expansion, not a penalty.</li>
+    <li><b>Compare competitors on the same terms.</b> If the whole niche moved, it's the algorithm breathing. If only you moved, audit your last 30 days of changes.</li>
+    <li><b>Rule out the boring causes first.</b> An expired plugin, a broken redirect, a slow deploy — technical faults explain more "algorithm hits" than algorithms do.</li>
+  </ul>
+  <div class="callout"><span class="ct">What we'd do about it</span>
+  <p>Hold your nerve through this week. With I/O tomorrow and a history of updates landing around Google's marquee events, mid-May is the worst possible moment for panic edits. Log your rankings now so you have a clean baseline, and if your site gets rattled by every tremor, treat that as a build-quality signal — resilience to volatility is earned in structure, speed and expertise, which is <a class="ext" href="../website-design-development.html">website development company</a> territory before it's a content problem.</p></div>
+
+  <h2>2. Google: spam policies apply to AI Overviews and AI Mode too</h2>
+  <p>The most quietly important clarification of the week: Google stated that its <b>spam policies extend to AI-powered search results</b> — AI Overviews and AI Mode included. Low-quality AI-generated pages, false claims and manipulative content can be filtered out of AI answers exactly as they can be from the classic ten blue links.</p>
+  <h3>Why this matters for business websites</h3>
+  <p>A cottage industry has sprung up around "getting cited by AI" with mass-produced content. This clarification closes the loophole before it opens: the same quality bar governs both surfaces. The practical guidance is unchanged and unglamorous — use AI to assist production, keep genuine expertise and verifiable service details on the page, and make trust signals (authorship, reviews, casework) visible in the HTML itself. That last part is a build decision: html web development done properly puts headings, answers and proof where machines can parse them, instead of burying everything under JavaScript.</p>
+  <h3>The Ahrefs schema test, same week</h3>
+  <p>Reinforcing the point, an Ahrefs test discussed this week found that <b>schema markup alone did not improve AI citations</b>. Structured data helps machines understand pages — keep it — but citations follow quotable content, unique details, real proof and trusted mentions across the web. There is no markup shortcut into AI answers.</p>
+  <div class="callout"><span class="ct">What we'd do about it</span>
+  <p>Audit any page produced primarily by AI in the last six months. Ask one question per page: does this contain anything a competitor's AI couldn't also generate? If not, add the things only you have — real numbers, real photos, named clients, first-hand process detail. That's what earns citations in AI answers and conversions from the humans who click through.</p></div>
+
+  <h2>3. FAQ rich results are gone — the fallout lands</h2>
+  <p>Google deprecated <b>FAQ rich results from 7 May</b> via a quiet note added to its structured data documentation, and this week the consequences worked through the ecosystem: the expandable FAQ results vanished from listings, and the removal schedule became clear — the Search Console FAQ report and Rich Results Test support go in <b>June 2026</b>, and the Search Console API data follows in <b>August 2026</b>.</p>
+  <h3>What to actually do</h3>
+  <ul>
+    <li><b>Don't rip out FAQPage markup.</b> It remains a valid schema.org type, and Google says it will keep using it to understand pages. It just no longer earns a visual feature.</li>
+    <li><b>Keep the FAQ content itself.</b> Well-structured question-and-answer sections map directly onto how people phrase queries to AI assistants — arguably more valuable now than the rich result ever was.</li>
+    <li><b>Reset client reporting.</b> If your SEO reports counted FAQ rich result impressions, that line goes to zero through June. Flag it before a stakeholder mistakes a reporting change for a traffic loss.</li>
+    <li><b>Reclaim the SERP real estate elsewhere.</b> Product, review, and other supported structured data types still draw enhanced results — shift effort there.</li>
+  </ul>
+
+  <h2>4. WordPress 7.0 ships Wednesday: what to check before you update</h2>
+  <p>After being pushed back from its original 9 April target, <b>WordPress 7.0 lands on 20 May</b> — two days from this post. It's a big one: a refreshed admin design, new blocks, a Web Client AI API, and Gutenberg plugin releases 22.0 through 22.6 merged into core. One headline feature didn't make it: <b>real-time collaboration was pulled from the release</b> after recurring bugs surfaced in testing, deferred rather than shipped shaky. Gutenberg 23.1 (7 May) also previewed what's coming next, including a new grid package for standardized grid-based interfaces.</p>
+  <h3>The pre-update checklist for business sites</h3>
+  <ul>
+    <li><b>Don't update on launch day.</b> A major version with an admin redesign is maximum plugin-conflict territory. Give it one to two weeks unless you have a staging pipeline.</li>
+    <li><b>Full backup plus staging test first.</b> Files and database, restorable, verified — then run 7.0 on staging against your real content.</li>
+    <li><b>Check your critical plugins.</b> Forms, e-commerce, SEO, caching — confirm each declares 7.0 compatibility before you commit.</li>
+    <li><b>Brief your editors.</b> The refreshed admin will look different on Thursday morning. A two-line heads-up prevents a week of confused support requests.</li>
+  </ul>
+
+  <h2>5. Platform notes: Chrome 149 beta, AI traffic in Analytics, Discover controls</h2>
+  <ul>
+    <li><b>Chrome 149 hit beta</b>, and it's a genuinely interesting release for front-end teams: <b>CSS gap decorations</b> (styling the gaps between grid and flex items — rules, colors, insets, all animatable), rect() and xywh() shape functions for shape-outside, and a back/forward cache change that stops open WebSockets from blocking instant back-navigation. Worth prototyping now; stable lands in early June.</li>
+    <li><b>Google Analytics now surfaces traffic from AI assistants</b>, giving site owners visibility into visitors arriving from AI tools. Set up the segmentation now, while the numbers are small, so you have a baseline as the channel grows.</li>
+    <li><b>Google Discover gave publishers more control</b> over how their profiles appear — names, descriptions, imagery. Brand consistency across every Google surface is becoming a ranking-adjacent concern, not a cosmetic one.</li>
+    <li><b>Google's John Mueller flagged Indexing API abuse</b>, noting it is "inundated by bloggers trying to act like legitimate sites" — expect tighter enforcement on who gets rapid indexing.</li>
+    <li><b>Soft 404 warnings resurfaced</b> in coverage this week: thin city pages, doorway pages and empty service templates risk being classified as soft 404s even when they load fine. If your site has a hundred near-identical location pages, this is your notice.</li>
+  </ul>
+
+  <h2>What this week means for your website strategy</h2>
+  <p>Three threads worth pulling together if you own a business website or are scoping a redesign right now:</p>
+  <ul>
+    <li><b>Two platform shifts land within ten days.</b> I/O tomorrow, WordPress 7.0 on Wednesday, and a June Chrome release behind them. Sites with staging environments, clean backups and a maintenance relationship absorb weeks like this; sites without them gamble. If your build partner can't articulate their update process, that's the real evaluation question for any <a class="ext" href="../website-design-development.html">web design and development</a> engagement — and it applies whether you search "web developers near me" or hire the best remote team you can find.</li>
+    <li><b>The AI answer layer is being regulated like search.</b> Spam policies now explicitly cover it, and schema alone won't buy your way in. The winning strategy is identical on both surfaces: structured, quotable, genuinely expert pages — then <a class="ext" href="../conversion-optimization.html">conversion optimization</a> to make sure the visitors those pages earn actually turn into enquiries.</li>
+    <li><b>E-commerce owners: mind your FAQ furniture.</b> Plenty of Shopify themes and apps lean on FAQ sections and markup for product and shipping questions. The rich result is gone, but the content matters more than ever for AI-assisted shopping queries — this is the kind of week where good <a class="ext" href="../shopify-development-new-york.html">Shopify development partners</a> earn their fee, keeping structured data current while the goalposts move. If you're vetting a shopify developer partner, ask how they handled this deprecation.</li>
+  </ul>
+
+  <h2>Frequently asked questions</h2>
+  <h3>Was there a Google algorithm update the week of 11–17 May 2026?</h3>
+  <p>Nothing confirmed. Tools showed heated volatility around 13–14 May, but Google announced no update. With I/O starting 19 May, some pre-event turbulence is normal. Diagnose before acting: separate rank drops from click drops, compare competitors, and wait a full week of data before changing content.</p>
+  <h3>Should I remove FAQ schema now that Google dropped FAQ rich results?</h3>
+  <p>No. FAQ rich results stopped showing from 7 May, but FAQPage remains a valid schema.org type and Google says it will keep using the markup to understand pages. Keep well-structured FAQ content on the page — it still feeds AI answers and long-tail queries — just stop expecting the expandable result in listings.</p>
+  <h3>Do Google's spam policies apply to AI Overviews and AI Mode?</h3>
+  <p>Yes — Google clarified this week that spam policies extend to AI-powered search results. Low-quality AI-generated pages, false claims and manipulative content can be penalized in AI answers just as in classic listings.</p>
+  <h3>Is it safe to update to WordPress 7.0 on launch day?</h3>
+  <p>For most business sites, wait one to two weeks. A major release with an admin redesign and merged Gutenberg 22.0–22.6 features is a large surface for plugin conflicts. Backup, test on staging, confirm plugin compatibility, then update.</p>
+  <h3>Does schema markup improve AI citations?</h3>
+  <p>Not on its own. The Ahrefs test discussed this week found schema alone didn't increase AI citations. Structured data helps machines parse pages, but citations come from strong content, unique details, real proof and trusted mentions across the web.</p>
+
+  <h2>The takeaway</h2>
+  <p>This was a week of clearing the decks. Google tidied its rules — spam policies now govern AI answers, FAQ rich results are formally retired, the Indexing API is being policed — right before it walks on stage at I/O. WordPress pulled a flagship feature rather than ship it broken. The signal underneath all of it: the platforms are consolidating around quality and stability, and the sites that win the next stretch are the ones built well enough not to flinch — this week, next week at I/O, or during whatever the May core season brings.</p>
+
+  <div class="src rv">
+    <h2>Sources & further reading</h2>
+    <ul>
+      <li><a class="ext" href="https://localdominator.co/seo-news/seo-news-roundup-may-11-to-17-2026/" target="_blank" rel="noopener">Local Dominator — SEO News Roundup, 11–17 May 2026</a></li>
+      <li><a class="ext" href="https://www.seroundtable.com/google-search-ranking-volatility-heated-41324.html" target="_blank" rel="noopener">Search Engine Roundtable — Google Search Ranking Volatility Heating Up May 13th & 14th</a></li>
+      <li><a class="ext" href="https://www.seroundtable.com/recap-05-15-2026-41332.html" target="_blank" rel="noopener">Search Engine Roundtable — Daily Search Forum Recap, 15 May 2026</a></li>
+      <li><a class="ext" href="https://gutenbergtimes.com/wordpress-7-0-on-may-20-gutenberg-23-0-weekend-edition-364/" target="_blank" rel="noopener">Gutenberg Times — WordPress 7.0 on May 20, Gutenberg 23.0 and more</a></li>
+      <li><a class="ext" href="https://developer.chrome.com/blog/chrome-149-beta" target="_blank" rel="noopener">Chrome for Developers — Chrome 149 beta</a></li>
+    </ul>
+  </div>
+</article>
+
+<section class="band rv">
+  <h2>Want a site built for how search works now?</h2>
+  <p>We design and build conversion-first websites that hold up in classic search and AI answers alike.</p>
+  <a href="../index.html#contact" class="btn btn-pri">Book a Growth Call</a>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-in">
+      <a href="../index.html" class="logo">Hyber<b>X</b></a>
+      <nav class="f-links" aria-label="Services">
+        <a href="../performance-marketing.html">Performance Marketing</a>
+        <a href="../website-design-development.html">Websites</a>
+        <a href="../content-creation.html">Content</a>
+        <a href="../ad-films-brand-videos.html">Ad Films</a>
+        <a href="../conversion-optimization.html">CRO</a>
+      </nav>
+    </div>
+    <div class="f-bottom">
+      <span>© <span id="yr">2026</span> HyberX. All rights reserved.</span>
+      <span style="display:flex;gap:22px"><a href="../privacy-policy.html">Privacy Policy</a><a href="../terms-of-service.html">Terms of Service</a><a href="../index.html#contact">support@hyberx.com</a></span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+"use strict";
+var nav=document.getElementById('nav'),burger=document.getElementById('burger'),mnav=document.getElementById('mnav');
+addEventListener('scroll',function(){nav.classList.toggle('on',scrollY>24);},{passive:true});
+nav.classList.toggle('on',scrollY>24);
+burger.addEventListener('click',function(){
+  var open=mnav.classList.toggle('open');burger.classList.toggle('x',open);
+  burger.setAttribute('aria-expanded',open);document.body.classList.toggle('lock',open);
+});
+addEventListener('keydown',function(e){
+  if(e.key==='Escape'&&mnav.classList.contains('open')){
+    mnav.classList.remove('open');burger.classList.remove('x');
+    burger.setAttribute('aria-expanded','false');document.body.classList.remove('lock');burger.focus();
+  }
+});
+if('IntersectionObserver' in window){
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.12,rootMargin:'0px 0px -40px 0px'});
+  document.querySelectorAll('.rv').forEach(function(el){io.observe(el);});
+}else{document.querySelectorAll('.rv').forEach(function(el){el.classList.add('in');});}
+document.getElementById('yr').textContent=new Date().getFullYear();
+})();
+</script>
+</body>
+</html>

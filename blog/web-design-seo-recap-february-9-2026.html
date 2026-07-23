@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#050507">
+<script>document.documentElement.classList.add('js')</script>
+<title>Google's First Discover-Only Core Update, a 2 February Volatility Spike & Anchor Positioning Goes Baseline | HyberX Weekly</title>
+<meta name="description" content="Weekly web design, development and SEO recap for 2–8 February 2026: Google's first-ever Discover-only core update, an unconfirmed 2 February ranking volatility spike, WordPress 6.9.1, Interop 2026, and CSS anchor positioning reaching Baseline.">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<link rel="canonical" href="https://hyberx.com/blog/web-design-seo-recap-february-9-2026.html">
+<meta property="og:url" content="https://hyberx.com/blog/web-design-seo-recap-february-9-2026.html">
+<meta property="og:image" content="https://hyberx.com/og-image.png">
+<meta property="og:site_name" content="HyberX">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://hyberx.com/og-image.png">
+<meta property="og:title" content="Google's First Discover-Only Core Update, a 2 February Volatility Spike & Anchor Positioning Goes Baseline | HyberX Weekly">
+<meta property="og:description" content="Weekly web design, development and SEO recap for 2–8 February 2026: Google's first Discover-only core update, unconfirmed ranking volatility, WordPress 6.9.1, Interop 2026, CSS anchor positioning Baseline.">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2026-02-09">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Google's First Discover-Only Core Update, a 2 February Volatility Spike and Anchor Positioning Goes Baseline",
+  "description": "Weekly web design, development and SEO recap for 2–8 February 2026: Google's first-ever Discover-only core update, an unconfirmed 2 February ranking volatility spike, WordPress 6.9.1, Interop 2026, and CSS anchor positioning reaching Baseline.",
+  "datePublished": "2026-02-09",
+  "dateModified": "2026-02-09",
+  "author": {"@type": "Organization", "name": "HyberX", "url": "https://hyberx.com/"},
+  "publisher": {"@type": "Organization", "name": "HyberX", "url": "https://hyberx.com/", "logo": {"@type": "ImageObject", "url": "https://hyberx.com/og-image.png"}},
+  "mainEntityOfPage": "https://hyberx.com/blog/web-design-seo-recap-february-9-2026.html",
+  "image": "https://hyberx.com/og-image.png"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "What is the February 2026 Google Discover core update?", "acceptedAnswer": {"@type": "Answer", "text": "It's the first update Google has ever announced that targets Discover only, not classic Search. Rolling out from 5 February to English-language users in the US first, it promotes locally relevant content, reduces sensational clickbait, and favours in-depth, original, timely content from sites with demonstrated expertise in their area. Google estimated up to two weeks for the rollout."}},
+    {"@type": "Question", "name": "Why did my Google rankings move around 2 February 2026 if no update was announced?", "acceptedAnswer": {"@type": "Answer", "text": "Rank trackers recorded a strong unconfirmed volatility spike around 2 February, continuing turbulence that had been running since January. Google confirmed nothing. Diagnose before acting: separate rank drops from click drops, compare competitors on the same queries, rule out technical causes, and wait a full week of data before rewriting anything."}},
+    {"@type": "Question", "name": "Should I install WordPress 6.9.1 straight away?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. WordPress 6.9.1, released 3 February 2026, is a pure maintenance release fixing 49 bugs across Core and the Block Editor — including block editor, mail and classic theme issues. It contains no risky feature changes, so update promptly after a routine backup."}},
+    {"@type": "Question", "name": "What does CSS anchor positioning becoming Baseline mean for my website?", "acceptedAnswer": {"@type": "Answer", "text": "With Firefox 147 joining Chrome and Safari, CSS anchor positioning is now Baseline Newly available — tooltips, dropdowns and popovers can be positioned natively in CSS across modern browsers. Sites can start replacing heavy JavaScript positioning libraries with lighter native code, which improves performance and Core Web Vitals."}},
+    {"@type": "Question", "name": "Does the Discover core update matter for ecommerce and Shopify stores?", "acceptedAnswer": {"@type": "Answer", "text": "Indirectly, yes. Discover rewards original, in-depth content from sites with topical expertise — which for stores means genuinely useful buying guides and editorial content, not thin product feeds. If your store publishes content, this update raises the bar on quality; sensational or clickbait-styled content is being actively demoted."}}
+  ]
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;450;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#050507;--bg2:#0a0a0e;--card:#0e0e13;--card2:#14141b;--text:#f7f8fa;--muted:#a5a5a5;--muted2:#7f7f7f;--line:rgba(255,255,255,.1);--line2:rgba(255,255,255,.06);--acc:#ffffff;--acc-ink:#050507;--max:1280px;--r:24px;--ease:cubic-bezier(.19,1,.22,1)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+html.js .rv{opacity:0;transform:translateY(26px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+html.js .rv.in{opacity:1;transform:none}
+body{background:var(--bg);color:var(--text);font-family:'Inter',system-ui,sans-serif;font-weight:450;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body.lock{overflow:hidden}
+h1,h2,h3,h4{font-family:'Space Grotesk',sans-serif;font-weight:600;line-height:1.1;letter-spacing:-.03em}
+a{color:inherit;text-decoration:none}
+img,svg{display:block;max-width:100%}
+button{font:inherit;cursor:pointer}
+::selection{background:#fff;color:#050507}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 28px}
+.ey{display:inline-flex;align-items:center;gap:10px;font-family:'Space Mono',monospace;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+.ey .d{width:6px;height:6px;border-radius:50%;background:var(--acc);box-shadow:0 0 12px var(--acc);animation:pulse 2.4s var(--ease) infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
+.skip{position:fixed;top:-64px;left:16px;z-index:300;background:var(--card2);border:1px solid var(--line);color:var(--text);padding:12px 20px;border-radius:10px;font-weight:600;font-size:14px;transition:top .3s var(--ease)}
+.skip:focus{top:16px}
+a:focus-visible,button:focus-visible{outline:2px solid var(--acc);outline-offset:3px;border-radius:6px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:17px 32px;border-radius:100px;font-weight:600;font-size:15px;border:1px solid transparent;transition:transform .35s var(--ease),box-shadow .35s var(--ease),background .35s,border-color .35s;white-space:nowrap;position:relative;overflow:hidden;isolation:isolate}
+.btn-pri{background:#fff;color:var(--acc-ink);box-shadow:0 8px 32px rgba(255,255,255,.18)}
+.btn-pri:hover{transform:translateY(-2px);box-shadow:0 16px 48px rgba(255,255,255,.26)}
+.btn-ghost{border-color:var(--line);color:var(--text);background:rgba(255,255,255,.03)}
+.btn-ghost:hover{border-color:rgba(255,255,255,.3);background:rgba(255,255,255,.06);transform:translateY(-2px)}
+.glow{position:fixed;inset:0;z-index:-2;background:var(--bg);overflow:hidden}
+.glow::before{content:"";position:absolute;width:70vw;height:70vw;left:50%;top:-42vw;transform:translateX(-50%);border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,.088),transparent 62%);filter:blur(60px)}
+.grain{position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.05;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.6'/%3E%3C/svg%3E")}
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;transition:background .4s,border-color .4s,backdrop-filter .4s}
+.nav.on{background:rgba(5,5,7,.8);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border-bottom:1px solid var(--line2)}
+.nav-in{max-width:var(--max);margin:0 auto;padding:0 28px;height:74px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.logo{font-family:'Space Grotesk',sans-serif;font-size:23px;font-weight:700;letter-spacing:-.02em}
+.logo b{color:transparent;-webkit-text-stroke:1.2px var(--text);font-weight:700}
+.nav-links{display:flex;gap:34px;align-items:center}
+.nav-links a{font-size:14.5px;font-weight:500;color:var(--muted);position:relative;padding:6px 0;transition:color .3s}
+.nav-links a:hover,.nav-links a.act{color:var(--text)}
+.nav-links a::after{content:"";position:absolute;left:0;bottom:0;width:0;height:1.5px;background:var(--acc);transition:width .4s var(--ease)}
+.nav-links a:hover::after,.nav-links a.act::after{width:100%}
+.nav .btn{padding:12px 24px;font-size:14px}
+.burger{display:none;background:none;border:0;width:44px;height:44px;position:relative;z-index:110}
+.burger span{display:block;width:24px;height:2px;background:var(--text);margin:5px auto;border-radius:2px;transition:transform .4s var(--ease),opacity .3s}
+.burger.x span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.burger.x span:nth-child(2){opacity:0}
+.burger.x span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+.mnav{position:fixed;inset:0;z-index:105;background:rgba(5,5,7,.97);backdrop-filter:blur(24px);display:flex;flex-direction:column;justify-content:center;padding:0 36px;gap:8px;opacity:0;pointer-events:none;transition:opacity .4s var(--ease)}
+.mnav.open{opacity:1;pointer-events:auto}
+.mnav a{font-family:'Space Grotesk',sans-serif;font-size:34px;font-weight:600;letter-spacing:-.02em;padding:12px 0;border-bottom:1px solid var(--line2)}
+.mnav .btn{margin-top:28px;align-self:flex-start}
+/* article */
+.post-hero{padding:170px 0 60px;text-align:center}
+.post-hero .ey{justify-content:center}
+.post-hero h1{font-size:clamp(34px,4.8vw,64px);max-width:960px;margin:26px auto 0}
+.post-meta{margin-top:26px;font-family:'Space Mono',monospace;font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted2);display:flex;gap:18px;justify-content:center;flex-wrap:wrap}
+.post{max-width:780px;margin:0 auto;padding:30px 28px 90px}
+.post p{font-size:16.5px;color:#cfcfd4;margin:0 0 22px}
+.post p b,.post p strong{color:var(--text)}
+.post h2{font-size:clamp(24px,2.8vw,34px);margin:54px 0 18px;letter-spacing:-.02em}
+.post h3{font-size:20px;margin:34px 0 12px}
+.post a.ext{color:var(--text);text-decoration:underline;text-decoration-color:rgba(255,255,255,.3);text-underline-offset:3px;transition:text-decoration-color .3s}
+.post a.ext:hover{text-decoration-color:var(--acc)}
+.post ul{margin:0 0 22px;padding-left:22px}
+.post ul li{font-size:16px;color:#cfcfd4;margin-bottom:10px}
+.post .lede{font-size:19px;color:var(--muted);line-height:1.65}
+.callout{border:1px solid var(--line);border-radius:18px;background:linear-gradient(170deg,var(--card2),var(--card));padding:26px 28px;margin:34px 0}
+.callout .ct{font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);display:block;margin-bottom:10px}
+.callout p{margin:0;font-size:15.5px}
+.src{margin-top:60px;padding-top:28px;border-top:1px solid var(--line2)}
+.src h2{font-size:18px;margin:0 0 14px}
+.src ul{list-style:none;padding:0}
+.src li{font-size:13.5px;color:var(--muted);margin-bottom:8px}
+.band{border-radius:30px;border:1px solid var(--line);background:radial-gradient(800px 380px at 50% -10%,rgba(255,255,255,.121),transparent 62%),linear-gradient(170deg,var(--card2),var(--card));padding:70px 40px;text-align:center;position:relative;overflow:hidden;margin:0 auto 100px;max-width:980px}
+.band h2{font-size:clamp(28px,4vw,46px);letter-spacing:-.03em;margin-bottom:14px}
+.band p{color:var(--muted);max-width:540px;margin:0 auto 32px;font-size:16px}
+footer{border-top:1px solid var(--line2);padding:56px 0 40px;background:var(--bg2)}
+.f-in{display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap}
+.f-links{display:flex;gap:26px;flex-wrap:wrap}
+.f-links a{font-size:14px;color:var(--muted);transition:color .3s}
+.f-links a:hover{color:var(--text)}
+.f-bottom{margin-top:34px;padding-top:26px;border-top:1px solid var(--line2);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:13px;color:var(--muted2)}
+@media(max-width:720px){
+  .wrap{padding:0 20px}
+  .nav-links{display:none}.nav .nav-cta{display:none}.burger{display:block}.nav-in{height:64px;padding:0 20px}
+  .post-hero{padding:130px 0 40px}
+  .post{padding:20px 20px 70px}
+  .band{padding:50px 24px;margin:0 20px 80px}
+}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.001s!important;transition-duration:.001s!important}html{scroll-behavior:auto}html.js .rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+<div class="glow" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
+<header class="nav" id="nav">
+  <div class="nav-in">
+    <a href="../index.html" class="logo" aria-label="HyberX home">Hyber<b>X</b></a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="../index.html">Home</a>
+      <a href="../index.html#services">Services</a>
+      <a href="../index.html#work">Work</a>
+      <a href="index.html" class="act">Insights</a>
+      <a href="../index.html#contact">Contact</a>
+    </nav>
+    <div style="display:flex;align-items:center;gap:12px">
+      <a href="../index.html#contact" class="btn btn-pri nav-cta">Book a Call</a>
+      <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<div class="mnav" id="mnav" role="navigation" aria-label="Mobile navigation">
+  <a href="../index.html">Home</a>
+  <a href="../index.html#services">Services</a>
+  <a href="../index.html#work">Work</a>
+  <a href="index.html">Insights</a>
+  <a href="../index.html#contact">Contact</a>
+  <a href="../index.html#contact" class="btn btn-pri">Book a Growth Call</a>
+</div>
+
+<main id="main">
+<section class="post-hero">
+  <div class="wrap">
+    <span class="ey"><i class="d"></i>Weekly Recap · Web Design, Dev & SEO</span>
+    <h1>Google's first Discover-only core update, another volatility spike, and anchor positioning goes Baseline.</h1>
+    <div class="post-meta"><span>9 February 2026</span><span>10 min read</span></div>
+  </div>
+</section>
+
+<article class="post">
+  <p class="lede">Google did something it has never done before this week: it announced a core update that touches Discover and only Discover. That landed on 5 February, three days after rank trackers lit up with yet another unconfirmed volatility spike on 2 February. Meanwhile WordPress shipped a 49-bug maintenance release, the browser makers launched Interop 2026, and CSS anchor positioning quietly became something you can actually use in production. Between 2 and 8 February 2026, the ground moved for search and for the build layer underneath it. Here's what happened — and what each item means if your website is supposed to move revenue, not just exist.</p>
+
+  <h2>1. The February 2026 Discover core update — Google's first Discover-only update</h2>
+  <h3>What happened</h3>
+  <p>On <b>Thursday 5 February</b>, Google announced the <b>February 2026 Discover core update</b> — the first time it has ever shipped a core update scoped to Discover alone, rather than Search and Discover together. The rollout started with English-language users in the US, with other countries and languages to follow, and Google estimated <b>up to two weeks</b> to complete. Per Google's own documentation, the update does three things:</p>
+  <ul>
+    <li><b>More locally relevant content</b> — surfacing articles from websites based in the user's own country.</li>
+    <li><b>Less sensational content and clickbait</b> — an explicit demotion target, named in the announcement.</li>
+    <li><b>More in-depth, original, timely content</b> from sites with demonstrated expertise in a given area, based on Google's understanding of the site's content as a whole.</li>
+  </ul>
+  <h3>Why it matters beyond publishers</h3>
+  <p>Discover has become a serious traffic channel for many content-led businesses — and a volatile one. A Discover-only update means Google now tunes that feed independently of blue-link rankings, so a Discover traffic swing this month is <b>not</b> evidence your search rankings moved. Segment the two in analytics before you diagnose anything.</p>
+  <div class="callout"><span class="ct">What we'd do about it</span>
+  <p>Treat Discover as bonus traffic, never as a plan. The update's criteria — original, in-depth, genuinely expert content with zero clickbait styling — are exactly what holds up in classic search and AI answers too, so there's no separate "Discover strategy" worth paying for. What is worth doing: making sure the traffic you do get converts. Discover visitors land cold on article pages, which makes on-page next steps and <a class="ext" href="../conversion-optimization.html">conversion optimization</a> the difference between a traffic spike and a revenue spike.</p></div>
+
+  <h2>2. Another unconfirmed volatility spike, starting 2 February</h2>
+  <h3>What happened</h3>
+  <p>Rank-tracking tools recorded a <b>strong volatility spike around Monday 2 February</b>, continuing the unconfirmed turbulence that has been running since January. Google confirmed nothing — and notably, this wave is separate from the Discover update that began on the 5th. That's the 2026 pattern in miniature: confirmed updates and unconfirmed tremors now run in parallel, and site owners have to tell them apart on their own.</p>
+  <h3>The triage sequence, again</h3>
+  <ul>
+    <li><b>Separate rank changes from click changes</b> in Search Console — they have different causes and different fixes.</li>
+    <li><b>Separate Search from Discover.</b> This week especially: a Discover drop after 5 February is the confirmed update; a Search drop from the 2nd is the unconfirmed wave.</li>
+    <li><b>Compare competitors.</b> If your whole niche moved, it's the algorithm breathing. If only you moved, audit your last 30 days of changes.</li>
+    <li><b>Rule out the boring causes</b> — broken redirects, deindexed pages, a slow deploy, an expired plugin.</li>
+    <li><b>Wait a full week</b> before rewriting anything. Panic edits during volatility routinely turn temporary dips into permanent losses.</li>
+  </ul>
+  <div class="callout"><span class="ct">What we'd do about it</span>
+  <p>Sites that get knocked around by every tremor usually share the same profile: slow pages, thin structure, no clear topical depth. Resilience to algorithm noise is a build-quality feature — which makes it a question for your <a class="ext" href="../website-design-development.html">website development company</a> before it's a question for your content writer. Ask any agency you're evaluating to show how the build itself earns rankings: markup, speed, structure, schema.</p></div>
+
+  <h2>3. WordPress 6.9.1: 49 bug fixes, zero drama</h2>
+  <p><b>WordPress 6.9.1</b> shipped on <b>Tuesday 3 February</b> — a pure maintenance release fixing <b>49 bugs</b> across Core and the Block Editor, including issues in the block editor, mail handling and classic themes. No feature changes, no breaking changes: back up, update, move on. The same week, WP Engine launched <b>Newsroom</b>, a platform aimed at editorial teams running structured content workflows at scale — another signal that the WordPress ecosystem keeps consolidating around publishing operations, not just hosting.</p>
+  <p>The unglamorous point: an enormous share of "SEO emergencies" we get called into trace back to unpatched CMS installs and abandoned plugins, not algorithms. A maintenance release like 6.9.1 is the cheapest insurance in this entire recap. If nobody owns updates for your site, that's the first gap to close.</p>
+
+  <h2>4. Interop 2026 launches — and anchor positioning goes Baseline</h2>
+  <h3>What happened</h3>
+  <p>Two related pieces of web-platform news landed at the start of February. First, web.dev's January platform roundup (published as February opened) confirmed that with <b>Chrome 144</b> and <b>Firefox 147</b> now stable, <b>CSS anchor positioning</b> and the <b>Navigation API</b> have reached <b>Baseline Newly available</b> — meaning they work across the modern browsers. Chrome 144 also introduced the declarative <b>&lt;geolocation&gt;</b> element and the <b>Temporal API</b> for sane date-and-time handling. Second, the browser vendors launched <b>Interop 2026</b>: twenty agreed focus areas — fifteen of them new — where Chrome, Firefox, Safari and Edge will converge this year, including container style queries, CSS scroll snap, the <code>shape()</code> function and an upgraded <code>attr()</code>.</p>
+  <h3>Why a business owner should care about CSS news</h3>
+  <ul>
+    <li><b>Anchor positioning replaces JavaScript.</b> Tooltips, dropdown menus and popovers — components most sites bolt on with heavy JS libraries — can now be positioned natively in CSS. Less JavaScript means faster pages and better Core Web Vitals, which feed straight back into the search picture above.</li>
+    <li><b>Interop reduces cross-browser bugs at the source.</b> Every focus area that converges is a class of "looks broken in Safari" ticket that stops existing.</li>
+    <li><b>These are html web development decisions,</b> made at build time. A site built this year on native platform features will be lighter and cheaper to maintain than one built on 2022's library stack.</li>
+  </ul>
+  <div class="callout"><span class="ct">What we'd do about it</span>
+  <p>On new builds, we're defaulting to native anchor positioning with a graceful fallback, and auditing existing sites for JS positioning libraries that can now be deleted. Shaving dependencies is the highest-leverage performance work of early 2026 — it shows up in load times, in Core Web Vitals, and in how well a site weathers the volatility in items one and two.</p></div>
+
+  <h2>5. Quick hits from the week</h2>
+  <ul>
+    <li><b>Discover, Search and preference signals.</b> Google's Discover update documentation leans on its understanding of site-level expertise — and Google has been building user-choice features like Preferred Sources that let readers up-rank publishers they trust. Direction of travel: being a source people would <em>choose</em> is becoming a measurable input, not a nicety.</li>
+    <li><b>The February Google Webmaster Report</b> (published 30 January, digested by everyone this week) rounded up a busy month: core search signals flowing into Google's AI experiences and continued January volatility — useful context for why the 2 February spike surprised nobody.</li>
+    <li><b>Ecommerce angle:</b> the Discover update's clickbait demotion applies to store blogs too. Thin, sensational content attached to a storefront is now a liability twice over. Stores that invest in genuinely useful buying guides — the standard we hold as <a class="ext" href="../shopify-development-new-york.html">Shopify development partners</a> — are on the right side of every change in this recap.</li>
+  </ul>
+
+  <h2>What this week means for your website strategy</h2>
+  <p>Three threads worth pulling together if you own a business website or are scoping a redesign:</p>
+  <ul>
+    <li><b>Channels are fragmenting; fundamentals aren't.</b> Search, Discover and AI answers are now tuned separately — but all three reward the same build: fast, structured, original, expert. One good site beats three channel hacks.</li>
+    <li><b>The platform is doing more of the work.</b> Anchor positioning, the Navigation API and Temporal landing cross-browser means modern sites need less JavaScript than the ones they replace. If a proposal for your rebuild reads like a 2022 dependency list, ask why.</li>
+    <li><b>Maintenance is strategy.</b> A 49-bug CMS patch and a deleted JS library will do more for most sites this month than any content sprint. Whether you find help by searching "web developers near me" or hire a specialist remotely, judge them on exactly this: update discipline, dependency hygiene, and evidence of fast Core Web Vitals on shipped work.</li>
+  </ul>
+
+  <h2>Frequently asked questions</h2>
+  <h3>What is the February 2026 Google Discover core update?</h3>
+  <p>The first update Google has ever announced for Discover alone. Rolling out from 5 February to US English users first, it promotes locally relevant, in-depth, original content from sites with real topical expertise, and demotes sensational clickbait. Google estimated up to two weeks for the rollout.</p>
+  <h3>Why did my rankings move around 2 February if no update was announced?</h3>
+  <p>An unconfirmed volatility spike hit on 2 February, continuing January's turbulence — and it's separate from the Discover update. Diagnose before acting: split rank drops from click drops, compare competitors, rule out technical causes, and wait a week of data before changing content.</p>
+  <h3>Should I install WordPress 6.9.1 straight away?</h3>
+  <p>Yes. Released 3 February, it's a pure maintenance release fixing 49 bugs across Core and the Block Editor with no feature changes. Back up and update promptly — unpatched installs cause more real-world SEO damage than algorithm updates do.</p>
+  <h3>What does CSS anchor positioning becoming Baseline mean for my site?</h3>
+  <p>With Firefox 147 joining the other engines, tooltips, dropdowns and popovers can be positioned natively in CSS across modern browsers. That lets developers delete heavy JavaScript positioning libraries, making pages lighter and faster — a direct Core Web Vitals win.</p>
+  <h3>Does the Discover update matter for ecommerce and Shopify stores?</h3>
+  <p>Indirectly, yes. If your store publishes content, Discover now holds it to a higher bar: original, useful, expert material earns visibility, while clickbait-styled posts get demoted. Thin content bolted onto a storefront is a liability; genuinely helpful buying guides are an asset in Discover, Search and AI answers alike.</p>
+
+  <h2>The takeaway</h2>
+  <p>This week drew the map for 2026 in one frame: Google tuning its surfaces independently and rewarding demonstrated expertise, the algorithm moving whether or not anyone announces it, and the web platform absorbing work that JavaScript used to do. None of it favours tricks. All of it favours websites that are well built, well maintained and worth choosing — which has quietly become the entire job description.</p>
+
+  <div class="src rv">
+    <h2>Sources & further reading</h2>
+    <ul>
+      <li><a class="ext" href="https://developers.google.com/search/blog/2026/02/discover-core-update" target="_blank" rel="noopener">Google Search Central Blog — Google's February 2026 Discover Core Update</a></li>
+      <li><a class="ext" href="https://searchengineland.com/google-releases-discover-core-update-february-2026-468308" target="_blank" rel="noopener">Search Engine Land — Google releases February 2026 Discover core update</a></li>
+      <li><a class="ext" href="https://www.seroundtable.com/february-2026-google-webmaster-report-40852.html" target="_blank" rel="noopener">Search Engine Roundtable — February 2026 Google Webmaster Report</a></li>
+      <li><a class="ext" href="https://developer.wordpress.org/news/2026/02/whats-new-for-developers-february-2026/" target="_blank" rel="noopener">WordPress.org — What's new for developers (February 2026)</a></li>
+      <li><a class="ext" href="https://web.dev/blog/web-platform-01-2026" target="_blank" rel="noopener">web.dev — New to the web platform in January</a></li>
+      <li><a class="ext" href="https://hacks.mozilla.org/2026/02/launching-interop-2026/" target="_blank" rel="noopener">Mozilla Hacks — Launching Interop 2026</a></li>
+    </ul>
+  </div>
+</article>
+
+<section class="band rv">
+  <h2>Want a site built for how search works now?</h2>
+  <p>We design and build conversion-first websites that hold up in classic search and AI answers alike.</p>
+  <a href="../index.html#contact" class="btn btn-pri">Book a Growth Call</a>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-in">
+      <a href="../index.html" class="logo">Hyber<b>X</b></a>
+      <nav class="f-links" aria-label="Services">
+        <a href="../performance-marketing.html">Performance Marketing</a>
+        <a href="../website-design-development.html">Websites</a>
+        <a href="../content-creation.html">Content</a>
+        <a href="../ad-films-brand-videos.html">Ad Films</a>
+        <a href="../conversion-optimization.html">CRO</a>
+      </nav>
+    </div>
+    <div class="f-bottom">
+      <span>© <span id="yr">2026</span> HyberX. All rights reserved.</span>
+      <span style="display:flex;gap:22px"><a href="../privacy-policy.html">Privacy Policy</a><a href="../terms-of-service.html">Terms of Service</a><a href="../index.html#contact">support@hyberx.com</a></span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+"use strict";
+var nav=document.getElementById('nav'),burger=document.getElementById('burger'),mnav=document.getElementById('mnav');
+addEventListener('scroll',function(){nav.classList.toggle('on',scrollY>24);},{passive:true});
+nav.classList.toggle('on',scrollY>24);
+burger.addEventListener('click',function(){
+  var open=mnav.classList.toggle('open');burger.classList.toggle('x',open);
+  burger.setAttribute('aria-expanded',open);document.body.classList.toggle('lock',open);
+});
+addEventListener('keydown',function(e){
+  if(e.key==='Escape'&&mnav.classList.contains('open')){
+    mnav.classList.remove('open');burger.classList.remove('x');
+    burger.setAttribute('aria-expanded','false');document.body.classList.remove('lock');burger.focus();
+  }
+});
+if('IntersectionObserver' in window){
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.12,rootMargin:'0px 0px -40px 0px'});
+  document.querySelectorAll('.rv').forEach(function(el){io.observe(el);});
+}else{document.querySelectorAll('.rv').forEach(function(el){el.classList.add('in');});}
+document.getElementById('yr').textContent=new Date().getFullYear();
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#050507">
+<script>document.documentElement.classList.add('js')</script>
+<title>May Core Update Done, Search Console's AI Report & an Opt-Out of AI Overviews | HyberX Weekly</title>
+<meta name="description" content="Weekly web design, development and SEO recap for 1–7 June 2026: the May 2026 core update finishes on 2 June, Search Console gets AI performance reports and an AI Overviews opt-out, Google's AI search guidance, Gutenberg 23.3, and new baseline CSS.">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<link rel="canonical" href="https://hyberx.com/blog/web-design-seo-recap-june-8-2026.html">
+<meta property="og:url" content="https://hyberx.com/blog/web-design-seo-recap-june-8-2026.html">
+<meta property="og:image" content="https://hyberx.com/og-image.png">
+<meta property="og:site_name" content="HyberX">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://hyberx.com/og-image.png">
+<meta property="og:title" content="May Core Update Done, Search Console's AI Report & an Opt-Out of AI Overviews | HyberX Weekly">
+<meta property="og:description" content="Weekly web design, development and SEO recap for 1–7 June 2026: the May core update completes, Search Console AI performance reports, an AI Overviews opt-out toggle, Google's AI search guidance, Gutenberg 23.3 and new baseline CSS.">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2026-06-08">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "May Core Update Done, Search Console's AI Report and an Opt-Out of AI Overviews",
+  "description": "Weekly web design, development and SEO recap for 1–7 June 2026: the May 2026 core update finishes on 2 June, Search Console gets AI performance reports and an AI Overviews opt-out, Google's AI search guidance, Gutenberg 23.3, and new baseline CSS.",
+  "datePublished": "2026-06-08",
+  "dateModified": "2026-06-08",
+  "author": {"@type": "Organization", "name": "HyberX", "url": "https://hyberx.com/"},
+  "publisher": {"@type": "Organization", "name": "HyberX", "url": "https://hyberx.com/", "logo": {"@type": "ImageObject", "url": "https://hyberx.com/og-image.png"}},
+  "mainEntityOfPage": "https://hyberx.com/blog/web-design-seo-recap-june-8-2026.html",
+  "image": "https://hyberx.com/og-image.png"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "How do I recover from the May 2026 Google core update?", "acceptedAnswer": {"@type": "Answer", "text": "First confirm the update actually caused the drop: it completed on 2 June 2026, so compare rankings before 21 May with the settled picture after 2 June. Then audit the losing pages against Google's helpful content questions — depth, first-hand expertise, and whether the page satisfies the query better than what now outranks it. Core update recovery is a rebuild of page quality and site structure, not a tweak, and improvements are typically reassessed at subsequent updates."}},
+    {"@type": "Question", "name": "Was the ranking volatility after 2 June 2026 a new Google update?", "acceptedAnswer": {"@type": "Answer", "text": "Not a confirmed one. Google said the May 2026 core update finished on 2 June, yet SEO chatter about ranking swings picked up again from Friday 5 June through the weekend of 6–7 June while most tracking tools stayed relatively calm. Treat it as post-update settling: wait for a full week of Search Console data before changing anything."}},
+    {"@type": "Question", "name": "What does the new Search Console AI performance report show?", "acceptedAnswer": {"@type": "Answer", "text": "The Search Generative AI performance reports, announced 3 June 2026, show how your content appears in AI Mode and AI Overviews — impressions, pages, countries, devices and dates — but not clicks. The rollout started with a subset of sites. It is the first official data on your visibility inside Google's AI answers, so baseline it as soon as your property gets access."}},
+    {"@type": "Question", "name": "Should I block my content from Google's AI Overviews and AI Mode?", "acceptedAnswer": {"@type": "Answer", "text": "For most business websites, no. The new Search Console toggle — launched UK-first on 3 June 2026 under a regulator's order — lets you stay indexed in classic results while opting out of AI answers, but AI surfaces are where a growing share of buying research happens. Blocking makes sense mainly for publishers whose business is the content itself, not for service or ecommerce sites that want to be the cited answer."}},
+    {"@type": "Question", "name": "Do the new CSS features from May and June 2026 matter for a business website?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, selectively. Native lazy loading for video and audio in Chrome 148 is a free performance win on media-heavy pages, and name-only container queries plus the :open pseudo-class reaching Baseline make genuinely responsive components simpler to build and maintain. Faster, lighter pages convert better and rank better — adopt what reduces JavaScript, skip what's just novelty."}}
+  ]
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;450;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#050507;--bg2:#0a0a0e;--card:#0e0e13;--card2:#14141b;--text:#f7f8fa;--muted:#a5a5a5;--muted2:#7f7f7f;--line:rgba(255,255,255,.1);--line2:rgba(255,255,255,.06);--acc:#ffffff;--acc-ink:#050507;--max:1280px;--r:24px;--ease:cubic-bezier(.19,1,.22,1)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+html.js .rv{opacity:0;transform:translateY(26px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+html.js .rv.in{opacity:1;transform:none}
+body{background:var(--bg);color:var(--text);font-family:'Inter',system-ui,sans-serif;font-weight:450;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body.lock{overflow:hidden}
+h1,h2,h3,h4{font-family:'Space Grotesk',sans-serif;font-weight:600;line-height:1.1;letter-spacing:-.03em}
+a{color:inherit;text-decoration:none}
+img,svg{display:block;max-width:100%}
+button{font:inherit;cursor:pointer}
+::selection{background:#fff;color:#050507}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 28px}
+.ey{display:inline-flex;align-items:center;gap:10px;font-family:'Space Mono',monospace;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+.ey .d{width:6px;height:6px;border-radius:50%;background:var(--acc);box-shadow:0 0 12px var(--acc);animation:pulse 2.4s var(--ease) infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
+.skip{position:fixed;top:-64px;left:16px;z-index:300;background:var(--card2);border:1px solid var(--line);color:var(--text);padding:12px 20px;border-radius:10px;font-weight:600;font-size:14px;transition:top .3s var(--ease)}
+.skip:focus{top:16px}
+a:focus-visible,button:focus-visible{outline:2px solid var(--acc);outline-offset:3px;border-radius:6px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:17px 32px;border-radius:100px;font-weight:600;font-size:15px;border:1px solid transparent;transition:transform .35s var(--ease),box-shadow .35s var(--ease),background .35s,border-color .35s;white-space:nowrap;position:relative;overflow:hidden;isolation:isolate}
+.btn-pri{background:#fff;color:var(--acc-ink);box-shadow:0 8px 32px rgba(255,255,255,.18)}
+.btn-pri:hover{transform:translateY(-2px);box-shadow:0 16px 48px rgba(255,255,255,.26)}
+.btn-ghost{border-color:var(--line);color:var(--text);background:rgba(255,255,255,.03)}
+.btn-ghost:hover{border-color:rgba(255,255,255,.3);background:rgba(255,255,255,.06);transform:translateY(-2px)}
+.glow{position:fixed;inset:0;z-index:-2;background:var(--bg);overflow:hidden}
+.glow::before{content:"";position:absolute;width:70vw;height:70vw;left:50%;top:-42vw;transform:translateX(-50%);border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,.088),transparent 62%);filter:blur(60px)}
+.grain{position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.05;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.6'/%3E%3C/svg%3E")}
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;transition:background .4s,border-color .4s,backdrop-filter .4s}
+.nav.on{background:rgba(5,5,7,.8);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border-bottom:1px solid var(--line2)}
+.nav-in{max-width:var(--max);margin:0 auto;padding:0 28px;height:74px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.logo{font-family:'Space Grotesk',sans-serif;font-size:23px;font-weight:700;letter-spacing:-.02em}
+.logo b{color:transparent;-webkit-text-stroke:1.2px var(--text);font-weight:700}
+.nav-links{display:flex;gap:34px;align-items:center}
+.nav-links a{font-size:14.5px;font-weight:500;color:var(--muted);position:relative;padding:6px 0;transition:color .3s}
+.nav-links a:hover,.nav-links a.act{color:var(--text)}
+.nav-links a::after{content:"";position:absolute;left:0;bottom:0;width:0;height:1.5px;background:var(--acc);transition:width .4s var(--ease)}
+.nav-links a:hover::after,.nav-links a.act::after{width:100%}
+.nav .btn{padding:12px 24px;font-size:14px}
+.burger{display:none;background:none;border:0;width:44px;height:44px;position:relative;z-index:110}
+.burger span{display:block;width:24px;height:2px;background:var(--text);margin:5px auto;border-radius:2px;transition:transform .4s var(--ease),opacity .3s}
+.burger.x span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.burger.x span:nth-child(2){opacity:0}
+.burger.x span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+.mnav{position:fixed;inset:0;z-index:105;background:rgba(5,5,7,.97);backdrop-filter:blur(24px);display:flex;flex-direction:column;justify-content:center;padding:0 36px;gap:8px;opacity:0;pointer-events:none;transition:opacity .4s var(--ease)}
+.mnav.open{opacity:1;pointer-events:auto}
+.mnav a{font-family:'Space Grotesk',sans-serif;font-size:34px;font-weight:600;letter-spacing:-.02em;padding:12px 0;border-bottom:1px solid var(--line2)}
+.mnav .btn{margin-top:28px;align-self:flex-start}
+/* article */
+.post-hero{padding:170px 0 60px;text-align:center}
+.post-hero .ey{justify-content:center}
+.post-hero h1{font-size:clamp(34px,4.8vw,64px);max-width:960px;margin:26px auto 0}
+.post-meta{margin-top:26px;font-family:'Space Mono',monospace;font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted2);display:flex;gap:18px;justify-content:center;flex-wrap:wrap}
+.post{max-width:780px;margin:0 auto;padding:30px 28px 90px}
+.post p{font-size:16.5px;color:#cfcfd4;margin:0 0 22px}
+.post p b,.post p strong{color:var(--text)}
+.post h2{font-size:clamp(24px,2.8vw,34px);margin:54px 0 18px;letter-spacing:-.02em}
+.post h3{font-size:20px;margin:34px 0 12px}
+.post a.ext{color:var(--text);text-decoration:underline;text-decoration-color:rgba(255,255,255,.3);text-underline-offset:3px;transition:text-decoration-color .3s}
+.post a.ext:hover{text-decoration-color:var(--acc)}
+.post ul{margin:0 0 22px;padding-left:22px}
+.post ul li{font-size:16px;color:#cfcfd4;margin-bottom:10px}
+.post .lede{font-size:19px;color:var(--muted);line-height:1.65}
+.callout{border:1px solid var(--line);border-radius:18px;background:linear-gradient(170deg,var(--card2),var(--card));padding:26px 28px;margin:34px 0}
+.callout .ct{font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);display:block;margin-bottom:10px}
+.callout p{margin:0;font-size:15.5px}
+.src{margin-top:60px;padding-top:28px;border-top:1px solid var(--line2)}
+.src h2{font-size:18px;margin:0 0 14px}
+.src ul{list-style:none;padding:0}
+.src li{font-size:13.5px;color:var(--muted);margin-bottom:8px}
+.band{border-radius:30px;border:1px solid var(--line);background:radial-gradient(800px 380px at 50% -10%,rgba(255,255,255,.121),transparent 62%),linear-gradient(170deg,var(--card2),var(--card));padding:70px 40px;text-align:center;position:relative;overflow:hidden;margin:0 auto 100px;max-width:980px}
+.band h2{font-size:clamp(28px,4vw,46px);letter-spacing:-.03em;margin-bottom:14px}
+.band p{color:var(--muted);max-width:540px;margin:0 auto 32px;font-size:16px}
+footer{border-top:1px solid var(--line2);padding:56px 0 40px;background:var(--bg2)}
+.f-in{display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap}
+.f-links{display:flex;gap:26px;flex-wrap:wrap}
+.f-links a{font-size:14px;color:var(--muted);transition:color .3s}
+.f-links a:hover{color:var(--text)}
+.f-bottom{margin-top:34px;padding-top:26px;border-top:1px solid var(--line2);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:13px;color:var(--muted2)}
+@media(max-width:720px){
+  .wrap{padding:0 20px}
+  .nav-links{display:none}.nav .nav-cta{display:none}.burger{display:block}.nav-in{height:64px;padding:0 20px}
+  .post-hero{padding:130px 0 40px}
+  .post{padding:20px 20px 70px}
+  .band{padding:50px 24px;margin:0 20px 80px}
+}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.001s!important;transition-duration:.001s!important}html{scroll-behavior:auto}html.js .rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+<div class="glow" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
+<header class="nav" id="nav">
+  <div class="nav-in">
+    <a href="../index.html" class="logo" aria-label="HyberX home">Hyber<b>X</b></a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="../index.html">Home</a>
+      <a href="../index.html#services">Services</a>
+      <a href="../index.html#work">Work</a>
+      <a href="index.html" class="act">Insights</a>
+      <a href="../index.html#contact">Contact</a>
+    </nav>
+    <div style="display:flex;align-items:center;gap:12px">
+      <a href="../index.html#contact" class="btn btn-pri nav-cta">Book a Call</a>
+      <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<div class="mnav" id="mnav" role="navigation" aria-label="Mobile navigation">
+  <a href="../index.html">Home</a>
+  <a href="../index.html#services">Services</a>
+  <a href="../index.html#work">Work</a>
+  <a href="index.html">Insights</a>
+  <a href="../index.html#contact">Contact</a>
+  <a href="../index.html#contact" class="btn btn-pri">Book a Growth Call</a>
+</div>
+
+<main id="main">
+<section class="post-hero">
+  <div class="wrap">
+    <span class="ey"><i class="d"></i>Weekly Recap · Web Design, Dev & SEO</span>
+    <h1>The May core update lands, Search Console learns AI, and Google offers an opt-out.</h1>
+    <div class="post-meta"><span>8 June 2026</span><span>10 min read</span></div>
+  </div>
+</section>
+
+<article class="post">
+  <p class="lede">The week of 1–7 June 2026 was the week the May core update stopped being a live event and became a scoreboard. Google confirmed the rollout complete on Tuesday 2 June — after one final spike of volatility — and then, two days later, quietly changed the AI visibility game: Search Console got its first AI performance reports and, for the first time ever, a switch that pulls a site out of AI Overviews without touching its rankings. Add Google's new guidance on optimising for AI search, a Gutenberg release that pushes responsive block styling forward, and a fresh batch of baseline CSS, and this was one of the most consequential quiet weeks of the year for anyone who owns a business website.</p>
+
+  <h2>1. The May 2026 core update is done — winners and losers are now official</h2>
+  <h3>What happened</h3>
+  <p>Google announced on <b>Tuesday 2 June</b> that the <b>May 2026 core update</b> — its second core update of the year, launched 21 May — had finished rolling out after roughly 12 days. The rollout was anything but smooth: significant ranking volatility hit the first weekend, more the second weekend, and one final spike landed on 2 June itself, hours before Google called it done. Community consensus is that this one felt <b>bigger than the March 2026 core update</b>.</p>
+  <h3>How to read your own scoreboard</h3>
+  <ul>
+    <li><b>Compare stable-to-stable.</b> In Search Console, compare the fortnight before 21 May against the days after 2 June. Mid-rollout numbers are noise; ignore them.</li>
+    <li><b>Segment by page template.</b> Core updates rarely hit a site evenly. If service pages held but blog posts dropped, that's a content-quality verdict, not a site-wide penalty.</li>
+    <li><b>If you gained, protect it.</b> Winners should document what's working — page structure, depth, internal linking — and extend it before the next update redistributes attention again.</li>
+    <li><b>If you lost, resist quick fixes.</b> Core update recovery means genuinely improving the pages that fell, and Google typically reassesses at future updates. There is no fast lane.</li>
+  </ul>
+  <div class="callout"><span class="ct">What we'd do about it</span>
+  <p>A core update is a quality audit you didn't order. If your site came out lighter, the honest first question is whether the pages that fell deserved their old rankings — thin service pages and template-stamped content were exactly what this update targeted. That's rarely fixable with a copy tweak; it's a structural job for a <a class="ext" href="../website-design-development.html">website development company</a> that treats content architecture, page speed and search as one build, not three afterthoughts.</p></div>
+
+  <h2>2. Search Console gets AI performance reports — your first real AI visibility data</h2>
+  <h3>What happened</h3>
+  <p>On <b>3 June</b>, Google announced <b>Search Generative AI performance reports</b> in Search Console: dedicated reporting on how your content appears in <b>AI Mode and AI Overviews</b>, covering impressions, pages, countries, devices and dates — though notably <b>no click data</b>. The rollout began with a subset of properties.</p>
+  <p>This matters because until now, AI visibility was guesswork. Businesses knew AI answers were absorbing informational queries, but had no first-party data on whether their own pages were being surfaced. Now the black box has a window — and every claim an agency makes about "AI SEO" can finally be checked against a Google report.</p>
+  <h3>What to do the day you get access</h3>
+  <ul>
+    <li><b>Baseline immediately.</b> Screenshot or export the first full week of AI impressions so you can measure every future change against it.</li>
+    <li><b>Find your cited pages.</b> The pages earning AI impressions are your templates — study their heading structure, answer placement and schema, then replicate.</li>
+    <li><b>Watch the impressions-without-clicks gap.</b> If AI surfaces show your content but classic clicks fall, your pages are informing the journey without capturing it — a <a class="ext" href="../conversion-optimization.html">conversion optimization</a> problem as much as a search one.</li>
+  </ul>
+  <div class="callout"><span class="ct">What we'd do about it</span>
+  <p>Treat this like the launch of Search Console itself in miniature: the businesses that baseline early will understand the AI channel a year before their competitors. We'd wire this report into every monthly review now, while the numbers are small enough to learn from cheaply.</p></div>
+
+  <h2>3. An official opt-out of AI Overviews — launched UK-first under regulator pressure</h2>
+  <p>The second half of the 3 June announcement was historic in its own quiet way: a Search Console <b>toggle to block your content from AI Mode and AI Overviews</b> while remaining fully indexed and ranked in classic results. Google launched it <b>UK-first under a binding order from the UK's competition regulator</b>, taking effect from 17 June.</p>
+  <p>For most business websites, the interesting part isn't the toggle — it's the precedent. Regulators have now forced a separation between "being in Google" and "being in Google's AI answers," and that split will shape how the rest of the world's search markets evolve. Should you flip it? Almost certainly not if you sell services or products: AI surfaces are where buying research increasingly starts, and being the cited answer is the new position one. The opt-out is built for publishers whose content <em>is</em> the product, not for sites that want the visit.</p>
+
+  <h2>4. Google publishes guidance on optimising for AI search — and a warning</h2>
+  <p>Rounding out an AI-heavy week, the <b>June 2026 Google Webmaster Report</b> (published 4 June) collected two notable Google positions: fresh <b>official guidance on how to optimise for AI search</b>, and a blunt <b>warning against manipulating or buying citations</b> to game AI search features. A grey market for "guaranteed AI mentions" had been forming for months; Google just put it on notice, the same way it did paid links fifteen years ago.</p>
+  <p>The legitimate playbook Google describes is unfashionably technical: clear structure, direct answers, real authority signals, and clean crawlable markup. In other words, AI visibility is largely decided at the html web development layer — heading hierarchy, semantic elements, structured data, and pages that render fast without a JavaScript excavation. You can't bolt that on after launch, and you can't buy it from a citation broker.</p>
+
+  <h2>5. Platform notes: Gutenberg 23.3, and a new baseline for CSS</h2>
+  <h3>WordPress: Gutenberg 23.3 ships 3 June</h3>
+  <p><b>Gutenberg 23.3</b> landed on 3 June, extending the responsive global block styles introduced in 23.2 with <b>layout responsive styles</b>, plus revisions improvements and accessibility fixes to Font Library navigation. With WordPress 7.0 "Armstrong" barely two weeks old and early 7.1 testing already underway, the direction is clear: per-viewport styling is moving into core, which will shrink the pile of custom breakpoint CSS most WordPress builds carry.</p>
+  <h3>Browsers: web.dev's May roundup lands, and the floor rises</h3>
+  <p>web.dev's monthly web platform roundup (published 29 May, digested by most dev teams this week) confirmed a strong batch across <b>Chrome 148, Firefox 151 and Safari 26.5</b>:</p>
+  <ul>
+    <li><b>Native lazy loading for <code>&lt;video&gt;</code> and <code>&lt;audio&gt;</code></b> via <code>loading="lazy"</code> in Chrome 148 — a free performance win on media-heavy pages.</li>
+    <li><b>The <code>:open</code> pseudo-class reached Baseline</b> with Safari 26.5 — style open/closed states of <code>&lt;details&gt;</code>, <code>&lt;dialog&gt;</code> and pickers without JavaScript.</li>
+    <li><b>Name-only container queries became Baseline</b> in Chrome 148, and container style queries for custom properties arrived in Firefox 151 — component-level responsiveness keeps getting simpler.</li>
+    <li><b>Document Picture-in-Picture</b> came to Firefox desktop, and the Web Serial API expanded to Firefox 151 and Chrome on Android.</li>
+  </ul>
+  <p>The pattern across all of it: features that used to demand JavaScript are becoming plain markup and CSS. Less script means faster pages, and faster pages hold up better in exactly the algorithmic weather described in item one. The same logic applies in ecommerce — theme bloat is the silent conversion killer, which is why good <a class="ext" href="../shopify-development-new-york.html">Shopify development partners</a> treat every new native browser feature as a chance to delete a library, not add one.</p>
+
+  <h2>What this week means for your website strategy</h2>
+  <p>Three threads worth pulling together if you own a business website or are scoping a redesign:</p>
+  <ul>
+    <li><b>Quality verdicts are now delivered twice a year, minimum.</b> Two core updates in five months means "build it right and leave it" is dead. Design and development decisions — structure, speed, depth — are ongoing ranking inputs, and resilience to updates is a build-quality feature you specify up front.</li>
+    <li><b>The AI channel just became measurable.</b> With Search Console reporting AI impressions, "we think AI is sending traffic" turns into a line on a dashboard. Any web project starting now should be scoped for AI citability — quotable sections, direct answers, schema — as a first-class requirement.</li>
+    <li><b>The platform keeps handing you performance.</b> Between Gutenberg's responsive styles and the new Baseline CSS, the cost of a fast, genuinely responsive site keeps falling — if your build actually uses it. Whether you're searching "web developers near me" or evaluating a specialist shopify developer partner remotely, the sharpest filter is the same: ask to see how their last three builds scored on Core Web Vitals, and how much JavaScript they shipped to do it.</li>
+  </ul>
+
+  <h2>Frequently asked questions</h2>
+  <h3>How do I recover from the May 2026 Google core update?</h3>
+  <p>Confirm causation first: the update ran 21 May to 2 June, so compare pre-21-May rankings with the post-2-June settled picture. Then audit the pages that fell against what now outranks them — depth, first-hand expertise, and how directly they satisfy the query. Recovery is a genuine quality rebuild, typically reassessed at future core updates, not a metadata tweak.</p>
+  <h3>Was the ranking volatility after 2 June a new update?</h3>
+  <p>No confirmed one. SEO chatter about fresh swings started Friday 5 June and ran through the weekend of 6–7 June, even though most tracking tools stayed fairly calm. The likeliest explanation is post-update settling. Give it a full week of data before you act on anything.</p>
+  <h3>What does the new Search Console AI performance report actually show?</h3>
+  <p>Impressions, pages, countries, devices and dates for your appearances in AI Mode and AI Overviews — but no clicks. It began rolling out to a subset of properties from 3 June. When your site gets it, export a baseline week immediately.</p>
+  <h3>Should I use the new toggle to block my content from AI Overviews?</h3>
+  <p>Almost certainly not if you're a service or ecommerce business — AI answers are where more buying research now starts, and being cited is the new position one. The opt-out, launched UK-first under a regulator's order, exists mainly for publishers whose content is the product itself.</p>
+  <h3>Do the new CSS features from this week matter for my business site?</h3>
+  <p>Yes, where they replace JavaScript. Lazy-loading media natively, styling <code>&lt;details&gt;</code> and dialogs with <code>:open</code>, and simpler container queries all mean lighter, faster pages — and page speed feeds both rankings and conversion rate. Adopt what deletes code; skip the novelty.</p>
+
+  <h2>The takeaway</h2>
+  <p>One week, one theme: <b>accountability arrived</b>. The core update delivered its verdict on page quality, Search Console started publishing receipts for AI visibility, and Google drew a line against buying your way into AI citations. The websites positioned to win from here are the ones where design, development and SEO were never separate line items — because everything Google measured this week was decided at build time.</p>
+
+  <div class="src rv">
+    <h2>Sources & further reading</h2>
+    <ul>
+      <li><a class="ext" href="https://www.seroundtable.com/google-may-2026-core-update-done-41435.html" target="_blank" rel="noopener">Search Engine Roundtable — Google May 2026 Broad Core Update Is Done Rolling Out</a></li>
+      <li><a class="ext" href="https://searchengineland.com/google-may-2026-core-update-rollout-is-now-complete-479119" target="_blank" rel="noopener">Search Engine Land — Google May 2026 core update rollout is now complete</a></li>
+      <li><a class="ext" href="https://searchengineland.com/google-search-console-ai-performance-reports-and-controls-to-block-your-content-in-ai-responses-479298" target="_blank" rel="noopener">Search Engine Land — Search Console AI performance reports and controls to block your content in AI responses</a></li>
+      <li><a class="ext" href="https://developers.google.com/search/blog/2026/06/gen-ai-performance-reports" target="_blank" rel="noopener">Google Search Central — Introducing Search Generative AI performance reports in Search Console</a></li>
+      <li><a class="ext" href="https://www.seroundtable.com/june-2026-google-webmaster-report-41446.html" target="_blank" rel="noopener">Search Engine Roundtable — June 2026 Google Webmaster Report</a></li>
+      <li><a class="ext" href="https://www.seroundtable.com/google-search-ranking-volatility-41466.html" target="_blank" rel="noopener">Search Engine Roundtable — Google Search Ranking Volatility Around June 6th</a></li>
+      <li><a class="ext" href="https://make.wordpress.org/core/2026/06/03/whats-new-in-gutenberg-23-3-03-jun/" target="_blank" rel="noopener">Make WordPress — What's new in Gutenberg 23.3 (3 June 2026)</a></li>
+      <li><a class="ext" href="https://web.dev/blog/web-platform-05-2026" target="_blank" rel="noopener">web.dev — New to the web platform in May (2026)</a></li>
+    </ul>
+  </div>
+</article>
+
+<section class="band rv">
+  <h2>Want a site built for how search works now?</h2>
+  <p>We design and build conversion-first websites that hold up in classic search and AI answers alike.</p>
+  <a href="../index.html#contact" class="btn btn-pri">Book a Growth Call</a>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-in">
+      <a href="../index.html" class="logo">Hyber<b>X</b></a>
+      <nav class="f-links" aria-label="Services">
+        <a href="../performance-marketing.html">Performance Marketing</a>
+        <a href="../website-design-development.html">Websites</a>
+        <a href="../content-creation.html">Content</a>
+        <a href="../ad-films-brand-videos.html">Ad Films</a>
+        <a href="../conversion-optimization.html">CRO</a>
+      </nav>
+    </div>
+    <div class="f-bottom">
+      <span>© <span id="yr">2026</span> HyberX. All rights reserved.</span>
+      <span style="display:flex;gap:22px"><a href="../privacy-policy.html">Privacy Policy</a><a href="../terms-of-service.html">Terms of Service</a><a href="../index.html#contact">support@hyberx.com</a></span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+"use strict";
+var nav=document.getElementById('nav'),burger=document.getElementById('burger'),mnav=document.getElementById('mnav');
+addEventListener('scroll',function(){nav.classList.toggle('on',scrollY>24);},{passive:true});
+nav.classList.toggle('on',scrollY>24);
+burger.addEventListener('click',function(){
+  var open=mnav.classList.toggle('open');burger.classList.toggle('x',open);
+  burger.setAttribute('aria-expanded',open);document.body.classList.toggle('lock',open);
+});
+addEventListener('keydown',function(e){
+  if(e.key==='Escape'&&mnav.classList.contains('open')){
+    mnav.classList.remove('open');burger.classList.remove('x');
+    burger.setAttribute('aria-expanded','false');document.body.classList.remove('lock');burger.focus();
+  }
+});
+if('IntersectionObserver' in window){
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.12,rootMargin:'0px 0px -40px 0px'});
+  document.querySelectorAll('.rv').forEach(function(el){io.observe(el);});
+}else{document.querySelectorAll('.rv').forEach(function(el){el.classList.add('in');});}
+document.getElementById('yr').textContent=new Date().getFullYear();
+})();
+</script>
+</body>
+</html>

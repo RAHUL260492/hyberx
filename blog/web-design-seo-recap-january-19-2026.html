@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#050507">
+<script>document.documentElement.classList.add('js')</script>
+<title>Two Unconfirmed Google Shakeups, Firefox 147 & Chrome 145's CSS Wins | HyberX Weekly</title>
+<meta name="description" content="Weekly web design, development and SEO recap for 12–18 January 2026: unconfirmed Google ranking volatility on the 12th and 15th–16th, Firefox 147, Chrome 145 beta CSS features, Gemini in Google Trends, and a critical WordPress plugin exploit.">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<link rel="canonical" href="https://hyberx.com/blog/web-design-seo-recap-january-19-2026.html">
+<meta property="og:url" content="https://hyberx.com/blog/web-design-seo-recap-january-19-2026.html">
+<meta property="og:image" content="https://hyberx.com/og-image.png">
+<meta property="og:site_name" content="HyberX">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://hyberx.com/og-image.png">
+<meta property="og:title" content="Two Unconfirmed Google Shakeups, Firefox 147 &amp; Chrome 145's CSS Wins | HyberX Weekly">
+<meta property="og:description" content="Weekly web design, development and SEO recap for 12–18 January 2026: unconfirmed ranking volatility on the 12th and 15th–16th, Firefox 147, Chrome 145 beta, Gemini in Google Trends, and a critical WordPress plugin exploit.">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2026-01-19">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Two Unconfirmed Google Shakeups, Firefox 147 and Chrome 145's CSS Wins",
+  "description": "Weekly web design, development and SEO recap for 12–18 January 2026: unconfirmed Google ranking volatility on the 12th and 15th–16th, Firefox 147, Chrome 145 beta CSS features, Gemini in Google Trends, and a critical WordPress plugin exploit.",
+  "datePublished": "2026-01-19",
+  "dateModified": "2026-01-19",
+  "author": {"@type": "Organization", "name": "HyberX", "url": "https://hyberx.com/"},
+  "publisher": {"@type": "Organization", "name": "HyberX", "url": "https://hyberx.com/", "logo": {"@type": "ImageObject", "url": "https://hyberx.com/og-image.png"}},
+  "mainEntityOfPage": "https://hyberx.com/blog/web-design-seo-recap-january-19-2026.html",
+  "image": "https://hyberx.com/og-image.png"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "Was there a Google algorithm update the week of 12 January 2026?", "acceptedAnswer": {"@type": "Answer", "text": "Nothing confirmed. Rank-tracking tools recorded two unconfirmed volatility spikes — around 12 January and again on 15–16 January — following a similar tremor on 6 January. Google announced nothing, so treat the swings as background volatility after the December 2025 core update rather than a named update to react to."}},
+    {"@type": "Question", "name": "Should I update to Firefox 147, and does it matter for my website?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — Firefox 147 shipped 13 January 2026 with fixes for 16 security vulnerabilities, including six high-impact flaws. For site owners it also enables WebGPU on Apple Silicon Macs and compression dictionary support, so test your site in it, especially anything using canvas, video or heavy graphics."}},
+    {"@type": "Question", "name": "What is new for CSS in Chrome 145?", "acceptedAnswer": {"@type": "Answer", "text": "Chrome 145 entered beta on 14 January 2026 with support for the text-justify property, column wrapping in multi-column layout, JPEG-XL image decoding, an SQLite backend for IndexedDB and reduced user-agent strings by default. It reaches stable in early February, so audit any code that parses user-agent strings now."}},
+    {"@type": "Question", "name": "Is the WordPress plugin vulnerability from mid-January 2026 serious?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. A CVSS 10.0 flaw in the Modular DS Connector plugin let unauthenticated attackers create administrator accounts and was actively exploited starting mid-January. If you run the plugin, update or remove it immediately and audit your admin user list. Even if you don't, it is a reminder to inventory and patch plugins on a schedule."}},
+    {"@type": "Question", "name": "How does Gemini in Google Trends change keyword research?", "acceptedAnswer": {"@type": "Answer", "text": "As of 14 January 2026, Google Trends uses Gemini to automatically identify and compare relevant trends for a topic. It speeds up demand discovery, but the output is a starting point — validate anything it surfaces against Search Console query data and actual conversion behaviour before building pages around it."}}
+  ]
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;450;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#050507;--bg2:#0a0a0e;--card:#0e0e13;--card2:#14141b;--text:#f7f8fa;--muted:#a5a5a5;--muted2:#7f7f7f;--line:rgba(255,255,255,.1);--line2:rgba(255,255,255,.06);--acc:#ffffff;--acc-ink:#050507;--max:1280px;--r:24px;--ease:cubic-bezier(.19,1,.22,1)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+html.js .rv{opacity:0;transform:translateY(26px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+html.js .rv.in{opacity:1;transform:none}
+body{background:var(--bg);color:var(--text);font-family:'Inter',system-ui,sans-serif;font-weight:450;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body.lock{overflow:hidden}
+h1,h2,h3,h4{font-family:'Space Grotesk',sans-serif;font-weight:600;line-height:1.1;letter-spacing:-.03em}
+a{color:inherit;text-decoration:none}
+img,svg{display:block;max-width:100%}
+button{font:inherit;cursor:pointer}
+::selection{background:#fff;color:#050507}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 28px}
+.ey{display:inline-flex;align-items:center;gap:10px;font-family:'Space Mono',monospace;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+.ey .d{width:6px;height:6px;border-radius:50%;background:var(--acc);box-shadow:0 0 12px var(--acc);animation:pulse 2.4s var(--ease) infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
+.skip{position:fixed;top:-64px;left:16px;z-index:300;background:var(--card2);border:1px solid var(--line);color:var(--text);padding:12px 20px;border-radius:10px;font-weight:600;font-size:14px;transition:top .3s var(--ease)}
+.skip:focus{top:16px}
+a:focus-visible,button:focus-visible{outline:2px solid var(--acc);outline-offset:3px;border-radius:6px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:17px 32px;border-radius:100px;font-weight:600;font-size:15px;border:1px solid transparent;transition:transform .35s var(--ease),box-shadow .35s var(--ease),background .35s,border-color .35s;white-space:nowrap;position:relative;overflow:hidden;isolation:isolate}
+.btn-pri{background:#fff;color:var(--acc-ink);box-shadow:0 8px 32px rgba(255,255,255,.18)}
+.btn-pri:hover{transform:translateY(-2px);box-shadow:0 16px 48px rgba(255,255,255,.26)}
+.btn-ghost{border-color:var(--line);color:var(--text);background:rgba(255,255,255,.03)}
+.btn-ghost:hover{border-color:rgba(255,255,255,.3);background:rgba(255,255,255,.06);transform:translateY(-2px)}
+.glow{position:fixed;inset:0;z-index:-2;background:var(--bg);overflow:hidden}
+.glow::before{content:"";position:absolute;width:70vw;height:70vw;left:50%;top:-42vw;transform:translateX(-50%);border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,.088),transparent 62%);filter:blur(60px)}
+.grain{position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.05;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.6'/%3E%3C/svg%3E")}
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;transition:background .4s,border-color .4s,backdrop-filter .4s}
+.nav.on{background:rgba(5,5,7,.8);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border-bottom:1px solid var(--line2)}
+.nav-in{max-width:var(--max);margin:0 auto;padding:0 28px;height:74px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.logo{font-family:'Space Grotesk',sans-serif;font-size:23px;font-weight:700;letter-spacing:-.02em}
+.logo b{color:transparent;-webkit-text-stroke:1.2px var(--text);font-weight:700}
+.nav-links{display:flex;gap:34px;align-items:center}
+.nav-links a{font-size:14.5px;font-weight:500;color:var(--muted);position:relative;padding:6px 0;transition:color .3s}
+.nav-links a:hover,.nav-links a.act{color:var(--text)}
+.nav-links a::after{content:"";position:absolute;left:0;bottom:0;width:0;height:1.5px;background:var(--acc);transition:width .4s var(--ease)}
+.nav-links a:hover::after,.nav-links a.act::after{width:100%}
+.nav .btn{padding:12px 24px;font-size:14px}
+.burger{display:none;background:none;border:0;width:44px;height:44px;position:relative;z-index:110}
+.burger span{display:block;width:24px;height:2px;background:var(--text);margin:5px auto;border-radius:2px;transition:transform .4s var(--ease),opacity .3s}
+.burger.x span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.burger.x span:nth-child(2){opacity:0}
+.burger.x span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+.mnav{position:fixed;inset:0;z-index:105;background:rgba(5,5,7,.97);backdrop-filter:blur(24px);display:flex;flex-direction:column;justify-content:center;padding:0 36px;gap:8px;opacity:0;pointer-events:none;transition:opacity .4s var(--ease)}
+.mnav.open{opacity:1;pointer-events:auto}
+.mnav a{font-family:'Space Grotesk',sans-serif;font-size:34px;font-weight:600;letter-spacing:-.02em;padding:12px 0;border-bottom:1px solid var(--line2)}
+.mnav .btn{margin-top:28px;align-self:flex-start}
+/* article */
+.post-hero{padding:170px 0 60px;text-align:center}
+.post-hero .ey{justify-content:center}
+.post-hero h1{font-size:clamp(34px,4.8vw,64px);max-width:960px;margin:26px auto 0}
+.post-meta{margin-top:26px;font-family:'Space Mono',monospace;font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted2);display:flex;gap:18px;justify-content:center;flex-wrap:wrap}
+.post{max-width:780px;margin:0 auto;padding:30px 28px 90px}
+.post p{font-size:16.5px;color:#cfcfd4;margin:0 0 22px}
+.post p b,.post p strong{color:var(--text)}
+.post h2{font-size:clamp(24px,2.8vw,34px);margin:54px 0 18px;letter-spacing:-.02em}
+.post h3{font-size:20px;margin:34px 0 12px}
+.post a.ext{color:var(--text);text-decoration:underline;text-decoration-color:rgba(255,255,255,.3);text-underline-offset:3px;transition:text-decoration-color .3s}
+.post a.ext:hover{text-decoration-color:var(--acc)}
+.post ul{margin:0 0 22px;padding-left:22px}
+.post ul li{font-size:16px;color:#cfcfd4;margin-bottom:10px}
+.post .lede{font-size:19px;color:var(--muted);line-height:1.65}
+.callout{border:1px solid var(--line);border-radius:18px;background:linear-gradient(170deg,var(--card2),var(--card));padding:26px 28px;margin:34px 0}
+.callout .ct{font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);display:block;margin-bottom:10px}
+.callout p{margin:0;font-size:15.5px}
+.src{margin-top:60px;padding-top:28px;border-top:1px solid var(--line2)}
+.src h2{font-size:18px;margin:0 0 14px}
+.src ul{list-style:none;padding:0}
+.src li{font-size:13.5px;color:var(--muted);margin-bottom:8px}
+.band{border-radius:30px;border:1px solid var(--line);background:radial-gradient(800px 380px at 50% -10%,rgba(255,255,255,.121),transparent 62%),linear-gradient(170deg,var(--card2),var(--card));padding:70px 40px;text-align:center;position:relative;overflow:hidden;margin:0 auto 100px;max-width:980px}
+.band h2{font-size:clamp(28px,4vw,46px);letter-spacing:-.03em;margin-bottom:14px}
+.band p{color:var(--muted);max-width:540px;margin:0 auto 32px;font-size:16px}
+footer{border-top:1px solid var(--line2);padding:56px 0 40px;background:var(--bg2)}
+.f-in{display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap}
+.f-links{display:flex;gap:26px;flex-wrap:wrap}
+.f-links a{font-size:14px;color:var(--muted);transition:color .3s}
+.f-links a:hover{color:var(--text)}
+.f-bottom{margin-top:34px;padding-top:26px;border-top:1px solid var(--line2);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:13px;color:var(--muted2)}
+@media(max-width:720px){
+  .wrap{padding:0 20px}
+  .nav-links{display:none}.nav .nav-cta{display:none}.burger{display:block}.nav-in{height:64px;padding:0 20px}
+  .post-hero{padding:130px 0 40px}
+  .post{padding:20px 20px 70px}
+  .band{padding:50px 24px;margin:0 20px 80px}
+}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.001s!important;transition-duration:.001s!important}html{scroll-behavior:auto}html.js .rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+<div class="glow" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
+<header class="nav" id="nav">
+  <div class="nav-in">
+    <a href="../index.html" class="logo" aria-label="HyberX home">Hyber<b>X</b></a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="../index.html">Home</a>
+      <a href="../index.html#services">Services</a>
+      <a href="../index.html#work">Work</a>
+      <a href="index.html" class="act">Insights</a>
+      <a href="../index.html#contact">Contact</a>
+    </nav>
+    <div style="display:flex;align-items:center;gap:12px">
+      <a href="../index.html#contact" class="btn btn-pri nav-cta">Book a Call</a>
+      <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<div class="mnav" id="mnav" role="navigation" aria-label="Mobile navigation">
+  <a href="../index.html">Home</a>
+  <a href="../index.html#services">Services</a>
+  <a href="../index.html#work">Work</a>
+  <a href="index.html">Insights</a>
+  <a href="../index.html#contact">Contact</a>
+  <a href="../index.html#contact" class="btn btn-pri">Book a Growth Call</a>
+</div>
+
+<main id="main">
+<section class="post-hero">
+  <div class="wrap">
+    <span class="ey"><i class="d"></i>Weekly Recap · Web Design, Dev & SEO</span>
+    <h1>Two unconfirmed Google shakeups, Firefox 147 lands, and Chrome 145 teases real CSS wins.</h1>
+    <div class="post-meta"><span>19 January 2026</span><span>10 min read</span></div>
+  </div>
+</section>
+
+<article class="post">
+  <p class="lede">Google confirmed nothing this week — and rankings moved twice anyway. Between 12 and 18 January the SEO tools recorded two separate volatility spikes, Firefox shipped a security-heavy release on the 13th, Chrome pushed version 145 to beta on the 14th with genuinely useful CSS features, Google folded Gemini into Trends, and a CVSS 10.0 WordPress plugin flaw started getting exploited in the wild. If your website is how customers find and choose you, here's what actually happened this week — and what each item means for a business site that has to earn revenue, not just exist.</p>
+
+  <h2>1. Unconfirmed volatility, twice: 12 January and 15–16 January</h2>
+  <h3>What happened</h3>
+  <p>Rank-tracking tools lit up around <b>Monday 12 January</b>, then again on <b>Thursday–Friday 15–16 January</b>, with site owners reporting ranking and traffic swings on both dates. Google announced nothing. That makes three unconfirmed tremors in a fortnight — one hit on 6 January too — and the pattern follows straight on from the December 2025 core update, which finished rolling out on 29 December. Some webmasters on the forums reported traffic drops as steep as 90% week over week; others saw recoveries just as sharp a few days later.</p>
+  <h3>How to read back-to-back unconfirmed spikes</h3>
+  <ul>
+    <li><b>Two spikes in one week usually means testing, not a launch.</b> When Google trials ranking changes, tools see waves that partially reverse. Compare your positions on the 12th, 15th and 18th before concluding anything.</li>
+    <li><b>Separate rankings from clicks.</b> A position drop and a click drop have different causes. Post-core-update turbulence often shifts clicks (via SERP feature changes) more than positions.</li>
+    <li><b>Benchmark against competitors.</b> If your whole niche moved on the same dates, it's the algorithm breathing. If only you moved, audit what changed on your site since mid-December.</li>
+    <li><b>Rule out the boring causes first.</b> An expired plugin, a slow deploy, a broken redirect — mundane failures explain more "algorithm hits" than algorithms do.</li>
+  </ul>
+  <div class="callout"><span class="ct">What we'd do about it</span>
+  <p>Log the dates, hold the line, and resist the panic rewrite. Sites that get knocked around by every unconfirmed tremor almost always share the same profile: thin structure, slow pages, borrowed content. That's a build problem before it's a content problem — and it's the first thing we audit as a <a class="ext" href="../website-design-development.html">website development company</a> when a client arrives mid-volatility.</p></div>
+
+  <h2>2. Firefox 147 ships with 16 security fixes and WebGPU on Apple Silicon</h2>
+  <p>Mozilla released <b>Firefox 147 on Tuesday 13 January</b>, patching <b>16 security vulnerabilities — six of them high-impact</b>, including multiple sandbox escapes that could enable arbitrary code execution. Beyond security, the release enables <b>WebGPU on Apple Silicon Macs</b>, adds compression dictionary support for smaller repeat downloads, improves picture-in-picture, and — for the Linux faithful — finally adopts the XDG base directory spec after twenty years.</p>
+  <h3>Why a browser release is a business-website story</h3>
+  <ul>
+    <li><b>Test your site in it.</b> Firefox is a minority browser but a vocal one; rendering bugs there still cost real conversions, especially on checkout and form flows.</li>
+    <li><b>WebGPU is now two-browser territory on Mac.</b> If you've held off on WebGPU-powered product visualisers or 3D configurators because of Safari-and-Chrome-only support, the calculus just improved.</li>
+    <li><b>Compression dictionaries reward clean asset pipelines.</b> Returning visitors download only what changed — but only if your build produces stable, cacheable bundles.</li>
+  </ul>
+
+  <h2>3. Chrome 145 hits beta: text-justify, multicol wrapping and JPEG-XL</h2>
+  <p>On <b>Wednesday 14 January</b>, Google promoted <b>Chrome 145 to beta</b> for Windows, Mac and Linux, with stable expected in early February. For people who build websites for a living, this one is unusually meaty:</p>
+  <ul>
+    <li><b>The text-justify CSS property</b> arrives, giving designers real control over justification behaviour — long a print-design capability the web faked badly.</li>
+    <li><b>Column wrapping in multi-column layout</b> lands, making magazine-style multicol genuinely usable in responsive contexts.</li>
+    <li><b>JPEG-XL decoding returns to Blink</b> — a modern image format with better compression than JPEG at equal quality, back from the dead after Google removed it in 2022.</li>
+    <li><b>An SQLite backend for IndexedDB</b> and <b>reduced user-agent strings by default</b> round out the platform changes, along with more granular permissions for sites requesting local network access.</li>
+  </ul>
+  <div class="callout"><span class="ct">What we'd do about it</span>
+  <p>Two action items before February's stable release: audit any analytics, personalisation or serving logic that parses user-agent strings — reduced UA strings will quietly break naive detection — and get JPEG-XL into your image pipeline evaluation next to AVIF and WebP. Both are classic html web development chores: invisible when done right, expensive when skipped. Faster images and unbroken detection feed directly into <a class="ext" href="../conversion-optimization.html">conversion optimization</a>, because every 100ms of image weight you shed shows up in bounce and checkout rates.</p></div>
+
+  <h2>4. Google folds Gemini into Trends and keeps tweaking the AI search box</h2>
+  <p>Also on <b>14 January</b>, Google announced that <b>Google Trends now uses Gemini</b> to automatically identify and compare relevant trends for a topic — turning a manual compare-five-terms workflow into an AI-assisted one. The same day, testers spotted Google experimenting with the <b>AI Mode entry point in the search box</b>, where the AI Mode option disappears as you type and is replaced by a plain blue Send button. Small tweak, big signal: Google is still iterating on how prominently AI answers sit in the default search journey.</p>
+  <h3>What this means for keyword and demand research</h3>
+  <ul>
+    <li><b>Gemini-assisted Trends speeds up discovery, not validation.</b> Use it to surface adjacent demand you hadn't considered, then validate against Search Console queries and actual conversion data before building pages.</li>
+    <li><b>The AI search interface is not settled.</b> Every UI experiment shifts how much traffic classic blue links receive. Watch your click-through rates around these test windows rather than assuming stable baselines.</li>
+    <li><b>Seasonal planning gets cheaper.</b> For ecommerce especially, AI-compared trend lines make it faster to time category pages and campaign landing pages to demand curves.</li>
+  </ul>
+
+  <h2>5. WordPress: a CVSS 10.0 exploit in the wild, and the road to 7.0</h2>
+  <p>Two WordPress stories this week, one urgent and one strategic. The urgent one: a <b>critical CVSS 10.0 vulnerability in the Modular DS Connector plugin</b> — allowing unauthenticated attackers to create administrator accounts — began being <b>actively exploited in the wild in mid-January</b>. If that plugin is anywhere in your stack, patch or remove it today and audit your admin user list for accounts you didn't create.</p>
+  <p>The strategic one: WordPress 7.0 planning moved forward, with the release targeted for <b>9 April at WordCamp Asia</b>, the call for release-squad contributors circulating, and Gutenberg 22.3 landing early 7.0 features — including a new Fonts screen and PHP-only blocks. Real-time collaborative editing remains the headline ambition for the 7.0 cycle.</p>
+  <div class="callout"><span class="ct">What we'd do about it</span>
+  <p>The exploit is the story. Most hacked business sites we're brought in to rescue weren't targeted — they were running one unpatched plugin among forty. Keep a plugin inventory, remove anything unused, and put updates on a weekly schedule with backups before each run. If nobody owns that job at your company, that's the real vulnerability.</p></div>
+
+  <h2>What this week means for your website strategy</h2>
+  <p>Pull the five stories together and a clear brief emerges for anyone scoping web design or development work in 2026:</p>
+  <ul>
+    <li><b>Volatility resilience is a build-quality feature.</b> Three unconfirmed spikes in two weeks is the new normal. The sites that shrug them off are fast, well-structured and genuinely expert — qualities decided at build time, not bolted on after.</li>
+    <li><b>The browser platform is moving fast in your favour.</b> text-justify, multicol wrapping, JPEG-XL, WebGPU on more hardware — the design ceiling keeps rising for teams that actually track releases. Ask any agency you're evaluating what shipped in Chrome 145; the answer tells you whether they build for the platform or from templates.</li>
+    <li><b>Maintenance is not optional.</b> A CVSS 10.0 exploit doesn't care how good your branding is. Whether you're on WordPress or Shopify, someone must own patching. It's a question worth putting to <a class="ext" href="../shopify-development-new-york.html">Shopify development partners</a> and WordPress agencies alike before you sign: who watches the vulnerabilities after launch?</li>
+  </ul>
+  <p>And on ecommerce specifically: a Shopify developer partner worth hiring should be able to explain how this week's image-format and UA-string changes affect theme performance. If the answer is a blank look, keep interviewing.</p>
+
+  <h2>Frequently asked questions</h2>
+  <h3>Was there a Google algorithm update the week of 12 January 2026?</h3>
+  <p>Nothing confirmed. Rank-tracking tools recorded two unconfirmed volatility spikes — around 12 January and again on 15–16 January — following a similar tremor on 6 January. Google announced nothing, so treat the swings as background volatility after the December 2025 core update rather than a named update to react to.</p>
+  <h3>Should I update to Firefox 147, and does it matter for my website?</h3>
+  <p>Yes — Firefox 147 shipped 13 January 2026 with fixes for 16 security vulnerabilities, including six high-impact flaws. For site owners it also enables WebGPU on Apple Silicon Macs and compression dictionary support, so test your site in it, especially anything using canvas, video or heavy graphics.</p>
+  <h3>What is new for CSS in Chrome 145?</h3>
+  <p>Chrome 145 entered beta on 14 January 2026 with support for the text-justify property, column wrapping in multi-column layout, JPEG-XL image decoding, an SQLite backend for IndexedDB and reduced user-agent strings by default. It reaches stable in early February, so audit any code that parses user-agent strings now.</p>
+  <h3>Is the WordPress plugin vulnerability from mid-January 2026 serious?</h3>
+  <p>Yes. A CVSS 10.0 flaw in the Modular DS Connector plugin let unauthenticated attackers create administrator accounts and was actively exploited starting mid-January. If you run the plugin, update or remove it immediately and audit your admin user list. Even if you don't, it is a reminder to inventory and patch plugins on a schedule.</p>
+  <h3>How does Gemini in Google Trends change keyword research?</h3>
+  <p>As of 14 January 2026, Google Trends uses Gemini to automatically identify and compare relevant trends for a topic. It speeds up demand discovery, but the output is a starting point — validate anything it surfaces against Search Console query data and actual conversion behaviour before building pages around it.</p>
+
+  <h2>The takeaway</h2>
+  <p>A week with no confirmed Google update still managed to move rankings twice, ship two browser releases' worth of platform change, and put a maximum-severity exploit into active circulation. The lesson isn't to chase each item — it's that websites now live in permanent motion, and the ones that keep winning are maintained like products, not launched like brochures. Whether you search "web developers near me" or hire across an ocean, that's the standard to hold any partner to: does the work move revenue for a business website, week after week, in conditions exactly like these?</p>
+
+  <div class="src rv">
+    <h2>Sources & further reading</h2>
+    <ul>
+      <li><a class="ext" href="https://www.seroundtable.com/google-search-ranking-volatility-january-15-40777.html" target="_blank" rel="noopener">Search Engine Roundtable — Google Search Ranking Volatility Around January 15–16</a></li>
+      <li><a class="ext" href="https://www.firefox.com/en-US/firefox/147.0/releasenotes/" target="_blank" rel="noopener">Mozilla — Firefox 147.0 Release Notes (13 January 2026)</a></li>
+      <li><a class="ext" href="https://developer.chrome.com/blog/chrome-145-beta" target="_blank" rel="noopener">Chrome for Developers — Chrome 145 beta (14 January 2026)</a></li>
+      <li><a class="ext" href="https://www.seroundtable.com/january-2026-google-webmaster-report-40696.html" target="_blank" rel="noopener">Search Engine Roundtable — January 2026 Google Webmaster Report</a></li>
+      <li><a class="ext" href="https://make.wordpress.org/project/2025/12/18/proposal-2026-major-release-schedule/" target="_blank" rel="noopener">WordPress.org — Proposal: 2026 Major Release Schedule</a></li>
+      <li><a class="ext" href="https://www.impressiondigital.com/blog/january-2026-google-algorithm-and-search-industry-updates/" target="_blank" rel="noopener">Impression — January 2026 Google algorithm and search industry updates</a></li>
+    </ul>
+  </div>
+</article>
+
+<section class="band rv">
+  <h2>Want a site built for how search works now?</h2>
+  <p>We design and build conversion-first websites that hold up in classic search and AI answers alike.</p>
+  <a href="../index.html#contact" class="btn btn-pri">Book a Growth Call</a>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-in">
+      <a href="../index.html" class="logo">Hyber<b>X</b></a>
+      <nav class="f-links" aria-label="Services">
+        <a href="../performance-marketing.html">Performance Marketing</a>
+        <a href="../website-design-development.html">Websites</a>
+        <a href="../content-creation.html">Content</a>
+        <a href="../ad-films-brand-videos.html">Ad Films</a>
+        <a href="../conversion-optimization.html">CRO</a>
+      </nav>
+    </div>
+    <div class="f-bottom">
+      <span>© <span id="yr">2026</span> HyberX. All rights reserved.</span>
+      <span style="display:flex;gap:22px"><a href="../privacy-policy.html">Privacy Policy</a><a href="../terms-of-service.html">Terms of Service</a><a href="../index.html#contact">support@hyberx.com</a></span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+"use strict";
+var nav=document.getElementById('nav'),burger=document.getElementById('burger'),mnav=document.getElementById('mnav');
+addEventListener('scroll',function(){nav.classList.toggle('on',scrollY>24);},{passive:true});
+nav.classList.toggle('on',scrollY>24);
+burger.addEventListener('click',function(){
+  var open=mnav.classList.toggle('open');burger.classList.toggle('x',open);
+  burger.setAttribute('aria-expanded',open);document.body.classList.toggle('lock',open);
+});
+addEventListener('keydown',function(e){
+  if(e.key==='Escape'&&mnav.classList.contains('open')){
+    mnav.classList.remove('open');burger.classList.remove('x');
+    burger.setAttribute('aria-expanded','false');document.body.classList.remove('lock');burger.focus();
+  }
+});
+if('IntersectionObserver' in window){
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.12,rootMargin:'0px 0px -40px 0px'});
+  document.querySelectorAll('.rv').forEach(function(el){io.observe(el);});
+}else{document.querySelectorAll('.rv').forEach(function(el){el.classList.add('in');});}
+document.getElementById('yr').textContent=new Date().getFullYear();
+})();
+</script>
+</body>
+</html>

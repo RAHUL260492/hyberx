@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#050507">
+<script>document.documentElement.classList.add('js')</script>
+<title>June Spam Update Done, Figma Config Rewrites the Canvas & Chrome 150 Lands | HyberX Weekly</title>
+<meta name="description" content="Weekly web design, development and SEO recap for 22–28 June 2026: Google's June spam update finishes rolling out, Figma Config 2026 announcements, Chrome 150 and new CSS, Search Console AI controls, and WordPress 7.1 timing.">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<link rel="canonical" href="https://hyberx.com/blog/web-design-seo-recap-june-29-2026.html">
+<meta property="og:url" content="https://hyberx.com/blog/web-design-seo-recap-june-29-2026.html">
+<meta property="og:image" content="https://hyberx.com/og-image.png">
+<meta property="og:site_name" content="HyberX">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://hyberx.com/og-image.png">
+<meta property="og:title" content="June Spam Update Done, Figma Config Rewrites the Canvas & Chrome 150 Lands | HyberX Weekly">
+<meta property="og:description" content="Weekly web design, development and SEO recap for 22–28 June 2026: Google's June spam update finishes, Figma Config 2026, Chrome 150 and new CSS, Search Console AI controls, WordPress 7.1 timing.">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2026-06-29">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "The June Spam Update Wraps, Figma Rewrites Its Canvas, and Chrome 150 Lands",
+  "description": "Weekly web design, development and SEO recap for 22–28 June 2026: Google's June spam update finishes rolling out, Figma Config 2026 announcements, Chrome 150 and new CSS, Search Console AI controls, and WordPress 7.1 timing.",
+  "datePublished": "2026-06-29",
+  "dateModified": "2026-06-29",
+  "author": {"@type": "Organization", "name": "HyberX", "url": "https://hyberx.com/"},
+  "publisher": {"@type": "Organization", "name": "HyberX", "url": "https://hyberx.com/", "logo": {"@type": "ImageObject", "url": "https://hyberx.com/og-image.png"}},
+  "mainEntityOfPage": "https://hyberx.com/blog/web-design-seo-recap-june-29-2026.html",
+  "image": "https://hyberx.com/og-image.png"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "What does the June 2026 Google spam update target?", "acceptedAnswer": {"@type": "Answer", "text": "Google describes it as a normal spam update: improvements to the automated systems that detect violations of its spam policies, applied globally and in all languages. Google confirmed it does not target link spam or the site reputation abuse policy. It rolled out from 24 to 26 June 2026 — an unusually fast two days."}},
+    {"@type": "Question", "name": "My site dropped after 24–26 June — how do I recover from the spam update?", "acceptedAnswer": {"@type": "Answer", "text": "First confirm the timing matches the rollout window in Search Console. If it does, audit against Google's spam policies: scaled or auto-generated content with no added value, doorway pages, thin affiliate pages, expired-domain abuse, and sneaky redirects. Fix or remove violating content, then wait — spam-update recoveries typically only show after the systems reprocess your site, often at the next spam update. There is no reconsideration request for algorithmic spam updates."}},
+    {"@type": "Question", "name": "My rankings didn't move during the spam update — do I need to do anything?", "acceptedAnswer": {"@type": "Answer", "text": "No action needed, but treat it as a free health check. Sites that sail through spam updates usually have original content, real authorship and clean technical foundations. Log your Search Console baseline for the rollout window so you have a reference point when the next update — confirmed or not — comes through."}},
+    {"@type": "Question", "name": "Should my team adopt Figma's new Code Layers and Motion features?", "acceptedAnswer": {"@type": "Answer", "text": "Worth piloting, not worth re-platforming for yet. Code Layers turns designs into interactive code on the canvas and Motion exports animation as CSS, JSON or React — both shorten the design-to-development handoff. But production websites still need performance budgets, accessibility and SEO-clean markup, which generated code does not guarantee. Let designers prototype with it while developers own what ships."}},
+    {"@type": "Question", "name": "Do new CSS features like text-fit in Chrome 150 matter for a business website?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, over time. Features like text-fit (auto-sizing headlines to their container) and field-sizing (form controls that grow with content) replace JavaScript workarounds with native CSS — which means lighter pages, fewer layout bugs and better Core Web Vitals. Adopt them progressively with fallbacks, since Safari support typically lags Chrome and Firefox."}}
+  ]
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;450;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#050507;--bg2:#0a0a0e;--card:#0e0e13;--card2:#14141b;--text:#f7f8fa;--muted:#a5a5a5;--muted2:#7f7f7f;--line:rgba(255,255,255,.1);--line2:rgba(255,255,255,.06);--acc:#ffffff;--acc-ink:#050507;--max:1280px;--r:24px;--ease:cubic-bezier(.19,1,.22,1)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+html.js .rv{opacity:0;transform:translateY(26px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+html.js .rv.in{opacity:1;transform:none}
+body{background:var(--bg);color:var(--text);font-family:'Inter',system-ui,sans-serif;font-weight:450;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body.lock{overflow:hidden}
+h1,h2,h3,h4{font-family:'Space Grotesk',sans-serif;font-weight:600;line-height:1.1;letter-spacing:-.03em}
+a{color:inherit;text-decoration:none}
+img,svg{display:block;max-width:100%}
+button{font:inherit;cursor:pointer}
+::selection{background:#fff;color:#050507}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 28px}
+.ey{display:inline-flex;align-items:center;gap:10px;font-family:'Space Mono',monospace;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+.ey .d{width:6px;height:6px;border-radius:50%;background:var(--acc);box-shadow:0 0 12px var(--acc);animation:pulse 2.4s var(--ease) infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
+.skip{position:fixed;top:-64px;left:16px;z-index:300;background:var(--card2);border:1px solid var(--line);color:var(--text);padding:12px 20px;border-radius:10px;font-weight:600;font-size:14px;transition:top .3s var(--ease)}
+.skip:focus{top:16px}
+a:focus-visible,button:focus-visible{outline:2px solid var(--acc);outline-offset:3px;border-radius:6px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:17px 32px;border-radius:100px;font-weight:600;font-size:15px;border:1px solid transparent;transition:transform .35s var(--ease),box-shadow .35s var(--ease),background .35s,border-color .35s;white-space:nowrap;position:relative;overflow:hidden;isolation:isolate}
+.btn-pri{background:#fff;color:var(--acc-ink);box-shadow:0 8px 32px rgba(255,255,255,.18)}
+.btn-pri:hover{transform:translateY(-2px);box-shadow:0 16px 48px rgba(255,255,255,.26)}
+.btn-ghost{border-color:var(--line);color:var(--text);background:rgba(255,255,255,.03)}
+.btn-ghost:hover{border-color:rgba(255,255,255,.3);background:rgba(255,255,255,.06);transform:translateY(-2px)}
+.glow{position:fixed;inset:0;z-index:-2;background:var(--bg);overflow:hidden}
+.glow::before{content:"";position:absolute;width:70vw;height:70vw;left:50%;top:-42vw;transform:translateX(-50%);border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,.088),transparent 62%);filter:blur(60px)}
+.grain{position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.05;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.6'/%3E%3C/svg%3E")}
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;transition:background .4s,border-color .4s,backdrop-filter .4s}
+.nav.on{background:rgba(5,5,7,.8);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border-bottom:1px solid var(--line2)}
+.nav-in{max-width:var(--max);margin:0 auto;padding:0 28px;height:74px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.logo{font-family:'Space Grotesk',sans-serif;font-size:23px;font-weight:700;letter-spacing:-.02em}
+.logo b{color:transparent;-webkit-text-stroke:1.2px var(--text);font-weight:700}
+.nav-links{display:flex;gap:34px;align-items:center}
+.nav-links a{font-size:14.5px;font-weight:500;color:var(--muted);position:relative;padding:6px 0;transition:color .3s}
+.nav-links a:hover,.nav-links a.act{color:var(--text)}
+.nav-links a::after{content:"";position:absolute;left:0;bottom:0;width:0;height:1.5px;background:var(--acc);transition:width .4s var(--ease)}
+.nav-links a:hover::after,.nav-links a.act::after{width:100%}
+.nav .btn{padding:12px 24px;font-size:14px}
+.burger{display:none;background:none;border:0;width:44px;height:44px;position:relative;z-index:110}
+.burger span{display:block;width:24px;height:2px;background:var(--text);margin:5px auto;border-radius:2px;transition:transform .4s var(--ease),opacity .3s}
+.burger.x span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.burger.x span:nth-child(2){opacity:0}
+.burger.x span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+.mnav{position:fixed;inset:0;z-index:105;background:rgba(5,5,7,.97);backdrop-filter:blur(24px);display:flex;flex-direction:column;justify-content:center;padding:0 36px;gap:8px;opacity:0;pointer-events:none;transition:opacity .4s var(--ease)}
+.mnav.open{opacity:1;pointer-events:auto}
+.mnav a{font-family:'Space Grotesk',sans-serif;font-size:34px;font-weight:600;letter-spacing:-.02em;padding:12px 0;border-bottom:1px solid var(--line2)}
+.mnav .btn{margin-top:28px;align-self:flex-start}
+/* article */
+.post-hero{padding:170px 0 60px;text-align:center}
+.post-hero .ey{justify-content:center}
+.post-hero h1{font-size:clamp(34px,4.8vw,64px);max-width:960px;margin:26px auto 0}
+.post-meta{margin-top:26px;font-family:'Space Mono',monospace;font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted2);display:flex;gap:18px;justify-content:center;flex-wrap:wrap}
+.post{max-width:780px;margin:0 auto;padding:30px 28px 90px}
+.post p{font-size:16.5px;color:#cfcfd4;margin:0 0 22px}
+.post p b,.post p strong{color:var(--text)}
+.post h2{font-size:clamp(24px,2.8vw,34px);margin:54px 0 18px;letter-spacing:-.02em}
+.post h3{font-size:20px;margin:34px 0 12px}
+.post a.ext{color:var(--text);text-decoration:underline;text-decoration-color:rgba(255,255,255,.3);text-underline-offset:3px;transition:text-decoration-color .3s}
+.post a.ext:hover{text-decoration-color:var(--acc)}
+.post ul{margin:0 0 22px;padding-left:22px}
+.post ul li{font-size:16px;color:#cfcfd4;margin-bottom:10px}
+.post .lede{font-size:19px;color:var(--muted);line-height:1.65}
+.callout{border:1px solid var(--line);border-radius:18px;background:linear-gradient(170deg,var(--card2),var(--card));padding:26px 28px;margin:34px 0}
+.callout .ct{font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);display:block;margin-bottom:10px}
+.callout p{margin:0;font-size:15.5px}
+.src{margin-top:60px;padding-top:28px;border-top:1px solid var(--line2)}
+.src h2{font-size:18px;margin:0 0 14px}
+.src ul{list-style:none;padding:0}
+.src li{font-size:13.5px;color:var(--muted);margin-bottom:8px}
+.band{border-radius:30px;border:1px solid var(--line);background:radial-gradient(800px 380px at 50% -10%,rgba(255,255,255,.121),transparent 62%),linear-gradient(170deg,var(--card2),var(--card));padding:70px 40px;text-align:center;position:relative;overflow:hidden;margin:0 auto 100px;max-width:980px}
+.band h2{font-size:clamp(28px,4vw,46px);letter-spacing:-.03em;margin-bottom:14px}
+.band p{color:var(--muted);max-width:540px;margin:0 auto 32px;font-size:16px}
+footer{border-top:1px solid var(--line2);padding:56px 0 40px;background:var(--bg2)}
+.f-in{display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap}
+.f-links{display:flex;gap:26px;flex-wrap:wrap}
+.f-links a{font-size:14px;color:var(--muted);transition:color .3s}
+.f-links a:hover{color:var(--text)}
+.f-bottom{margin-top:34px;padding-top:26px;border-top:1px solid var(--line2);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:13px;color:var(--muted2)}
+@media(max-width:720px){
+  .wrap{padding:0 20px}
+  .nav-links{display:none}.nav .nav-cta{display:none}.burger{display:block}.nav-in{height:64px;padding:0 20px}
+  .post-hero{padding:130px 0 40px}
+  .post{padding:20px 20px 70px}
+  .band{padding:50px 24px;margin:0 20px 80px}
+}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.001s!important;transition-duration:.001s!important}html{scroll-behavior:auto}html.js .rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+<div class="glow" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
+<header class="nav" id="nav">
+  <div class="nav-in">
+    <a href="../index.html" class="logo" aria-label="HyberX home">Hyber<b>X</b></a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="../index.html">Home</a>
+      <a href="../index.html#services">Services</a>
+      <a href="../index.html#work">Work</a>
+      <a href="index.html" class="act">Insights</a>
+      <a href="../index.html#contact">Contact</a>
+    </nav>
+    <div style="display:flex;align-items:center;gap:12px">
+      <a href="../index.html#contact" class="btn btn-pri nav-cta">Book a Call</a>
+      <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<div class="mnav" id="mnav" role="navigation" aria-label="Mobile navigation">
+  <a href="../index.html">Home</a>
+  <a href="../index.html#services">Services</a>
+  <a href="../index.html#work">Work</a>
+  <a href="index.html">Insights</a>
+  <a href="../index.html#contact">Contact</a>
+  <a href="../index.html#contact" class="btn btn-pri">Book a Growth Call</a>
+</div>
+
+<main id="main">
+<section class="post-hero">
+  <div class="wrap">
+    <span class="ey"><i class="d"></i>Weekly Recap · Web Design, Dev & SEO</span>
+    <h1>The June spam update wraps in 48 hours, Figma rewrites its canvas, and Chrome 150 lands.</h1>
+    <div class="post-meta"><span>29 June 2026</span><span>10 min read</span></div>
+  </div>
+</section>
+
+<article class="post">
+  <p class="lede">A dense week. Between 22 and 28 June, Google pushed a confirmed spam update through search in barely two days, Figma used Config 2026 to move code, motion and shaders onto the design canvas, Chrome 150 reached early stable with CSS that kills a whole category of JavaScript hacks, and Search Console's new AI controls kept expanding. Each story sounds like industry inside-baseball until you translate it into the only question that matters: does this change how a business website earns and converts traffic? Here's the week, translated.</p>
+
+  <h2>1. Google's June 2026 spam update: done rolling out in two days</h2>
+  <h3>What happened</h3>
+  <p>Google announced the <b>June 2026 spam update</b> on Wednesday 24 June and confirmed it finished on <b>Friday 26 June</b> — roughly 48 hours, one of the fastest rollouts on record for an update of this type. It's the second spam update of 2026, it applies globally in all languages, and early community readings suggest it hit harder than March's. Google told Search Engine Roundtable it's a "normal" spam update: it does <b>not</b> target link spam and does <b>not</b> enforce the site reputation abuse policy. It's the automated spam-detection systems getting better at what they already do.</p>
+  <h3>What a spam update actually punishes</h3>
+  <ul>
+    <li><b>Scaled content abuse</b> — mass-produced pages (increasingly AI-generated) that add no original value.</li>
+    <li><b>Doorway pages</b> — near-duplicate location or keyword pages built to funnel, not inform. "Web design in [town]" times forty is the classic pattern.</li>
+    <li><b>Thin affiliate and copied content</b> — republishing what already ranks with nothing added.</li>
+    <li><b>Sneaky redirects and cloaking</b> — showing Google one thing and users another.</li>
+    <li><b>Expired domain abuse</b> — old domains repurposed to host unrelated content for rankings.</li>
+  </ul>
+  <p>If your traffic moved between 24 and 26 June, check the timing against Search Console before assuming anything else. If the window matches and you've been running programmatic pages or bulk AI content, you have your answer. And note the sobering part: recovery from an algorithmic spam update isn't a form you file — you fix the violations and typically wait for the systems to reprocess your site, often not until the next update.</p>
+  <div class="callout"><span class="ct">What we'd do about it</span>
+  <p>Audit before you panic. Most legitimate business sites feel nothing from spam updates — that's the point of them. But the two-day rollout speed is a signal worth reading: Google's spam classification is getting faster and more confident, which raises the cost of every shortcut. If part of your lead-gen strategy is a folder of templated location pages, this is the week to replace them with fewer, genuinely local pages — real projects, real reviews, real addresses. That's a job for a <a class="ext" href="../website-design-development.html">website development company</a> that treats content architecture as part of the build, not a plugin setting.</p></div>
+
+  <h2>2. Figma Config 2026: code, motion and shaders move onto the canvas</h2>
+  <h3>What happened</h3>
+  <p>Figma's Config conference ran <b>23–25 June</b> in San Francisco, and the announcements amounted to a thesis: everything that used to happen after design — code, animation, effects — should happen on the canvas. The headliners: <b>Code Layers</b>, which turn any design layer into working, interactive code with a click or a prompt; <b>Figma Motion</b>, a keyframe timeline that exports animation as CSS, JSON, React, MP4, WebM, animated SVG or GIF; WebGPU-powered <b>shader fills</b> on paid plans; and an upgraded Figma AI agent alongside generative plugins.</p>
+  <h3>What it means for how websites get built</h3>
+  <ul>
+    <li><b>The handoff gap narrows.</b> Motion specs that used to be a Loom video and a shrug now export as CSS or React. Fewer interpretation errors, faster builds.</li>
+    <li><b>Prototypes get more honest.</b> Code Layers means stakeholders review something that behaves like the real product, not a picture of it. Better decisions, earlier.</li>
+    <li><b>Generated code still isn't shipped code.</b> Nothing announced at Config guarantees semantic HTML, accessibility, performance budgets or crawlable markup. The craft of html web development — heading hierarchy, clean structure, fast render paths — is still what separates a site that ranks and converts from a beautiful demo.</li>
+  </ul>
+  <div class="callout"><span class="ct">What we'd do about it</span>
+  <p>Adopt the workflow, keep the quality gate. We'd let design teams run Motion and Code Layers for exploration and client sign-off this quarter — the speed gain is real. But everything that ships still goes through developers who own performance, accessibility and SEO-clean markup. Tools that generate code faster make that review more valuable, not less, because more code now arrives unreviewed by default.</p></div>
+
+  <h2>3. Chrome 150: CSS that replaces JavaScript, and a browser facelift</h2>
+  <p>Chrome 150 hit <b>early stable on 17 June</b>, with the full stable rollout landing 30 June — so this was the week developers got their hands on it. The visible change is a WebUI refresh: cleaner icons, simplified context menus, updated internal pages. The changes that matter for your website are in the engine:</p>
+  <ul>
+    <li><b>CSS text-fit</b> — headlines and dynamic text that automatically size to fit their container, in pure CSS. Every hero section with a JavaScript "fit text" library just got lighter.</li>
+    <li><b>AccentColor and AccentColorText</b> — CSS access to the user's operating-system accent colour, for web apps that want to feel native.</li>
+    <li><b>WebGPU immediates</b> — <code>setImmediateData()</code> passes small, frequently updated values to shaders without buffer overhead, useful for the growing wave of GPU-driven page effects.</li>
+    <li><b>Security default</b> — users on Enhanced Safe Browsing now get "Always use secure connections" switched on automatically. If any corner of your site still serves HTTP, more visitors will now see friction.</li>
+  </ul>
+  <p>Elsewhere in browsers: <b>Firefox 152</b> shipped <b>field-sizing</b>, letting textareas and inputs grow with their content natively, and the <b>Safari 27 beta</b> previewed transform-aware anchor positioning, the <code>:heading</code> pseudo-class and stretch-based box sizing. There was no stable Safari release in June — the usual reminder to treat Safari as your compatibility floor and ship new CSS behind progressive enhancement.</p>
+
+  <h2>4. Search Console's AI controls keep spreading</h2>
+  <p>The Search Console story that started mid-June kept developing through this week: Google's new <b>"Search generative AI" settings</b> — which let a site opt out of AI Overviews, AI Mode and AI Overviews in Discover while staying fully indexed in classic results — took effect from 17 June, UK-first under a CMA mandate, with documentation and the AI performance reports expanding to more properties since. It's the first time publishers have had a lever over AI answer inclusion that doesn't also nuke their organic rankings.</p>
+  <h3>Should a business site pull out of AI answers?</h3>
+  <p>Almost certainly not. For publishers whose product is the content itself, the calculus is genuinely hard. For a business website, being cited in an AI answer is a recommendation at the moment of decision — the modern equivalent of ranking #1. The right move is the opposite of opting out: get your AI visibility measured. If the AI performance report is available on your property, baseline it now, and make sure the pages AI systems cite have a clear next step on them — this is where <a class="ext" href="../conversion-optimization.html">conversion optimization</a> and SEO stop being separate disciplines.</p>
+
+  <h2>5. Platform notes: WordPress 7.1 gets a date, Shopify builds keep compounding</h2>
+  <ul>
+    <li><b>WordPress 7.1 is targeted for 19 August 2026</b> — discussed across community coverage this week with a packed backlog, and core committers debating whether real-time collaboration belongs in core at all. If you run WordPress, the practical takeaway is calendar math: plugin-compatibility testing in early August beats firefighting in late August.</li>
+    <li><b>Quiet weeks are for maintenance.</b> No major CMS shipped a release this week, which makes it the right week for the unglamorous work: core and plugin updates, redirect audits, Core Web Vitals checks.</li>
+    <li><b>Commerce stacks feel every search story.</b> The spam update's distaste for templated, thin pages applies double to ecommerce — collection pages with boilerplate descriptions are exactly the pattern that gets classified as low-value. Good <a class="ext" href="../shopify-development-new-york.html">Shopify development partners</a> earn their fee here: unique collection copy, structured data on every product, and fast templates that survive whatever Google ships next.</li>
+    <li><b>One to watch as we publish:</b> today, 29 June, SEO analyst Lily Ray spotted Google testing a <b>Top Stories carousel inside AI Overviews</b> — fresh news links embedded directly in AI answers. If it rolls out, it's the strongest signal yet that AI Overviews will cite timely content, not just evergreen pages. More next week.</li>
+  </ul>
+
+  <h2>What this week means for your website strategy</h2>
+  <p>Pull the threads together and the week has one shape: <b>the floor is rising at both ends of the craft.</b></p>
+  <ul>
+    <li><b>On the search end,</b> Google is running spam classification fast enough to complete a global rollout in 48 hours. Shortcut content — scaled, templated, thin — is a depreciating asset with an enforcement date. Original content on a technically clean site is the only durable position.</li>
+    <li><b>On the build end,</b> Figma is generating code, Chrome is absorbing JavaScript patterns into CSS, and browsers ship monthly. The differentiator is no longer "can you build it" — it's judgment: what to generate, what to hand-craft, what to ship. When you evaluate a website development company or a <a class="ext" href="../website-design-development.html">web design and development team</a>, ask how they use these tools and where they refuse to.</li>
+    <li><b>In between sits measurement.</b> AI visibility reports, AI referral traffic, spam-update windows — the businesses that win the next year are baselining all of it now, while the numbers are small enough to learn from cheaply.</li>
+  </ul>
+
+  <h2>Frequently asked questions</h2>
+  <h3>What does the June 2026 Google spam update target?</h3>
+  <p>It's what Google calls a normal spam update — improved automated detection of spam-policy violations like scaled content, doorway pages, cloaking and expired-domain abuse — applied globally in all languages. Google confirmed it does not target link spam or site reputation abuse. It rolled out 24–26 June.</p>
+  <h3>My site dropped after 24–26 June — how do I recover?</h3>
+  <p>Confirm the timing in Search Console first, then audit honestly against Google's spam policies: bulk AI content, templated location pages, thin affiliate pages, sneaky redirects. Fix or remove what matches, improve what remains, and be patient — algorithmic spam recoveries usually surface only after Google reprocesses the site, often at the next spam update. There's no reconsideration request for this.</p>
+  <h3>My rankings didn't move — do I need to do anything?</h3>
+  <p>Nothing urgent. Take the free health check: sites that pass spam updates untouched generally have original content and clean foundations. Log your rollout-window baseline in Search Console so you can compare cleanly when the next tremor arrives.</p>
+  <h3>Should my team adopt Figma's Code Layers and Motion now?</h3>
+  <p>Pilot them for prototyping and motion specs — the handoff speed is real. But keep human developers as the quality gate for anything that ships, because generated code doesn't guarantee accessibility, performance or SEO-clean markup. Speed in, judgment out.</p>
+  <h3>Do new CSS features like text-fit actually matter for a business site?</h3>
+  <p>Yes — each one retires a JavaScript workaround, which means lighter pages, fewer layout bugs and better Core Web Vitals, all of which feed rankings and conversion. Adopt progressively with fallbacks; Safari had no stable release this month and remains the compatibility floor. If you're comparing agencies or searching "web developers near me", ask candidates which of this month's CSS features they've already shipped — it's a fast test of who keeps current.</p>
+
+  <h2>The takeaway</h2>
+  <p>A 48-hour spam update and a design tool that writes code are the same story told from opposite ends: production is getting easier, and getting away with mediocre production is getting harder. Google is automating the demotion of low-effort pages at the exact moment the tools automate the creation of them. The websites that compound from here are the ones where every generated shortcut passes through human judgment before it ships — and where structure, speed and originality are build decisions, not afterthoughts.</p>
+
+  <div class="src rv">
+    <h2>Sources & further reading</h2>
+    <ul>
+      <li><a class="ext" href="https://searchengineland.com/google-releases-june-2026-spam-update-481002" target="_blank" rel="noopener">Search Engine Land — Google releases June 2026 spam update</a></li>
+      <li><a class="ext" href="https://searchengineland.com/google-june-2026-spam-update-done-rolling-out-481063" target="_blank" rel="noopener">Search Engine Land — June 2026 spam update done rolling out</a></li>
+      <li><a class="ext" href="https://www.seroundtable.com/google-june-2026-spam-update-done-41580.html" target="_blank" rel="noopener">Search Engine Roundtable — Google June 2026 Spam Update Is Done Rolling Out</a></li>
+      <li><a class="ext" href="https://www.figma.com/blog/config-2026-recap/" target="_blank" rel="noopener">Figma — Config 2026: New Materials, New Tools and a More Expressive Canvas</a></li>
+      <li><a class="ext" href="https://developer.chrome.com/blog/chrome-150-beta" target="_blank" rel="noopener">Chrome for Developers — Chrome 150</a></li>
+      <li><a class="ext" href="https://web.dev/blog/web-platform-06-2026" target="_blank" rel="noopener">web.dev — New to the web platform in June 2026</a></li>
+      <li><a class="ext" href="https://www.seroundtable.com/google-top-stories-ai-overviews-41583.html" target="_blank" rel="noopener">Search Engine Roundtable — Google Testing Top Stories Carousel In AI Overviews</a></li>
+      <li><a class="ext" href="https://wpbuilds.com/2026/06/23/this-week-in-wordpress-377/" target="_blank" rel="noopener">WP Builds — This Week in WordPress #377</a></li>
+    </ul>
+  </div>
+</article>
+
+<section class="band rv">
+  <h2>Want a site built for how search works now?</h2>
+  <p>We design and build conversion-first websites that hold up in classic search and AI answers alike.</p>
+  <a href="../index.html#contact" class="btn btn-pri">Book a Growth Call</a>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-in">
+      <a href="../index.html" class="logo">Hyber<b>X</b></a>
+      <nav class="f-links" aria-label="Services">
+        <a href="../performance-marketing.html">Performance Marketing</a>
+        <a href="../website-design-development.html">Websites</a>
+        <a href="../content-creation.html">Content</a>
+        <a href="../ad-films-brand-videos.html">Ad Films</a>
+        <a href="../conversion-optimization.html">CRO</a>
+      </nav>
+    </div>
+    <div class="f-bottom">
+      <span>© <span id="yr">2026</span> HyberX. All rights reserved.</span>
+      <span style="display:flex;gap:22px"><a href="../privacy-policy.html">Privacy Policy</a><a href="../terms-of-service.html">Terms of Service</a><a href="../index.html#contact">support@hyberx.com</a></span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+"use strict";
+var nav=document.getElementById('nav'),burger=document.getElementById('burger'),mnav=document.getElementById('mnav');
+addEventListener('scroll',function(){nav.classList.toggle('on',scrollY>24);},{passive:true});
+nav.classList.toggle('on',scrollY>24);
+burger.addEventListener('click',function(){
+  var open=mnav.classList.toggle('open');burger.classList.toggle('x',open);
+  burger.setAttribute('aria-expanded',open);document.body.classList.toggle('lock',open);
+});
+addEventListener('keydown',function(e){
+  if(e.key==='Escape'&&mnav.classList.contains('open')){
+    mnav.classList.remove('open');burger.classList.remove('x');
+    burger.setAttribute('aria-expanded','false');document.body.classList.remove('lock');burger.focus();
+  }
+});
+if('IntersectionObserver' in window){
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.12,rootMargin:'0px 0px -40px 0px'});
+  document.querySelectorAll('.rv').forEach(function(el){io.observe(el);});
+}else{document.querySelectorAll('.rv').forEach(function(el){el.classList.add('in');});}
+document.getElementById('yr').textContent=new Date().getFullYear();
+})();
+</script>
+</body>
+</html>

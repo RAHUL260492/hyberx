@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#050507">
+<script>document.documentElement.classList.add('js')</script>
+<title>Chrome 150 Ships, WordPress Goes Responsive & Google's Quiet Week | HyberX Weekly</title>
+<meta name="description" content="Weekly web design, development and SEO recap for 29 June – 5 July 2026: Chrome 150 lands text-fit and CSS gradient borders, WordPress opens responsive styling testing, AI Mode gets clickable recipe links, and the calm after Google's June spam update.">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<link rel="canonical" href="https://hyberx.com/blog/web-design-seo-recap-july-6-2026.html">
+<meta property="og:url" content="https://hyberx.com/blog/web-design-seo-recap-july-6-2026.html">
+<meta property="og:image" content="https://hyberx.com/og-image.png">
+<meta property="og:site_name" content="HyberX">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://hyberx.com/og-image.png">
+<meta property="og:title" content="Chrome 150 Ships, WordPress Goes Responsive & Google's Quiet Week | HyberX Weekly">
+<meta property="og:description" content="Weekly web design, development and SEO recap for 29 June – 5 July 2026: Chrome 150's new CSS, WordPress 7.1 responsive styling testing, clickable AI Mode recipe links, and the post-spam-update calm.">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2026-07-06">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Chrome 150 Ships, WordPress Goes Responsive and Google's Quietest Week in Months",
+  "description": "Weekly web design, development and SEO recap for 29 June – 5 July 2026: Chrome 150 lands text-fit and CSS gradient borders, WordPress opens responsive styling testing, AI Mode gets clickable recipe links, and the calm after Google's June spam update.",
+  "datePublished": "2026-07-06",
+  "dateModified": "2026-07-06",
+  "author": {"@type": "Organization", "name": "HyberX", "url": "https://hyberx.com/"},
+  "publisher": {"@type": "Organization", "name": "HyberX", "url": "https://hyberx.com/", "logo": {"@type": "ImageObject", "url": "https://hyberx.com/og-image.png"}},
+  "mainEntityOfPage": "https://hyberx.com/blog/web-design-seo-recap-july-6-2026.html",
+  "image": "https://hyberx.com/og-image.png"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "What new CSS features shipped in Chrome 150?", "acceptedAnswer": {"@type": "Answer", "text": "Chrome 150 went stable on 30 June 2026 with the text-fit property, which scales font size to fit a container's width; background-clip: border-area, which enables native CSS gradient borders; and the AccentColor and AccentColorText system colours, which let installed web apps match the user's device accent colour. It also shipped a large batch of security fixes."}},
+    {"@type": "Question", "name": "What is WordPress responsive styling and when does it ship?", "acceptedAnswer": {"@type": "Answer", "text": "Responsive styling lets you style blocks differently per breakpoint — tablet and mobile — directly in the editor, with changes saved only for the selected viewport. A call for testing opened on 3 July 2026 ahead of WordPress 7.1, with Beta 1 scheduled for 15 July and final release due 19 August 2026."}},
+    {"@type": "Question", "name": "Did Google run an algorithm update the week of 29 June 2026?", "acceptedAnswer": {"@type": "Answer", "text": "No confirmed update ran that week. The June 2026 spam update finished rolling out on 26 June, and the following week was comparatively calm — a useful window to ship site changes and gather clean baseline data before the next tremor."}},
+    {"@type": "Question", "name": "What changed in Google's AI Mode for recipe results?", "acceptedAnswer": {"@type": "Answer", "text": "On 1 July 2026 Google announced a new visual treatment for recipe results in AI Mode: prominent links at the top of responses with creator name, ratings and ingredient counts. It signals Google making AI answers more clickable — and rewarding pages with clean structured data and clear authorship."}},
+    {"@type": "Question", "name": "Should I use the new Chrome 150 CSS features on a client site now?", "acceptedAnswer": {"@type": "Answer", "text": "Use them as progressive enhancement. text-fit and background-clip: border-area are Chrome-only for now, so ship a sensible fallback and layer the new property on top. Baseline features like field-sizing, which reached all major engines in June 2026, are safe to use directly."}}
+  ]
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;450;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#050507;--bg2:#0a0a0e;--card:#0e0e13;--card2:#14141b;--text:#f7f8fa;--muted:#a5a5a5;--muted2:#7f7f7f;--line:rgba(255,255,255,.1);--line2:rgba(255,255,255,.06);--acc:#ffffff;--acc-ink:#050507;--max:1280px;--r:24px;--ease:cubic-bezier(.19,1,.22,1)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+html.js .rv{opacity:0;transform:translateY(26px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+html.js .rv.in{opacity:1;transform:none}
+body{background:var(--bg);color:var(--text);font-family:'Inter',system-ui,sans-serif;font-weight:450;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body.lock{overflow:hidden}
+h1,h2,h3,h4{font-family:'Space Grotesk',sans-serif;font-weight:600;line-height:1.1;letter-spacing:-.03em}
+a{color:inherit;text-decoration:none}
+img,svg{display:block;max-width:100%}
+button{font:inherit;cursor:pointer}
+::selection{background:#fff;color:#050507}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 28px}
+.ey{display:inline-flex;align-items:center;gap:10px;font-family:'Space Mono',monospace;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+.ey .d{width:6px;height:6px;border-radius:50%;background:var(--acc);box-shadow:0 0 12px var(--acc);animation:pulse 2.4s var(--ease) infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
+.skip{position:fixed;top:-64px;left:16px;z-index:300;background:var(--card2);border:1px solid var(--line);color:var(--text);padding:12px 20px;border-radius:10px;font-weight:600;font-size:14px;transition:top .3s var(--ease)}
+.skip:focus{top:16px}
+a:focus-visible,button:focus-visible{outline:2px solid var(--acc);outline-offset:3px;border-radius:6px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:17px 32px;border-radius:100px;font-weight:600;font-size:15px;border:1px solid transparent;transition:transform .35s var(--ease),box-shadow .35s var(--ease),background .35s,border-color .35s;white-space:nowrap;position:relative;overflow:hidden;isolation:isolate}
+.btn-pri{background:#fff;color:var(--acc-ink);box-shadow:0 8px 32px rgba(255,255,255,.18)}
+.btn-pri:hover{transform:translateY(-2px);box-shadow:0 16px 48px rgba(255,255,255,.26)}
+.btn-ghost{border-color:var(--line);color:var(--text);background:rgba(255,255,255,.03)}
+.btn-ghost:hover{border-color:rgba(255,255,255,.3);background:rgba(255,255,255,.06);transform:translateY(-2px)}
+.glow{position:fixed;inset:0;z-index:-2;background:var(--bg);overflow:hidden}
+.glow::before{content:"";position:absolute;width:70vw;height:70vw;left:50%;top:-42vw;transform:translateX(-50%);border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,.088),transparent 62%);filter:blur(60px)}
+.grain{position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.05;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.6'/%3E%3C/svg%3E")}
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;transition:background .4s,border-color .4s,backdrop-filter .4s}
+.nav.on{background:rgba(5,5,7,.8);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border-bottom:1px solid var(--line2)}
+.nav-in{max-width:var(--max);margin:0 auto;padding:0 28px;height:74px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.logo{font-family:'Space Grotesk',sans-serif;font-size:23px;font-weight:700;letter-spacing:-.02em}
+.logo b{color:transparent;-webkit-text-stroke:1.2px var(--text);font-weight:700}
+.nav-links{display:flex;gap:34px;align-items:center}
+.nav-links a{font-size:14.5px;font-weight:500;color:var(--muted);position:relative;padding:6px 0;transition:color .3s}
+.nav-links a:hover,.nav-links a.act{color:var(--text)}
+.nav-links a::after{content:"";position:absolute;left:0;bottom:0;width:0;height:1.5px;background:var(--acc);transition:width .4s var(--ease)}
+.nav-links a:hover::after,.nav-links a.act::after{width:100%}
+.nav .btn{padding:12px 24px;font-size:14px}
+.burger{display:none;background:none;border:0;width:44px;height:44px;position:relative;z-index:110}
+.burger span{display:block;width:24px;height:2px;background:var(--text);margin:5px auto;border-radius:2px;transition:transform .4s var(--ease),opacity .3s}
+.burger.x span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.burger.x span:nth-child(2){opacity:0}
+.burger.x span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+.mnav{position:fixed;inset:0;z-index:105;background:rgba(5,5,7,.97);backdrop-filter:blur(24px);display:flex;flex-direction:column;justify-content:center;padding:0 36px;gap:8px;opacity:0;pointer-events:none;transition:opacity .4s var(--ease)}
+.mnav.open{opacity:1;pointer-events:auto}
+.mnav a{font-family:'Space Grotesk',sans-serif;font-size:34px;font-weight:600;letter-spacing:-.02em;padding:12px 0;border-bottom:1px solid var(--line2)}
+.mnav .btn{margin-top:28px;align-self:flex-start}
+/* article */
+.post-hero{padding:170px 0 60px;text-align:center}
+.post-hero .ey{justify-content:center}
+.post-hero h1{font-size:clamp(34px,4.8vw,64px);max-width:960px;margin:26px auto 0}
+.post-meta{margin-top:26px;font-family:'Space Mono',monospace;font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted2);display:flex;gap:18px;justify-content:center;flex-wrap:wrap}
+.post{max-width:780px;margin:0 auto;padding:30px 28px 90px}
+.post p{font-size:16.5px;color:#cfcfd4;margin:0 0 22px}
+.post p b,.post p strong{color:var(--text)}
+.post h2{font-size:clamp(24px,2.8vw,34px);margin:54px 0 18px;letter-spacing:-.02em}
+.post h3{font-size:20px;margin:34px 0 12px}
+.post a.ext{color:var(--text);text-decoration:underline;text-decoration-color:rgba(255,255,255,.3);text-underline-offset:3px;transition:text-decoration-color .3s}
+.post a.ext:hover{text-decoration-color:var(--acc)}
+.post ul{margin:0 0 22px;padding-left:22px}
+.post ul li{font-size:16px;color:#cfcfd4;margin-bottom:10px}
+.post .lede{font-size:19px;color:var(--muted);line-height:1.65}
+.callout{border:1px solid var(--line);border-radius:18px;background:linear-gradient(170deg,var(--card2),var(--card));padding:26px 28px;margin:34px 0}
+.callout .ct{font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);display:block;margin-bottom:10px}
+.callout p{margin:0;font-size:15.5px}
+.src{margin-top:60px;padding-top:28px;border-top:1px solid var(--line2)}
+.src h2{font-size:18px;margin:0 0 14px}
+.src ul{list-style:none;padding:0}
+.src li{font-size:13.5px;color:var(--muted);margin-bottom:8px}
+.band{border-radius:30px;border:1px solid var(--line);background:radial-gradient(800px 380px at 50% -10%,rgba(255,255,255,.121),transparent 62%),linear-gradient(170deg,var(--card2),var(--card));padding:70px 40px;text-align:center;position:relative;overflow:hidden;margin:0 auto 100px;max-width:980px}
+.band h2{font-size:clamp(28px,4vw,46px);letter-spacing:-.03em;margin-bottom:14px}
+.band p{color:var(--muted);max-width:540px;margin:0 auto 32px;font-size:16px}
+footer{border-top:1px solid var(--line2);padding:56px 0 40px;background:var(--bg2)}
+.f-in{display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap}
+.f-links{display:flex;gap:26px;flex-wrap:wrap}
+.f-links a{font-size:14px;color:var(--muted);transition:color .3s}
+.f-links a:hover{color:var(--text)}
+.f-bottom{margin-top:34px;padding-top:26px;border-top:1px solid var(--line2);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:13px;color:var(--muted2)}
+@media(max-width:720px){
+  .wrap{padding:0 20px}
+  .nav-links{display:none}.nav .nav-cta{display:none}.burger{display:block}.nav-in{height:64px;padding:0 20px}
+  .post-hero{padding:130px 0 40px}
+  .post{padding:20px 20px 70px}
+  .band{padding:50px 24px;margin:0 20px 80px}
+}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.001s!important;transition-duration:.001s!important}html{scroll-behavior:auto}html.js .rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+<div class="glow" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
+<header class="nav" id="nav">
+  <div class="nav-in">
+    <a href="../index.html" class="logo" aria-label="HyberX home">Hyber<b>X</b></a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="../index.html">Home</a>
+      <a href="../index.html#services">Services</a>
+      <a href="../index.html#work">Work</a>
+      <a href="index.html" class="act">Insights</a>
+      <a href="../index.html#contact">Contact</a>
+    </nav>
+    <div style="display:flex;align-items:center;gap:12px">
+      <a href="../index.html#contact" class="btn btn-pri nav-cta">Book a Call</a>
+      <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<div class="mnav" id="mnav" role="navigation" aria-label="Mobile navigation">
+  <a href="../index.html">Home</a>
+  <a href="../index.html#services">Services</a>
+  <a href="../index.html#work">Work</a>
+  <a href="index.html">Insights</a>
+  <a href="../index.html#contact">Contact</a>
+  <a href="../index.html#contact" class="btn btn-pri">Book a Growth Call</a>
+</div>
+
+<main id="main">
+<section class="post-hero">
+  <div class="wrap">
+    <span class="ey"><i class="d"></i>Weekly Recap · Web Design, Dev & SEO</span>
+    <h1>Chrome 150 ships new CSS, WordPress goes responsive, and Google has its quietest week in months.</h1>
+    <div class="post-meta"><span>6 July 2026</span><span>10 min read</span></div>
+  </div>
+</section>
+
+<article class="post">
+  <p class="lede">For once, the news came from the build side, not the algorithm side. Between 29 June and 5 July, Google's rankings stayed comparatively calm after the June spam update wrapped on the 26th — while the platforms your website actually runs on moved fast. Chrome 150 went stable with three genuinely useful CSS features, WordPress opened testing on per-device block styling ahead of 7.1, Google made AI Mode answers more clickable, and the web platform's June haul got its official recap. A quiet ranking week is a gift: it's the window to ship. Here's everything that mattered, filtered through one question — does it move revenue for a business website?</p>
+
+  <h2>1. Chrome 150 goes stable: text-fit, gradient borders, and system accent colours</h2>
+  <h3>What happened</h3>
+  <p>Chrome 150 shipped to stable on <b>30 June</b>, and it's one of the more design-relevant releases in a while. Three features stand out:</p>
+  <ul>
+    <li><b>text-fit</b> — a CSS property that scales a text node's font size to fit the width of its container. Every hero headline that's ever wrapped awkwardly on a 390px screen, every hand-rolled fitty.js hack: this replaces them with one declaration.</li>
+    <li><b>background-clip: border-area</b> — clips a background to the area painted by the border, which means <b>native gradient borders</b> with no pseudo-element tricks, no double-wrapper hacks.</li>
+    <li><b>AccentColor and AccentColorText</b> — system colours that let installed web apps pick up the accent colour the user chose on their device, so a PWA can feel native without guessing.</li>
+  </ul>
+  <p>The release also carried a large batch of security fixes and continued the phase-out of Manifest V2 extensions — worth knowing if any part of your team's workflow still leans on older Chrome extensions.</p>
+  <div class="callout"><span class="ct">What we'd do about it</span>
+  <p>Treat all three as progressive enhancement: ship the fallback first, layer the new property on top with <code>@supports</code>. text-fit in particular is a conversion feature disguised as a typography feature — headlines that fit cleanly on every device keep the value proposition readable above the fold, which is where most landing pages win or lose. This is the level of craft to expect from any <a class="ext" href="../website-design-development.html">website development company</a> you brief this quarter.</p></div>
+
+  <h2>2. WordPress opens testing on responsive styling — the feature users have wanted for years</h2>
+  <h3>What happened</h3>
+  <p>On <b>3 July</b>, WordPress contributors published a formal call for testing for <b>responsive styling</b>: the ability to style blocks differently for tablet and mobile, directly in the editor. You toggle on responsive editing from the device-preview dropdown, switch the canvas to a smaller viewport, adjust a style — and the change saves only for that breakpoint, with a badge in the inspector confirming which device you're editing.</p>
+  <p>The timeline is tight: WordPress <b>7.1 Beta 1 lands 15 July</b>, with the final release due <b>19 August</b>. The same week's Gutenberg news covered the 7.1 roadmap and Gutenberg 23.5, so the direction is clear — the block editor is finally closing the gap with page builders on per-device control.</p>
+  <h3>Why it matters for business sites</h3>
+  <ul>
+    <li><b>Fewer plugin crutches.</b> A lot of sites carry a page-builder plugin purely for breakpoint control. Native responsive styling removes that dependency — and its performance tax.</li>
+    <li><b>Mobile is where the money is.</b> For most service and ecommerce sites, the majority of paid and organic traffic is mobile. Being able to tune spacing, type and layout per device without a developer round-trip shortens every optimisation cycle.</li>
+    <li><b>Test before you rely on it.</b> It's a call for testing, not a shipped feature. If WordPress runs your revenue site, try it in Playground now and plan the 7.1 upgrade for late August, not launch day.</li>
+  </ul>
+
+  <h2>3. Google makes AI Mode more clickable — starting with recipes</h2>
+  <h3>What happened</h3>
+  <p>On <b>1 July</b>, Google announced a new visual treatment for recipe results in AI Mode: <b>prominent links at the top of responses</b>, with creator name, ratings and ingredient counts pulled through. Recipes are the test kitchen, but the pattern is the story — Google is experimenting with making AI answers send more clicks, and it's choosing which pages to feature based on structured data and clear authorship.</p>
+  <p>The same week, observers spotted Google surfacing <b>markdown files in AI Overview snippets</b> — a reminder that anything crawlable can become an answer — and on <b>2 July</b>, <b>Google Business Profiles went officially live inside Gemini</b>, putting your local listing data directly into another AI surface. Meanwhile Search Console's new Generative AI report, launched in June, kept rolling out to more sites, giving owners their first official read on AI Overviews and AI Mode visibility.</p>
+  <div class="callout"><span class="ct">What we'd do about it</span>
+  <p>The pages winning links inside AI surfaces share a build signature: valid schema markup, visible authorship, direct answers high on the page, and clean semantic HTML. None of that is bolt-on SEO — it's decided during html web development, when headings, markup and structured data get written. Audit your top ten revenue pages against that list this week, while rankings are calm, and make sure your Business Profile data is accurate now that Gemini is reading it too.</p></div>
+
+  <h2>4. The web platform's June haul: field-sizing goes Baseline, gap decorations arrive</h2>
+  <p>web.dev's monthly recap, published around <b>1 July</b>, tallied the browser releases of June — Chrome 149 and 150, Firefox 152, no stable Safari — and flagged two items beyond the Chrome 150 headliners:</p>
+  <ul>
+    <li><b>field-sizing is now Baseline Newly available.</b> With Firefox 152 on board, <code>field-sizing: content</code> works in every major engine: textareas and inputs that grow with their content, no JavaScript. If your lead forms still use fixed-height textareas that scroll awkwardly on mobile, this is a one-line fix you can ship today.</li>
+    <li><b>CSS gap decorations</b> (Chrome 149) let you style the gaps between grid and flex items — rules and dividers without border hacks or extra markup.</li>
+  </ul>
+  <p>Baseline status is the practical signal here: field-sizing is safe to use unguarded, while text-fit and gap decorations still want an <code>@supports</code> wrapper.</p>
+
+  <h2>5. Search stayed quiet — and quick hits worth a minute</h2>
+  <h3>The calm after the spam update</h3>
+  <p>The <b>June 2026 spam update finished rolling out on 26 June</b>, and the week that followed was the calmest the trackers have shown in months. No confirmed update, no major volatility spike. That matters tactically: a quiet week is when you ship structural changes, because you can attribute what happens next to your work rather than to Google's. Google's Head of Search, Liz Reid, also gave a podcast interview this week repeating the company line that it wants great content to shine in both classic results and AI experiences — take the sentiment, keep the receipts.</p>
+  <h3>Quick hits</h3>
+  <ul>
+    <li><b>Fraudulent DMCA takedowns</b> were reported causing real damage in Google Search — legitimate pages knocked out by fake copyright claims. If a page vanishes from results, check for a DMCA notice before assuming an algorithm hit.</li>
+    <li><b>Google Trends</b> added same-time-period comparisons — small, but handy for seasonal planning.</li>
+    <li><b>Google Ads</b> was spotted testing AI-generated summaries beneath ad descriptions — another place your messaging gets machine-rewritten, so keep landing pages and ad copy tightly aligned.</li>
+    <li><b>Fabrice Canel retired from Microsoft Bing</b> after almost 30 years — the end of an era for anyone who's worked with Bing Webmaster Tools.</li>
+  </ul>
+
+  <h2>What this week means for your website strategy</h2>
+  <p>Three threads to pull together if you own a business website or are scoping a build:</p>
+  <ul>
+    <li><b>Ship during the calm.</b> With no update in flight, this is the fortnight to do the structural work — migrations, template changes, schema rollouts — and measure it cleanly. Pair every change with a <a class="ext" href="../conversion-optimization.html">conversion optimization</a> baseline so you know what moved and why.</li>
+    <li><b>The browser is doing more of the work.</b> text-fit, gradient borders, field-sizing, gap decorations — features that used to cost JavaScript now cost one line of CSS. Less script means faster pages, and faster pages convert better. Ecommerce teams should hold their <a class="ext" href="../shopify-development-new-york.html">Shopify development partners</a> to the same standard: modern CSS first, script only where it earns its weight.</li>
+    <li><b>AI surfaces are becoming referral channels.</b> Clickable recipe links, Business Profiles in Gemini, a Generative AI report in Search Console — Google is building the plumbing for AI answers that send traffic. The sites that benefit will be the ones whose structure, schema and authorship were built in from day one.</li>
+  </ul>
+
+  <h2>Frequently asked questions</h2>
+  <h3>What new CSS features shipped in Chrome 150?</h3>
+  <p>Chrome 150 went stable on 30 June 2026 with text-fit (font size scales to fit the container), background-clip: border-area (native gradient borders), and the AccentColor/AccentColorText system colours for installed web apps — plus a large batch of security fixes.</p>
+  <h3>What is WordPress responsive styling and when does it ship?</h3>
+  <p>It's per-breakpoint block styling — tablet and mobile styles set directly in the editor, saved per viewport. The call for testing opened 3 July 2026; WordPress 7.1 Beta 1 is due 15 July and the final release 19 August.</p>
+  <h3>Did Google run an algorithm update the week of 29 June 2026?</h3>
+  <p>No confirmed update. The June spam update finished on 26 June, and the following week was notably calm — a good window to ship site changes with clean attribution.</p>
+  <h3>What changed in Google's AI Mode for recipe results?</h3>
+  <p>Google added prominent, information-rich links at the top of AI Mode recipe responses — creator name, ratings, ingredient counts. It's the clearest signal yet that structured data and visible authorship decide who gets featured, and clicked, in AI answers.</p>
+  <h3>Should I use the new Chrome 150 CSS features on a client site now?</h3>
+  <p>As progressive enhancement, yes: fallback first, new property behind @supports. field-sizing is the exception — it reached Baseline across all major engines in June, so it's safe to use unguarded. If you're vetting web developers near me for a rebuild, ask how they handle exactly this kind of browser-support decision; the answer tells you a lot.</p>
+
+  <h2>The takeaway</h2>
+  <p>The week of 29 June – 5 July was the inverse of most weeks in 2026: the algorithm rested while the platform sprinted. Chrome handed designers three features they've wanted for a decade, WordPress started closing its biggest editor gap, and Google quietly kept wiring AI answers up as a traffic source. The sites that gain from all of it will be the ones treating build quality — markup, schema, speed, per-device polish — as the growth lever it now plainly is.</p>
+
+  <div class="src rv">
+    <h2>Sources & further reading</h2>
+    <ul>
+      <li><a class="ext" href="https://developer.chrome.com/blog/new-in-chrome-150" target="_blank" rel="noopener">Chrome for Developers — New in Chrome 150</a></li>
+      <li><a class="ext" href="https://web.dev/blog/web-platform-06-2026" target="_blank" rel="noopener">web.dev — New to the web platform in June 2026</a></li>
+      <li><a class="ext" href="https://make.wordpress.org/test/2026/07/03/call-for-testing-responsive-styling/" target="_blank" rel="noopener">Make WordPress — Call for Testing: Responsive Styling</a></li>
+      <li><a class="ext" href="https://www.seroundtable.com/recap-07-01-2026-41605.html" target="_blank" rel="noopener">Search Engine Roundtable — Daily Recap, 1 July 2026</a></li>
+      <li><a class="ext" href="https://www.seroundtable.com/recap-07-02-2026-41616.html" target="_blank" rel="noopener">Search Engine Roundtable — Daily Recap, 2 July 2026</a></li>
+      <li><a class="ext" href="https://fortunelords.com/seo-news-week-28/" target="_blank" rel="noopener">Fortunelords — SEO & AI Search News, 29 June – 5 July 2026</a></li>
+    </ul>
+  </div>
+</article>
+
+<section class="band rv">
+  <h2>Want a site built for how search works now?</h2>
+  <p>We design and build conversion-first websites that hold up in classic search and AI answers alike.</p>
+  <a href="../index.html#contact" class="btn btn-pri">Book a Growth Call</a>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-in">
+      <a href="../index.html" class="logo">Hyber<b>X</b></a>
+      <nav class="f-links" aria-label="Services">
+        <a href="../performance-marketing.html">Performance Marketing</a>
+        <a href="../website-design-development.html">Websites</a>
+        <a href="../content-creation.html">Content</a>
+        <a href="../ad-films-brand-videos.html">Ad Films</a>
+        <a href="../conversion-optimization.html">CRO</a>
+      </nav>
+    </div>
+    <div class="f-bottom">
+      <span>© <span id="yr">2026</span> HyberX. All rights reserved.</span>
+      <span style="display:flex;gap:22px"><a href="../privacy-policy.html">Privacy Policy</a><a href="../terms-of-service.html">Terms of Service</a><a href="../index.html#contact">support@hyberx.com</a></span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+"use strict";
+var nav=document.getElementById('nav'),burger=document.getElementById('burger'),mnav=document.getElementById('mnav');
+addEventListener('scroll',function(){nav.classList.toggle('on',scrollY>24);},{passive:true});
+nav.classList.toggle('on',scrollY>24);
+burger.addEventListener('click',function(){
+  var open=mnav.classList.toggle('open');burger.classList.toggle('x',open);
+  burger.setAttribute('aria-expanded',open);document.body.classList.toggle('lock',open);
+});
+addEventListener('keydown',function(e){
+  if(e.key==='Escape'&&mnav.classList.contains('open')){
+    mnav.classList.remove('open');burger.classList.remove('x');
+    burger.setAttribute('aria-expanded','false');document.body.classList.remove('lock');burger.focus();
+  }
+});
+if('IntersectionObserver' in window){
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.12,rootMargin:'0px 0px -40px 0px'});
+  document.querySelectorAll('.rv').forEach(function(el){io.observe(el);});
+}else{document.querySelectorAll('.rv').forEach(function(el){el.classList.add('in');});}
+document.getElementById('yr').textContent=new Date().getFullYear();
+})();
+</script>
+</body>
+</html>

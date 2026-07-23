@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#050507">
+<script>document.documentElement.classList.add('js')</script>
+<title>Volatility Won't Quit, WordPress 7.0 Beta 5 & Container Queries Go Cross-Browser | HyberX Weekly</title>
+<meta name="description" content="Weekly web design, development and SEO recap for 9–15 March 2026: unconfirmed Google ranking volatility, WordPress 6.9.4 security release and 7.0 Beta 5, Chrome 146 / Firefox 149 / Safari 26.4 CSS features, AI Mode query data, and Shopify's partner platform overhaul.">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<link rel="canonical" href="https://hyberx.com/blog/web-design-seo-recap-march-16-2026.html">
+<meta property="og:url" content="https://hyberx.com/blog/web-design-seo-recap-march-16-2026.html">
+<meta property="og:image" content="https://hyberx.com/og-image.png">
+<meta property="og:site_name" content="HyberX">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://hyberx.com/og-image.png">
+<meta property="og:title" content="Volatility Won't Quit, WordPress 7.0 Beta 5 & Container Queries Go Cross-Browser | HyberX Weekly">
+<meta property="og:description" content="Weekly web design, development and SEO recap for 9–15 March 2026: unconfirmed Google volatility, WordPress 6.9.4 and 7.0 Beta 5, new CSS in Chrome 146 / Firefox 149 / Safari 26.4, AI Mode data, Shopify partner platform changes.">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2026-03-16">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Volatility Won't Quit, WordPress 7.0 Beta 5 and Container Queries Go Cross-Browser",
+  "description": "Weekly web design, development and SEO recap for 9–15 March 2026: unconfirmed Google ranking volatility, WordPress 6.9.4 security release and 7.0 Beta 5, Chrome 146 / Firefox 149 / Safari 26.4 CSS features, AI Mode query data, and Shopify's partner platform overhaul.",
+  "datePublished": "2026-03-16",
+  "dateModified": "2026-03-16",
+  "author": {"@type": "Organization", "name": "HyberX", "url": "https://hyberx.com/"},
+  "publisher": {"@type": "Organization", "name": "HyberX", "url": "https://hyberx.com/", "logo": {"@type": "ImageObject", "url": "https://hyberx.com/og-image.png"}},
+  "mainEntityOfPage": "https://hyberx.com/blog/web-design-seo-recap-march-16-2026.html",
+  "image": "https://hyberx.com/og-image.png"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "Is there a confirmed Google algorithm update in March 2026?", "acceptedAnswer": {"@type": "Answer", "text": "As of 16 March 2026, no. Rankings have been unusually volatile since January, with tracking sensors spiking as high as 9.5 out of 10 in late February and early March, but Google has confirmed nothing. Treat it as sustained background turbulence: diagnose before acting, compare against competitors, and avoid panic rewrites."}},
+    {"@type": "Question", "name": "Should I install WordPress 6.9.4 right away?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. WordPress 6.9.4, released 11 March 2026, is a security release. Security releases should be applied within days, not weeks — take a backup, update on staging if you have it, then push to production. Sites still on 6.9.1 or earlier are also missing the fixes bundled in 6.9.2 and 6.9.3."}},
+    {"@type": "Question", "name": "Should I wait for WordPress 7.0 before starting a website redesign?", "acceptedAnswer": {"@type": "Answer", "text": "No. WordPress 7.0 reached Beta 5 on 12 March 2026 with final release scheduled for early April, but anything built properly on 6.9.x will upgrade cleanly. Delaying a redesign that drives revenue to wait for a version number costs more than the upgrade ever will."}},
+    {"@type": "Question", "name": "What are name-only container queries and why do they matter?", "acceptedAnswer": {"@type": "Answer", "text": "Firefox 149 and Safari 26.4 both shipped support for @container queries that match on a container's name alone, with no size condition. Combined with Chrome's existing support, it makes truly reusable, context-aware components practical across all major browsers — a card can restyle itself based on where it sits, not just how wide the viewport is."}},
+    {"@type": "Question", "name": "What changed for Shopify partners and developers in March 2026?", "acceptedAnswer": {"@type": "Answer", "text": "Shopify's March 2026 dev platform update overhauled partner organizations: a single Owner plus Admins, role-based access control, and centralized management in the Dev Dashboard. It also introduced Tinker, an AI workspace for building and testing storefront sections without touching a live theme. Merchants should ask their Shopify development partners how store access is now scoped."}}
+  ]
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;450;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#050507;--bg2:#0a0a0e;--card:#0e0e13;--card2:#14141b;--text:#f7f8fa;--muted:#a5a5a5;--muted2:#7f7f7f;--line:rgba(255,255,255,.1);--line2:rgba(255,255,255,.06);--acc:#ffffff;--acc-ink:#050507;--max:1280px;--r:24px;--ease:cubic-bezier(.19,1,.22,1)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+html.js .rv{opacity:0;transform:translateY(26px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+html.js .rv.in{opacity:1;transform:none}
+body{background:var(--bg);color:var(--text);font-family:'Inter',system-ui,sans-serif;font-weight:450;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body.lock{overflow:hidden}
+h1,h2,h3,h4{font-family:'Space Grotesk',sans-serif;font-weight:600;line-height:1.1;letter-spacing:-.03em}
+a{color:inherit;text-decoration:none}
+img,svg{display:block;max-width:100%}
+button{font:inherit;cursor:pointer}
+::selection{background:#fff;color:#050507}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 28px}
+.ey{display:inline-flex;align-items:center;gap:10px;font-family:'Space Mono',monospace;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+.ey .d{width:6px;height:6px;border-radius:50%;background:var(--acc);box-shadow:0 0 12px var(--acc);animation:pulse 2.4s var(--ease) infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
+.skip{position:fixed;top:-64px;left:16px;z-index:300;background:var(--card2);border:1px solid var(--line);color:var(--text);padding:12px 20px;border-radius:10px;font-weight:600;font-size:14px;transition:top .3s var(--ease)}
+.skip:focus{top:16px}
+a:focus-visible,button:focus-visible{outline:2px solid var(--acc);outline-offset:3px;border-radius:6px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:17px 32px;border-radius:100px;font-weight:600;font-size:15px;border:1px solid transparent;transition:transform .35s var(--ease),box-shadow .35s var(--ease),background .35s,border-color .35s;white-space:nowrap;position:relative;overflow:hidden;isolation:isolate}
+.btn-pri{background:#fff;color:var(--acc-ink);box-shadow:0 8px 32px rgba(255,255,255,.18)}
+.btn-pri:hover{transform:translateY(-2px);box-shadow:0 16px 48px rgba(255,255,255,.26)}
+.btn-ghost{border-color:var(--line);color:var(--text);background:rgba(255,255,255,.03)}
+.btn-ghost:hover{border-color:rgba(255,255,255,.3);background:rgba(255,255,255,.06);transform:translateY(-2px)}
+.glow{position:fixed;inset:0;z-index:-2;background:var(--bg);overflow:hidden}
+.glow::before{content:"";position:absolute;width:70vw;height:70vw;left:50%;top:-42vw;transform:translateX(-50%);border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,.088),transparent 62%);filter:blur(60px)}
+.grain{position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.05;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.6'/%3E%3C/svg%3E")}
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;transition:background .4s,border-color .4s,backdrop-filter .4s}
+.nav.on{background:rgba(5,5,7,.8);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border-bottom:1px solid var(--line2)}
+.nav-in{max-width:var(--max);margin:0 auto;padding:0 28px;height:74px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.logo{font-family:'Space Grotesk',sans-serif;font-size:23px;font-weight:700;letter-spacing:-.02em}
+.logo b{color:transparent;-webkit-text-stroke:1.2px var(--text);font-weight:700}
+.nav-links{display:flex;gap:34px;align-items:center}
+.nav-links a{font-size:14.5px;font-weight:500;color:var(--muted);position:relative;padding:6px 0;transition:color .3s}
+.nav-links a:hover,.nav-links a.act{color:var(--text)}
+.nav-links a::after{content:"";position:absolute;left:0;bottom:0;width:0;height:1.5px;background:var(--acc);transition:width .4s var(--ease)}
+.nav-links a:hover::after,.nav-links a.act::after{width:100%}
+.nav .btn{padding:12px 24px;font-size:14px}
+.burger{display:none;background:none;border:0;width:44px;height:44px;position:relative;z-index:110}
+.burger span{display:block;width:24px;height:2px;background:var(--text);margin:5px auto;border-radius:2px;transition:transform .4s var(--ease),opacity .3s}
+.burger.x span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.burger.x span:nth-child(2){opacity:0}
+.burger.x span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+.mnav{position:fixed;inset:0;z-index:105;background:rgba(5,5,7,.97);backdrop-filter:blur(24px);display:flex;flex-direction:column;justify-content:center;padding:0 36px;gap:8px;opacity:0;pointer-events:none;transition:opacity .4s var(--ease)}
+.mnav.open{opacity:1;pointer-events:auto}
+.mnav a{font-family:'Space Grotesk',sans-serif;font-size:34px;font-weight:600;letter-spacing:-.02em;padding:12px 0;border-bottom:1px solid var(--line2)}
+.mnav .btn{margin-top:28px;align-self:flex-start}
+/* article */
+.post-hero{padding:170px 0 60px;text-align:center}
+.post-hero .ey{justify-content:center}
+.post-hero h1{font-size:clamp(34px,4.8vw,64px);max-width:960px;margin:26px auto 0}
+.post-meta{margin-top:26px;font-family:'Space Mono',monospace;font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted2);display:flex;gap:18px;justify-content:center;flex-wrap:wrap}
+.post{max-width:780px;margin:0 auto;padding:30px 28px 90px}
+.post p{font-size:16.5px;color:#cfcfd4;margin:0 0 22px}
+.post p b,.post p strong{color:var(--text)}
+.post h2{font-size:clamp(24px,2.8vw,34px);margin:54px 0 18px;letter-spacing:-.02em}
+.post h3{font-size:20px;margin:34px 0 12px}
+.post a.ext{color:var(--text);text-decoration:underline;text-decoration-color:rgba(255,255,255,.3);text-underline-offset:3px;transition:text-decoration-color .3s}
+.post a.ext:hover{text-decoration-color:var(--acc)}
+.post ul{margin:0 0 22px;padding-left:22px}
+.post ul li{font-size:16px;color:#cfcfd4;margin-bottom:10px}
+.post .lede{font-size:19px;color:var(--muted);line-height:1.65}
+.callout{border:1px solid var(--line);border-radius:18px;background:linear-gradient(170deg,var(--card2),var(--card));padding:26px 28px;margin:34px 0}
+.callout .ct{font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);display:block;margin-bottom:10px}
+.callout p{margin:0;font-size:15.5px}
+.src{margin-top:60px;padding-top:28px;border-top:1px solid var(--line2)}
+.src h2{font-size:18px;margin:0 0 14px}
+.src ul{list-style:none;padding:0}
+.src li{font-size:13.5px;color:var(--muted);margin-bottom:8px}
+.band{border-radius:30px;border:1px solid var(--line);background:radial-gradient(800px 380px at 50% -10%,rgba(255,255,255,.121),transparent 62%),linear-gradient(170deg,var(--card2),var(--card));padding:70px 40px;text-align:center;position:relative;overflow:hidden;margin:0 auto 100px;max-width:980px}
+.band h2{font-size:clamp(28px,4vw,46px);letter-spacing:-.03em;margin-bottom:14px}
+.band p{color:var(--muted);max-width:540px;margin:0 auto 32px;font-size:16px}
+footer{border-top:1px solid var(--line2);padding:56px 0 40px;background:var(--bg2)}
+.f-in{display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap}
+.f-links{display:flex;gap:26px;flex-wrap:wrap}
+.f-links a{font-size:14px;color:var(--muted);transition:color .3s}
+.f-links a:hover{color:var(--text)}
+.f-bottom{margin-top:34px;padding-top:26px;border-top:1px solid var(--line2);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:13px;color:var(--muted2)}
+@media(max-width:720px){
+  .wrap{padding:0 20px}
+  .nav-links{display:none}.nav .nav-cta{display:none}.burger{display:block}.nav-in{height:64px;padding:0 20px}
+  .post-hero{padding:130px 0 40px}
+  .post{padding:20px 20px 70px}
+  .band{padding:50px 24px;margin:0 20px 80px}
+}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.001s!important;transition-duration:.001s!important}html{scroll-behavior:auto}html.js .rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+<div class="glow" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
+<header class="nav" id="nav">
+  <div class="nav-in">
+    <a href="../index.html" class="logo" aria-label="HyberX home">Hyber<b>X</b></a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="../index.html">Home</a>
+      <a href="../index.html#services">Services</a>
+      <a href="../index.html#work">Work</a>
+      <a href="index.html" class="act">Insights</a>
+      <a href="../index.html#contact">Contact</a>
+    </nav>
+    <div style="display:flex;align-items:center;gap:12px">
+      <a href="../index.html#contact" class="btn btn-pri nav-cta">Book a Call</a>
+      <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<div class="mnav" id="mnav" role="navigation" aria-label="Mobile navigation">
+  <a href="../index.html">Home</a>
+  <a href="../index.html#services">Services</a>
+  <a href="../index.html#work">Work</a>
+  <a href="index.html">Insights</a>
+  <a href="../index.html#contact">Contact</a>
+  <a href="../index.html#contact" class="btn btn-pri">Book a Growth Call</a>
+</div>
+
+<main id="main">
+<section class="post-hero">
+  <div class="wrap">
+    <span class="ey"><i class="d"></i>Weekly Recap · Web Design, Dev & SEO</span>
+    <h1>Rankings won't sit still, WordPress ships twice in a week, and container queries finally go everywhere.</h1>
+    <div class="post-meta"><span>16 March 2026</span><span>10 min read</span></div>
+  </div>
+</section>
+
+<article class="post">
+  <p class="lede">Ten weeks into 2026 and Google's rankings still haven't found a resting position. Between 9 and 15 March the volatility trackers stayed hot with no confirmed update to blame, WordPress shipped a security release and a major beta within twenty-four hours of each other, three browsers converged on the same CSS feature, and Shopify quietly rewrote how its partner ecosystem handles store access. None of it is abstract: every item this week lands on a question we hear from clients — is my traffic safe, is my platform safe, and is my site built for how people actually browse now. Here's the week, item by item, with the move we'd make on each.</p>
+
+  <h2>1. Google volatility grinds on — still no confirmed update</h2>
+  <h3>What happened</h3>
+  <p>The turbulence that started in January carried straight through this week. Rank-tracking sensors that spiked as high as <b>9.5 out of 10</b> in late February and early March — readings above 9 are rare — never returned to baseline, and community reports across WebmasterWorld and the SEO subreddits described daily position swings on top-performing keywords all week. Google, as has become standard in 2026, confirmed nothing. The February Discover update wrapped on 27 February, so whatever is moving results now is unannounced tuning, not a named rollout.</p>
+  <h3>How to respond when the algorithm is "breathing"</h3>
+  <ul>
+    <li><b>Separate rankings from clicks.</b> In Search Console, a position drop and a click drop have different causes. Clicks falling while positions hold usually points at SERP-feature changes, not a penalty.</li>
+    <li><b>Benchmark against your niche.</b> If every competitor on your money queries is swinging too, it's the weather. If only you moved, audit what changed on your site in the last 30 days.</li>
+    <li><b>Rule out the boring causes first.</b> Expired plugins, broken redirects, a slow deploy and accidental noindex tags explain more "algorithm hits" than algorithms do.</li>
+    <li><b>Hold content changes for a full week of data.</b> Sustained pattern first, edits second.</li>
+  </ul>
+  <div class="callout"><span class="ct">What we'd do about it</span>
+  <p>Ten weeks of continuous turbulence is the clearest signal yet that stability is now a build-quality feature, not a content trick. Sites that shrug off every tremor share the same traits: fast pages, clean information architecture, real expertise on the page. If your site rides every wave down, that's a fundamentals conversation with a <a class="ext" href="../website-design-development.html">website development company</a> before it's a content conversation with a copywriter.</p></div>
+
+  <h2>2. WordPress ships twice in one week: 6.9.4 security release and 7.0 Beta 5</h2>
+  <h3>6.9.4 — update now, not later</h3>
+  <p>WordPress <b>6.9.4 landed on 11 March</b> as a security release. There's no feature bait here and no reason to wait: back up, apply on staging if you have one, push to production within days. If you're still on 6.9.1 or earlier you're also missing the ten security fixes bundled across 6.9.2 and 6.9.3 — which makes this week's update effectively three security releases in one.</p>
+  <h3>7.0 Beta 5 — the next major is nearly done cooking</h3>
+  <p>One day later, on <b>12 March</b>, WordPress 7.0 reached <b>Beta 5</b>, with release candidates expected later this month and the final release scheduled for early April. The right posture for a business site: test the beta on a staging copy if you run heavy plugin stacks, but don't delay live projects for a version number. Anything built cleanly on 6.9.x will upgrade without drama — and "built cleanly" is doing the heavy lifting in that sentence.</p>
+  <div class="callout"><span class="ct">What we'd do about it</span>
+  <p>Security releases are where neglected websites quietly become liabilities. If nobody owns your update cadence, that's the gap to close this week — a hacked site loses more revenue in a weekend than a maintenance retainer costs in a year. And if a rebuild is on your 2026 roadmap, scope it now on 6.9.x with a 7.0 upgrade check written into the plan, rather than parking the project until April.</p></div>
+
+  <h2>3. Chrome 146, Firefox 149, Safari 26.4: the CSS convergence week</h2>
+  <p>March's stable browser releases delivered an unusually aligned batch of layout tools, and the standout is agreement rather than novelty: <b>Firefox 149 and Safari 26.4 both shipped name-only <code>@container</code> queries</b> — matching a container by its name alone, with no size condition attached. With Chrome already on board, styling a component based on <em>where it sits</em> rather than how wide the viewport is now works across every major engine.</p>
+  <h3>Why this matters beyond the CSS crowd</h3>
+  <ul>
+    <li><b>Truly reusable components.</b> A pricing card or testimonial block can restyle itself in a sidebar versus a hero without duplicate code or brittle viewport breakpoints. Design systems get cheaper to build and far cheaper to maintain.</li>
+    <li><b>Chrome 146 added scroll-position-driven animation control in CSS,</b> moving scroll-linked effects off the main JavaScript thread. That's scroll storytelling without the jank tax — animation that used to cost performance points now doesn't have to.</li>
+    <li><b>Less JavaScript, faster pages.</b> Every effect that moves from a script to a stylesheet is weight off your Core Web Vitals. This is the quiet argument for modern html web development: the platform keeps absorbing work that agencies used to bill JavaScript hours for.</li>
+  </ul>
+  <p>The practical question for site owners isn't "do I care about container queries" — it's whether the team building your next site does. A build that leans on the 2026 platform ships lighter, scores faster, and ages better than one assembled from 2021-era JavaScript habits.</p>
+
+  <h2>4. Google's AI Mode data: queries are three times longer</h2>
+  <p>Data published by Google this month put a number on how differently people search inside <b>AI Mode: queries average roughly three times the length</b> of traditional searches. People aren't typing "web design agency" into a conversational interface — they're typing "web design agency that can rebuild a Shopify store, keep our rankings, and show ecommerce case studies."</p>
+  <h3>Three consequences for your website</h3>
+  <ul>
+    <li><b>Long queries reward specific pages.</b> A generic services page can't answer a three-clause question. Pages that name the industry, the platform and the outcome can — and they're what gets cited.</li>
+    <li><b>Answers must be liftable.</b> Clear heading hierarchy, direct answers high in each section, and FAQ blocks with real schema give AI surfaces something to quote. Buried prose gives them nothing.</li>
+    <li><b>Fewer, better-briefed visitors.</b> When synthesized answers absorb the casual traffic, the clicks that remain arrive closer to a decision — which raises the stakes on <a class="ext" href="../conversion-optimization.html">conversion optimization</a> for every page that still earns a visit.</li>
+  </ul>
+
+  <h2>5. Shopify overhauls partner organizations — and ships an AI theme workspace</h2>
+  <p>Shopify's March dev platform update restructured how partner organizations work: a single <b>Owner</b> plus Admins, <b>role-based access control</b>, and centralized management through Organization Settings in the Dev Dashboard. Alongside it came <b>Tinker</b>, a new AI workspace for building and testing storefront sections without touching a live theme.</p>
+  <h3>What merchants should take from it</h3>
+  <ul>
+    <li><b>Audit who can touch your store.</b> RBAC only protects you if it's configured. Ask your <a class="ext" href="../shopify-development-new-york.html">Shopify development partners</a> to show you exactly which roles hold access to your admin, themes and customer data under the new structure — a two-line email that closes a real security gap.</li>
+    <li><b>Sandboxed theme work should become the norm.</b> With Tinker, "we tested it on the live theme" stops being an acceptable answer. Section changes should be built and reviewed in isolation before they go anywhere near checkout.</li>
+    <li><b>Process is the differentiator.</b> Any freelancer can edit a Liquid file. A disciplined shopify developer partner works in scoped roles, sandboxes changes, and leaves an audit trail — that's the checklist to hire against.</li>
+  </ul>
+
+  <h2>What this week means for your website decisions</h2>
+  <p>Pull the five stories together and one theme emerges: <b>the gap between well-built and merely launched keeps widening.</b> Volatile rankings punish weak fundamentals. Security releases punish unowned maintenance. New CSS rewards teams that actually use the platform. Longer AI queries reward specific, structured pages. And Shopify's access overhaul rewards merchants who run their store like the revenue asset it is.</p>
+  <ul>
+    <li><b>Scoping a redesign?</b> Make platform fluency a hiring filter. Ask any agency — local shortlist or a search for "web developers near me" — how they'd use container queries and scroll-driven CSS animations on your build. Blank looks mean a heavier, slower site.</li>
+    <li><b>Running WordPress?</b> Apply 6.9.4 this week and put someone's name against the update cadence permanently.</li>
+    <li><b>On Shopify?</b> Request the access audit. Ten minutes, real risk closed.</li>
+    <li><b>Watching rankings wobble?</b> Diagnose, benchmark, wait a week. The panic edit is the only guaranteed way to lose.</li>
+  </ul>
+
+  <h2>Frequently asked questions</h2>
+  <h3>Is there a confirmed Google algorithm update in March 2026?</h3>
+  <p>As of 16 March, no. Rankings have been unusually volatile since January, with sensors spiking as high as 9.5 out of 10 in late February and early March, but Google has confirmed nothing. Treat it as sustained background turbulence: diagnose before acting, compare against competitors, and avoid panic rewrites.</p>
+  <h3>Should I install WordPress 6.9.4 right away?</h3>
+  <p>Yes. It's a security release, shipped 11 March — apply it within days, not weeks. Back up first, test on staging if you have one, and note that sites still on 6.9.1 or earlier are also missing the fixes from 6.9.2 and 6.9.3.</p>
+  <h3>Should I wait for WordPress 7.0 before starting a website redesign?</h3>
+  <p>No. 7.0 hit Beta 5 on 12 March with final release scheduled for early April, but a clean build on 6.9.x upgrades without drama. Delaying a redesign that drives revenue to wait for a version number costs more than the upgrade ever will.</p>
+  <h3>What are name-only container queries and why do they matter?</h3>
+  <p>Firefox 149 and Safari 26.4 both now support @container queries that match on a container's name alone, no size condition required. With Chrome already supporting them, context-aware components work across all major browsers — a card can restyle itself based on where it sits in the layout, which makes design systems cheaper to build and maintain.</p>
+  <h3>What changed for Shopify partners and developers in March 2026?</h3>
+  <p>Shopify restructured partner organizations around a single Owner, Admins and role-based access control, managed centrally in the Dev Dashboard, and introduced Tinker — an AI workspace for building storefront sections without touching a live theme. If an agency has access to your store, ask them how that access is now scoped.</p>
+
+  <h2>The takeaway</h2>
+  <p>Nothing this week was a headline earthquake — and that's exactly the point. The weeks that decide whether a business website compounds or decays are the quiet ones: an unglamorous security patch applied on time, a CSS feature adopted early, an access audit nobody asked for, a ranking wobble met with patience instead of panic. Google keeps moving, the platform keeps improving, and the sites that win are the ones where somebody is actually paying attention.</p>
+
+  <div class="src rv">
+    <h2>Sources & further reading</h2>
+    <ul>
+      <li><a class="ext" href="https://almcorp.com/blog/google-search-ranking-volatility-march-2026/" target="_blank" rel="noopener">ALM Corp — Google Search ranking volatility continues into March 2026</a></li>
+      <li><a class="ext" href="https://wordpress.org/news/2026/03/wordpress-6-9-4-release/" target="_blank" rel="noopener">WordPress.org — WordPress 6.9.4 release</a></li>
+      <li><a class="ext" href="https://developer.wordpress.org/news/2026/03/whats-new-for-developers-march-2026/" target="_blank" rel="noopener">WordPress.org — What's new for developers (March 2026)</a></li>
+      <li><a class="ext" href="https://web.dev/blog/web-platform-03-2026" target="_blank" rel="noopener">web.dev — New to the web platform in March 2026</a></li>
+      <li><a class="ext" href="https://community.shopify.dev/t/whats-new-on-the-shopify-dev-platform-march-2026/32831" target="_blank" rel="noopener">Shopify — What's new on the Shopify Dev Platform, March 2026</a></li>
+    </ul>
+  </div>
+</article>
+
+<section class="band rv">
+  <h2>Want a site built for how search works now?</h2>
+  <p>We design and build conversion-first websites that hold up in classic search and AI answers alike.</p>
+  <a href="../index.html#contact" class="btn btn-pri">Book a Growth Call</a>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-in">
+      <a href="../index.html" class="logo">Hyber<b>X</b></a>
+      <nav class="f-links" aria-label="Services">
+        <a href="../performance-marketing.html">Performance Marketing</a>
+        <a href="../website-design-development.html">Websites</a>
+        <a href="../content-creation.html">Content</a>
+        <a href="../ad-films-brand-videos.html">Ad Films</a>
+        <a href="../conversion-optimization.html">CRO</a>
+      </nav>
+    </div>
+    <div class="f-bottom">
+      <span>© <span id="yr">2026</span> HyberX. All rights reserved.</span>
+      <span style="display:flex;gap:22px"><a href="../privacy-policy.html">Privacy Policy</a><a href="../terms-of-service.html">Terms of Service</a><a href="../index.html#contact">support@hyberx.com</a></span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+"use strict";
+var nav=document.getElementById('nav'),burger=document.getElementById('burger'),mnav=document.getElementById('mnav');
+addEventListener('scroll',function(){nav.classList.toggle('on',scrollY>24);},{passive:true});
+nav.classList.toggle('on',scrollY>24);
+burger.addEventListener('click',function(){
+  var open=mnav.classList.toggle('open');burger.classList.toggle('x',open);
+  burger.setAttribute('aria-expanded',open);document.body.classList.toggle('lock',open);
+});
+addEventListener('keydown',function(e){
+  if(e.key==='Escape'&&mnav.classList.contains('open')){
+    mnav.classList.remove('open');burger.classList.remove('x');
+    burger.setAttribute('aria-expanded','false');document.body.classList.remove('lock');burger.focus();
+  }
+});
+if('IntersectionObserver' in window){
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.12,rootMargin:'0px 0px -40px 0px'});
+  document.querySelectorAll('.rv').forEach(function(el){io.observe(el);});
+}else{document.querySelectorAll('.rv').forEach(function(el){el.classList.add('in');});}
+document.getElementById('yr').textContent=new Date().getFullYear();
+})();
+</script>
+</body>
+</html>
