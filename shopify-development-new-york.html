@@ -131,6 +131,20 @@ html.js .h-an{opacity:0;transform:translateY(30px);animation:hIn 1s var(--ease) 
 .band{border-radius:30px;border:1px solid var(--line);background:radial-gradient(800px 380px at 50% -10%,rgba(255,255,255,.121),transparent 62%),linear-gradient(170deg,var(--card2),var(--card));padding:80px 40px;text-align:center;position:relative;overflow:hidden}
 .band h2{font-size:clamp(32px,4.6vw,58px);letter-spacing:-.03em;margin-bottom:16px}
 .band p{color:var(--muted);max-width:540px;margin:0 auto 36px;font-size:17px}
+/* insights carousel */
+.blog-sec{padding:90px 0 40px;overflow:hidden}
+.blog-sec .sec-head{max-width:var(--max);margin:0 auto 40px;padding:0 28px}
+.blog-track{display:flex;width:max-content;animation:blogSlide 46s linear infinite}
+.blog-track:hover{animation-play-state:paused}
+.blog-set{display:flex;gap:16px;padding-right:16px}
+.bcard{width:330px;flex:none;border-radius:20px;border:1px solid var(--line2);background:linear-gradient(170deg,var(--card2),var(--card));padding:26px;display:flex;flex-direction:column;gap:12px;transition:transform .4s var(--ease),border-color .4s}
+.bcard:hover{transform:translateY(-5px);border-color:rgba(255,255,255,.22)}
+.bcard .btag{font-family:'Space Mono',monospace;font-size:9.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+.bcard h3{font-size:18.5px;line-height:1.3;letter-spacing:-.01em}
+.bcard p{font-size:13px;color:var(--muted);line-height:1.55}
+.bcard .bmeta{margin-top:auto;padding-top:14px;font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted2);border-top:1px solid var(--line2)}
+@keyframes blogSlide{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@media(max-width:720px){.bcard{width:270px}}
 footer{border-top:1px solid var(--line2);padding:56px 0 40px;background:var(--bg2)}
 .f-in{display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap}
 .f-links{display:flex;gap:26px;flex-wrap:wrap}
@@ -164,6 +178,7 @@ footer{border-top:1px solid var(--line2);padding:56px 0 40px;background:var(--bg
       <a href="index.html#services" class="act">Services</a>
       <a href="index.html#work">Work</a>
       <a href="index.html#about">About</a>
+      <a href="blog/">Insights</a>
       <a href="index.html#contact">Contact</a>
     </nav>
     <div style="display:flex;align-items:center;gap:12px">
@@ -177,6 +192,7 @@ footer{border-top:1px solid var(--line2);padding:56px 0 40px;background:var(--bg
   <a href="index.html#services">Services</a>
   <a href="index.html#work">Work</a>
   <a href="index.html#about">About</a>
+  <a href="blog/">Insights</a>
   <a href="index.html#contact">Contact</a>
   <a href="index.html#contact" class="btn btn-pri">Book a Growth Call</a>
 </div>
@@ -246,6 +262,27 @@ footer{border-top:1px solid var(--line2);padding:56px 0 40px;background:var(--bg
 <details class="rv"><summary>Do you handle ongoing development after launch?</summary><p>Most clients keep a monthly engineering and CRO retainer after launch. You get a roadmap, not a ticket queue.</p></details></div>
   </div>
 </section>
+<section class="blog-sec" id="insights" aria-label="Shopify insights from HyberX">
+  <div class="sec-head rv"><span class="ey"><i class="d"></i>Insights &middot; Shopify</span><h2>Thinking we work by.</h2><p style="margin-top:14px"><a href="blog/" style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)">View all insights &rarr;</a></p></div>
+  <div class="blog-track">
+    <div class="blog-set">
+<a class="bcard" href="blog/shopify-theme-speed-conversion.html"><span class="btag">Performance</span><h3>Your theme is costing you sales</h3><p>Where Shopify speed goes, and the speed-first rebuild math.</p><span class="bmeta">From the blog &middot; Read post</span></a>
+<a class="bcard" href="blog/shopify-vs-wordpress-vs-custom.html"><span class="btag">Platforms</span><h3>Shopify, WordPress or custom?</h3><p>The honest platform guide — by use-case, not agency preference.</p><span class="bmeta">From the blog &middot; Read post</span></a>
+<a class="bcard" href="blog/shopify-checkout-aov-optimization.html"><span class="btag">Conversion</span><h3>The checkout layer nobody touches</h3><p>Thresholds, bundles, extensibility and recovery — the AOV stack.</p><span class="bmeta">From the blog &middot; Read post</span></a>
+<a class="bcard" href="blog/headless-shopify-when-worth-it.html"><span class="btag">Architecture</span><h3>Is headless Shopify worth it?</h3><p>What it buys, what it quietly costs, and the middle path.</p><span class="bmeta">From the blog &middot; Read post</span></a>
+<a class="bcard" href="blog/shopify-seo-product-pages.html"><span class="btag">SEO</span><h3>Product pages that rank in AI answers</h3><p>Shopify’s structural SEO quirks, and the citation playbook.</p><span class="bmeta">From the blog &middot; Read post</span></a>
+<a class="bcard" href="blog/shopify-store-launch-checklist.html"><span class="btag">Launch</span><h3>The launch checklist that saves rankings</h3><p>Redirects, tracking, payments and the first-week watch plan.</p><span class="bmeta">From the blog &middot; Read post</span></a>
+    </div>
+    <div class="blog-set" aria-hidden="true">
+<a class="bcard" href="blog/shopify-theme-speed-conversion.html"><span class="btag">Performance</span><h3>Your theme is costing you sales</h3><p>Where Shopify speed goes, and the speed-first rebuild math.</p><span class="bmeta">From the blog &middot; Read post</span></a>
+<a class="bcard" href="blog/shopify-vs-wordpress-vs-custom.html"><span class="btag">Platforms</span><h3>Shopify, WordPress or custom?</h3><p>The honest platform guide — by use-case, not agency preference.</p><span class="bmeta">From the blog &middot; Read post</span></a>
+<a class="bcard" href="blog/shopify-checkout-aov-optimization.html"><span class="btag">Conversion</span><h3>The checkout layer nobody touches</h3><p>Thresholds, bundles, extensibility and recovery — the AOV stack.</p><span class="bmeta">From the blog &middot; Read post</span></a>
+<a class="bcard" href="blog/headless-shopify-when-worth-it.html"><span class="btag">Architecture</span><h3>Is headless Shopify worth it?</h3><p>What it buys, what it quietly costs, and the middle path.</p><span class="bmeta">From the blog &middot; Read post</span></a>
+<a class="bcard" href="blog/shopify-seo-product-pages.html"><span class="btag">SEO</span><h3>Product pages that rank in AI answers</h3><p>Shopify’s structural SEO quirks, and the citation playbook.</p><span class="bmeta">From the blog &middot; Read post</span></a>
+<a class="bcard" href="blog/shopify-store-launch-checklist.html"><span class="btag">Launch</span><h3>The launch checklist that saves rankings</h3><p>Redirects, tracking, payments and the first-week watch plan.</p><span class="bmeta">From the blog &middot; Read post</span></a>
+    </div>
+  </div>
+</section>
 <section class="sec" style="padding-top:0">
   <div class="wrap">
     <div class="band rv">
@@ -266,6 +303,7 @@ footer{border-top:1px solid var(--line2);padding:56px 0 40px;background:var(--bg
         <a href="content-creation.html">Content</a>
         <a href="ad-films-brand-videos.html">Ad Films</a>
         <a href="conversion-optimization.html">CRO</a>
+        <a href="blog/">Insights</a>
       </nav>
     </div>
     <div class="f-bottom">
